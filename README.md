@@ -1,5 +1,7 @@
 # SCSS-MIXINS
 
+[![npm version](https://badge.fury.io/js/%407ninjas%2Fscss-mixins.svg)](https://badge.fury.io/js/%407ninjas%2Fscss-mixins)
+
 ### Description
 `scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.
 
@@ -7,11 +9,11 @@
 #### npm
 To install scss-mixins using npm, simply run:
 ```javascript
-npm install scss-mixins
+npm install @7ninjas/scss-mixins -D
 ```
 #### yarn 
 ```javascript
-yarn add scss-mixins
+yarn add @7ninjas/scss-mixins --dev
 ```
 
 ### Usage
@@ -31,15 +33,10 @@ Example:
 
 ### Versioning
 
-- **05.01.2018 - v0.0.1**
-    - Feature:
-        - feature 1
-        - feature 2
+- **05.01.2018 - v0.0.1**     
     - Fixed: 
-        - fix 1
-        - fix 2   
-    - Removed:
-        - mixin 1    
-        - mixin 2    
+        - update readme.md
+        - change project structure
+            
 ### License
 Released under the MIT License.
