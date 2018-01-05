@@ -23,5 +23,18 @@ asdlkfjasdlkfjasdf
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 
+
+### Versioning
+
+- **05.01.2018 - v0.0.1**
+    - Feature:
+        - feature 1
+        - feature 2
+    - Fixed: 
+        - fix 1
+        - fix 2   
+    - Removed:
+        - mixin 1    
+        - mixin 2    
 ### License
 Released under the MIT License.

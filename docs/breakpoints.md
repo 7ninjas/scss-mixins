@@ -1,12 +1,12 @@
 # _breakpoints.scss
 _Breakpoint viewport sizes and media queries._
 
-List of content:
+### List of content:
 
-- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap)
-- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap)
-- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap)
-- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap)
+- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap 4.0.0-beta)
+- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap 4.0.0-beta)
+- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap 4.0.0-beta)
+- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap 4.0.0-beta)
 
 
 ### Default variables
