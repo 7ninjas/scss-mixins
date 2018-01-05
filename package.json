@@ -1,0 +1,22 @@
+{
+  "name": "scss-mixins",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/components/_base.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7ninjas/scss-mixins.git"
+  },
+  "author": "7ninjas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/7ninjas/scss-mixins/issues"
+  },
+  "homepage": "https://github.com/7ninjas/scss-mixins#readme",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta"
+  }
+}
