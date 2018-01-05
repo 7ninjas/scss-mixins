@@ -1,5 +1,5 @@
 {
-  "name": "scss-mixins",
+  "name": "@7ninjas/scss-mixins",
   "version": "0.0.0",
   "description": "",
   "main": "src/components/_base.scss",
