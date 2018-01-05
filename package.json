@@ -1,6 +1,6 @@
 {
   "name": "@7ninjas/scss-mixins",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "src/components/_base.scss",
   "scripts": {
