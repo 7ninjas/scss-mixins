@@ -15,8 +15,13 @@ yarn add scss-mixins
 ```
 
 ### Usage
-asdlkfjasdlkfjasdf
-    
+Import this file to your core `scss` file for importing all mixins from package
+
+Example:
+```
+@import '~scss-mixins/components/base'
+```
+
 ### Table of contents
 
 - [Variables](./docs/variables.md)
