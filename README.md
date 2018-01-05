@@ -7,11 +7,11 @@
 #### npm
 To install scss-mixins using npm, simply run:
 ```javascript
-npm install scss-mixins
+npm install @7ninjas/scss-mixins -D
 ```
 #### yarn 
 ```javascript
-yarn add scss-mixins
+yarn add @7ninjas/scss-mixins --dev
 ```
 
 ### Usage
@@ -40,6 +40,7 @@ Example:
         - fix 2   
     - Removed:
         - mixin 1    
-        - mixin 2    
+        - mixin 2
+            
 ### License
 Released under the MIT License.
