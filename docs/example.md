@@ -6,7 +6,17 @@ List of content
 -[Mixin Blablabla](#blablabla)
 
 
+## Default variables
 
+```
+$grid-breakpoints: (
+        xs: 0,
+        sm: 544px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);
+```
 
 
 ## Mixin Blablabla
@@ -21,17 +31,7 @@ _what this shit does_
 - `sdsdfsdf` - sdfsdf
 - `sdsdfsdf` - sdfsdf
 
-### Default variables
 
-```
-$grid-breakpoints: (
-        xs: 0,
-        sm: 544px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
-);
-```
 
 ### Usage: 
 
