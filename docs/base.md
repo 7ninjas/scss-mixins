@@ -1,57 +1,11 @@
 # _base.scss
 
+**Contains imports of all mixin from `components` folder.**
 
-List of content
+## Usage: 
+Import this file to your core `scss` file for importing all mixins from package
 
--[Mixin Blablabla](#blablabla)
-
-
-
-
-
-## Mixin Blablabla
-
-### Description
-_what this shit does_
-
-
-### Parameters
-- `sdsdfsdf` - sdfsdf
-- `sdsdfsdf` - sdfsdf (**required**)
-- `sdsdfsdf` - sdfsdf
-- `sdsdfsdf` - sdfsdf
-
-### Default variables
-
+Example:
 ```
-$grid-breakpoints: (
-        xs: 0,
-        sm: 544px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px
-);
+@import '~scss-mixins/components/base'
 ```
-
-### Usage: 
-
-
-#### Case 1
-description
-
-```
-.exampleClass {
-    @include blablabla ();
-}
-```
-
-#### Case 2 
-description
-
-```
-.exampleClass1 {
-    @include blablabla ();
-}
-
-```
-
