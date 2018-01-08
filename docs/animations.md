@@ -22,7 +22,7 @@ Enable hardware acceleration for elements with `exampleAnimationClass` class.
 #### Case 1
 Assign hardware acceleration with default values. 
 
-```
+```scss
 .exampleAnimationClass {
     @include hardware();
 }
@@ -31,7 +31,7 @@ Assign hardware acceleration with default values.
 #### Case 2
 Assign hardware acceleration without `backface-visibility` property. 
 
-```
+```scss
 .exampleAnimationClass {
     @include hardware(false);
 }
@@ -40,7 +40,7 @@ Assign hardware acceleration without `backface-visibility` property.
 #### Case 3
 Assign hardware acceleration. Set custom value `perspective` property.
 
-```
+```scss
 .exampleAnimationClass {
     @include hardware($perspective: 5000);
 }

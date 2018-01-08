@@ -20,20 +20,21 @@ yarn add @7ninjas/scss-mixins --dev
 Import this file to your core `scss` file for importing all mixins from package
 
 Example:
-```
+```scss
 @import '~scss-mixins/components/base'
 ```
 
 ### Table of contents
 
 - [Variables](./docs/variables.md)
+- [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 - [Fonts](./docs/fonts.md)
+- [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
-- [Animations](./docs/animations.md)
 
 ### License
 Released under the MIT License.

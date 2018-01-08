@@ -8,9 +8,9 @@ _File includes function which helps keeping consistent shades of color_
 
 ### Default variables
 _Default variables declared in file to be used in ```colors``` map and later in ```color``` function.<br />
-In variables map of colors and colors themselves can be redeclared_
+In variables map of colors and colors themselves can be redeclared._
 
-```
+```scss
 $color-primary: red !default;
 $color-secondary: blue !default;
 $color-shade-amount: 15% !default;
@@ -44,7 +44,7 @@ _Function which helps to retrieve color from colors map_
 ### Usage: 
 Assigned light shade of primary color to class
 
-```
+```scss
 .exampleClass {
     color: color(primary, light)
 }

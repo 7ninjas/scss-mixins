@@ -4,9 +4,10 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 :rocket: New feature:
 - added changelog
-- added colors.scss
 - added animations.scss
+- added colors.scss
 - added fonts.scss
+- added typography.scss
 - added units.scss
 - added utils.scss
  
