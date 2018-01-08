@@ -31,11 +31,12 @@ Example:
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
+- [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
 - [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
-- [Flex](./docs/flex.md)
+
 
 ### License
 Released under the MIT License.
