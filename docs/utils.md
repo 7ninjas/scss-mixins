@@ -11,7 +11,7 @@ _File includes functions and mixins which don't fit to other files_
 ## Function first
 
 ### Description
-_Helper which takes first parameter from list_
+_Helper which takes first parameter from list._
 
 ### Parameters
 - `$list` - list with keys (**required**)
