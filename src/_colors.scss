@@ -1,0 +1,24 @@
+$color-primary: red !default;
+$color-secondary: blue !default;
+$color-shade-amount: 15% !default;
+$color-trans-amount: 0.5 !default;
+
+$colors: (
+  primary: (
+    base: $color-primary,
+    light: lighten($color-primary, $color-shade-amount),
+    dark: darken($color-primary, $color-shade-amount),
+    trans: transparentize($color-primary, $color-trans-amount)
+  ),
+  secondary: (
+    base: $color-secondary,
+    light: lighten($color-secondary, $color-shade-amount),
+    dark: darken($color-secondary, $color-shade-amount),
+    trans: transparentize($color-secondary, $color-trans-amount)
+  )
+) !default;
+
+// retrieve color from $colors map ie. `color(primary, light)`
+@function color($color-name, $color-variant: base) {
+  @return map-get(map-get($colors, $color-name), $color-variant);
+}
