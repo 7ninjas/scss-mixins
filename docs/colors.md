@@ -44,8 +44,6 @@ _Function which helps to retrieve color from colors map_
 ### Usage: 
 Assigned light shade of primary color to class
 
-#### Case
-
 ```
 .exampleClass {
     color: color(primary, light)
