@@ -96,7 +96,7 @@ Assigning h1 font variation with red color and without responsiveness
 ## Mixin link-variant
 
 ### Description
-_Mixin styling color to given one, setting cursor type to pointer and setting adequate values ​​for hover and focus actions<br />
+_Mixin styling color to given one, setting cursor type to pointer and setting adequate values ​​for hover and focus actions.<br />
 Mainly used for consistent links styling._
 
 ### Parameters

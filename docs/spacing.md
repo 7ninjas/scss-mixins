@@ -1,5 +1,5 @@
 # _spacing.scss
-_File includes function which helps keeping consistent shades of color_
+_File includes function and mixins which add margins and paddings in many variations_
 
 ### List of content:
 
@@ -48,7 +48,7 @@ _Helper used in mixins to find proper size with given key_
 ## Mixin ml
 
 ### Description
-_Mixin which helps to add ```margin-left: $value``` to class_
+_Mixin which helps to add ```margin-left``` to class_
 
 ### Parameters
 - `$size` - variable which will be used as a value for ```margin-left``` (as default it's used ```1```)
@@ -66,7 +66,7 @@ Assigned 2rem of left margin to class
 ## Mixin mt
 
 ### Description
-_Mixin which helps to add ```margin-top: $value``` to class_
+_Mixin which helps to add ```margin-top``` to class_
 
 ### Parameters
 - `$size` - variable which will be used as a value for ```margin-top``` (as default it's used ```1```)
@@ -84,7 +84,7 @@ Assigned 2rem of top margin to class
 ## Mixin mr
 
 ### Description
-_Mixin which helps to add ```margin-right: $value``` to class_
+_Mixin which helps to add ```margin-right``` to class_
 
 ### Parameters
 - `$size` - variable which will be used as a value for ```margin-right``` (as default it's used ```1```)
@@ -102,7 +102,7 @@ Assigned 2rem of right margin to class
 ## Mixin mb
 
 ### Description
-_Mixin which helps to add ```margin-bottom: $value``` to class_
+_Mixin which helps to add ```margin-bottom``` to class_
 
 ### Parameters
 - `$size` - variable which will be used as a value for ```margin-bottom``` (as default it's used ```1```)
@@ -176,133 +176,50 @@ Right margin wasn't assigned!
 }
 ```
 
-## Mixin ml
+## Mixin pl
 
 ### Description
-_Mixin which helps to add ```margin-left: $value``` to class_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```margin-left``` (as default it's used ```1```)
-
-### Usage: 
-Assigned 2rem of left margin to class
-
-```scss
-.exampleClass {
-    @include ml(4);
-}
-```
+_Mixin which helps to add ```padding-left``` to class.<br />
+Adequate to [Mixin ml](#mixin-ml)_
 
 
-## Mixin mt
+## Mixin pt
 
 ### Description
-_Mixin which helps to add ```margin-top: $value``` to class_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```margin-top``` (as default it's used ```1```)
-
-### Usage: 
-Assigned 2rem of top margin to class
-
-```scss
-.exampleClass {
-    @include mt(4);
-}
-```
+_Mixin which helps to add ```padding-top``` to class.<br />
+Adequate to [Mixin mt](#mixin-mt)_
 
 
-## Mixin mr
+## Mixin pr
 
 ### Description
-_Mixin which helps to add ```margin-right: $value``` to class_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```margin-right``` (as default it's used ```1```)
-
-### Usage: 
-Assigned 2rem of right margin to class
-
-```scss
-.exampleClass {
-    @include mr(4);
-}
-```
+_Mixin which helps to add ```padding-right``` to class.<br />
+Adequate to [Mixin mr](#mixin-mr)_
 
 
-## Mixin mb
+## Mixin pb
 
 ### Description
-_Mixin which helps to add ```margin-bottom: $value``` to class_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```margin-bottom``` (as default it's used ```1```)
-
-### Usage: 
-Assigned 2rem of bottom margin to class
-
-```scss
-.exampleClass {
-    @include mb(4);
-}
-```
+_Mixin which helps to add ```padding-bottom``` to class.<br />
+Adequate to [Mixin mb](#mixin-mb)_
 
 
-## Mixin mx
+## Mixin px
 
 ### Description
-_Mixin which helps to add ```margin-right``` and ```margin-left``` to class_
-
-### Parameters
-- `$r` - value for ```margin-right``` (as default it's used ```1```)
-- `$l` - value for ```margin-left``` (as default it's used ```null```)
-
-### Usage: 
-Assigned 2rem of right margin and 1rem of left margin to class
-
-```scss
-.exampleClass {
-    @include mx(4, 3);
-}
-```
+_Mixin which helps to add ```padding-right``` and ```padding-left``` to class.<br />
+Adequate to [Mixin mx](#mixin-mx)_
 
 
-## Mixin my
+## Mixin py
 
 ### Description
-_Mixin which helps to add ```margin-top``` and ```margin-bottom``` to class_
-
-### Parameters
-- `$t` - value for ```margin-top``` (as default it's used ```1```)
-- `$b` - value for ```margin-bottom``` (as default it's used ```null```)
-
-### Usage: 
-Assigned 2rem of top margin and 1rem of bottom margin to class
-
-```scss
-.exampleClass {
-    @include my(4, 3);
-}
-```
+_Mixin which helps to add ```padding-top``` and ```padding-bottom``` to class.<br />
+Adequate to [Mixin my](#mixin-my)_
 
 
-## Mixin m
+## Mixin p
 
 ### Description
-_Mixin which helps to add all margins to class_
-
-### Parameters
-- `$t` - value for ```margin-top``` (as default it's used ```1```)
-- `$r` - value for ```margin-right``` (as default it's used ```null```)
-- `$b` - value for ```margin-bottom``` (as default it's used ```null```)
-- `$l` - value for ```margin-left``` (as default it's used ```null```)
-
-### Usage: 
-Assigned 0.25rem of top and bottom margin and 1rem of left margin to class.<br />
-Right margin wasn't assigned!
-
-```scss
-.exampleClass {
-    @include m($t : 1, $b: 1, $l: 3);
-}
-```
+_Mixin which helps to add all paddings to class.<br />
+Adequate to [Mixin m](#mixin-m)_
