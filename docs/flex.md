@@ -1,5 +1,5 @@
 # _flex.scss
-_File includes mixins which helps use flex features in easiest way_
+_File includes mixins which help using flex features in easiest way_
 
 ### List of content:
 
