@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file.
 - added changelog
 - added colors.scss
 - added animations.scss
+- added fonts.scss
+- added units.scss
+- added utils.scss
  
 :bug: Fixed:
 - updated readme
