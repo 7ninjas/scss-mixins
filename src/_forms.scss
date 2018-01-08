@@ -1,5 +1,40 @@
 @import '~bootstrap/scss/mixins/resize';
 
+// Default input variables
+
+$color-success: #6acb00 !default;
+$brand-primary: #2189ff !default;
+$gray-lighter: #e6e6e6 !default;
+
+//Input
+$input-color: $black !default;
+$input-placeholder-color: #ccc !default;
+$input-bg: $gray-lighter !default;
+$input-border-width: 1px !default;
+$input-border-color: #ccc !default;
+$input-border-radius: $border-radius !default;
+$input-box-shadow: false !default;
+$input-padding-y: 9px !default;
+$input-padding-x: 20px !default;
+
+$input-disabled-bg: #f0f0f0 !default;
+
+$input-focus-color: $input-color !default;
+$input-focus-bg: $input-bg !default;
+$input-focus-border-color: #75b6ff !default;
+$input-focus-box-shadow: $input-box-shadow !default;
+
+// Textarea
+$textarea-resizable: false !default;
+$textarea-resizable-direction: vertical !default;
+
+// Forms error
+$input-error-color: $input-color !default;
+$input-error-bg: $input-bg !default;
+$input-error-border-color: $brand-primary !default;
+$input-error-box-shadow: $input-box-shadow !default;
+$input-error-message-color: $brand-primary !default;
+
 @mixin input-focus() {
   &:focus {
     background-color: $input-focus-bg;
