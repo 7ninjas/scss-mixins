@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - added fonts.scss
 - added units.scss
 - added utils.scss
+- added flex.scss
  
 :bug: Fixed:
 - updated readme
