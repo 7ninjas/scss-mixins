@@ -10,7 +10,7 @@ _File includes function which helps keeping consistent shades of color_
 ### Default variables
 _Default variables declared in file to be used in ```to-rem``` function._
 
-```
+```scss
 $font-size-base: 16px !default;
 ```
 
@@ -33,7 +33,7 @@ _Function which helps converting given value to value in rem units with taking b
 ### Usage: 
 Changing font size from pixels to rem
 
-```
+```scss
 .exampleClass {
     font-size: to-rem(15px);
 }

@@ -13,7 +13,7 @@ _File includes mixins which help create consistent and proper styling of fonts_
 ### Default variables
 _Default variables declared in file to be used mainly in ```font``` mixin._
 
-```
+```scss
 $font-variants: (
   base: (
     base: (
@@ -39,7 +39,7 @@ _Mixin for text hiding_
 ### Usage: 
 Hiding text in given class
 
-```
+```scss
 .exampleHideTextClass {
     @include text-hide();
 }
@@ -54,7 +54,7 @@ It requires inline-block or block for proper styling._
 ### Usage: 
 Truncating text in specific class
 
-```
+```scss
 .exampleTruncateTextClass {
     @include text-truncate();
 }
@@ -87,7 +87,7 @@ _Mixin which helps assign consistent font values for given class_
 ### Usage: 
 Assigning h1 font variation with red color and without responsiveness
 
-```
+```scss
 .exampleClass {
    @include font($variant: h1, $color: #ff0000, $responsive: false);
 }
@@ -105,7 +105,7 @@ Mainly used for consistent links styling._
 ### Usage: 
 Styling link with blue color
 
-```
+```scss
 .exampleLinkClass {
     @include link-variant(#0000ff);
 }
