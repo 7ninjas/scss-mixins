@@ -31,15 +31,5 @@ Example:
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 
-
-### Versioning
-- **08.01.2018 - v0.0.2**     
-    - Added:
-        - color function
-- **05.01.2018 - v0.0.1**     
-    - Fixed: 
-        - update readme.md
-        - change project structure
-            
 ### License
 Released under the MIT License.
