@@ -34,6 +34,7 @@ Example:
 - [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
+- [Animations](./docs/animations.md)
 
 ### License
 Released under the MIT License.
