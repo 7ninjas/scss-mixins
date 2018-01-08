@@ -8,7 +8,7 @@ _File includes function which helps keeping consistent shades of color_
 
 
 ### Default variables
-_Default variables declared in file to be used in ```to-rem``` function._
+_Default variables declared in file to bae used in ```to-rem``` function._
 
 ```scss
 $font-size-base: 16px !default;

@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - added units.scss
 - added utils.scss
 - added flex.scss
+- added spacing.scss
  
 :bug: Fixed:
 - updated readme

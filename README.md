@@ -33,6 +33,7 @@ Example:
 - [Colors](./docs/colors.md)
 - [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
+- [Spacing](./docs/spacing.md)
 - [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
