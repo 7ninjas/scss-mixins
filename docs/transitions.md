@@ -21,7 +21,7 @@ $transition-delay: 0s !default;
 _Mixin which helps setting transition properties to given class_
 
 ### Parameters
-- `$args` - value of transition delay (as default it's used ```all```)
+- `$args` - value of transition property (as default it's used ```all```)
 - `$duration` - value of transition duration
 - `$function` - value of transition timing function
 - `$delay` - value of transition delay
