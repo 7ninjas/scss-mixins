@@ -29,6 +29,7 @@ Example:
 - [Variables](./docs/variables.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
+- [Fonts](./docs/fonts.md)
 
 
 ### Versioning
