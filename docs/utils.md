@@ -1,28 +1,12 @@
 # _breakpoints.scss
-_File includes breakpoint viewport sizes and media queries._
+_Breakpoint viewport sizes and media queries._
 
 ### List of content:
 
-- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap 4.0.0-beta)
+- [Function first](#Function-first)
+- [Function last](#Function-last)
+- [Function str-split](#Function-str-split)
 
-
-### Default variables
-_Breakpoints are defined as a map of (name: minimum width), order from small to large: <br />
-xs: 0, sm: 544px, md: 768px, lg: 992px, xl: 1200px)<br />
-The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default._
-
-```
-$grid-breakpoints: (
-  xs: 0,
-  sm: 544px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-```
 
 ## Mixin media-breakpoint-up
 
