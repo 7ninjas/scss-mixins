@@ -8,7 +8,7 @@ _File includes helper for adding @font-face rules_
 ## Mixin font-face
 
 ### Description
-_Specify a font name, URL where it can be found, font weight and font style_
+_Specify a font name, URL where it can be found, font weight and font style._
 
 ### Parameters
 - `$font-name` - define a name for the font (**required**)

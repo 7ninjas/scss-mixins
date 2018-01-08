@@ -8,7 +8,7 @@ _File includes function which helps keeping consistent shades of color_
 
 ### Default variables
 _Default variables declared in file to be used in ```colors``` map and later in ```color``` function.<br />
-In variables map of colors and colors themselves can be redeclared_
+In variables map of colors and colors themselves can be redeclared._
 
 ```
 $color-primary: red !default;

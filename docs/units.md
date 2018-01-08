@@ -8,8 +8,7 @@ _File includes function which helps keeping consistent shades of color_
 
 
 ### Default variables
-_Default variables declared in file to be used in ```to-rem``` function.<br />
-In variables map of colors and colors themselves can be redeclared_
+_Default variables declared in file to be used in ```to-rem``` function._
 
 ```
 $font-size-base: 16px !default;

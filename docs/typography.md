@@ -1,51 +1,112 @@
 # _typography.scss
-_File includes function which helps keeping consistent shades of color_
+_File includes mixins which help create consistent and proper styling of fonts_
 
 ### List of content:
 
-- [Function color](#function-color)
+- [Mixin text-hide](#mixin-text-hide) (bootstrap 4.0.0-beta)
+- [Mixin text-truncate](#mixin-text-truncate) (bootstrap 4.0.0-beta)
+- [Mixin _font-variant](#mixin-_font-variant)
+- [Mixin font](#mixin-font)
+- [Mixin link-variant](#mixin-link-variant)
 
 
 ### Default variables
-_Default variables declared in file to be used in ```colors``` map and later in ```color``` function.<br />
-In variables map of colors and colors themselves can be redeclared_
+_Default variables declared in file to be used mainly in ```font``` mixin._
 
 ```
-$color-primary: red !default;
-$color-secondary: blue !default;
-$color-shade-amount: 15% !default;
-$color-trans-amount: 0.5 !default;
-
-$colors: (
-  primary: (
-    base: $color-primary,
-    light: lighten($color-primary, $color-shade-amount),
-    dark: darken($color-primary, $color-shade-amount),
-    trans: transparentize($color-primary, $color-trans-amount)
+$font-variants: (
+  base: (
+    base: (
+      font-size: $font-size-base,
+    )
   ),
-  secondary: (
-    base: $color-secondary,
-    light: lighten($color-secondary, $color-shade-amount),
-    dark: darken($color-secondary, $color-shade-amount),
-    trans: transparentize($color-secondary, $color-trans-amount)
-  )
+  h1: (
+    base: (
+      font-size: 4rem,
+    ),
+    sm: (
+      font-size: 2rem,
+    )
+  ),
 ) !default;
 ```
 
-## Function color
+## Mixin text-hide
 
 ### Description
-_Function which helps to retrieve color from colors map_
-
-### Parameters
-- `$color-name` - name of color from map (**required**)
-- `$color-variant` - color variant from ```colors``` map (as default it's used ```base```)
+_Mixin for text hiding_
 
 ### Usage: 
-Assigned light shade of primary color to class
+Hiding text in given class
+
+```
+.exampleHideTextClass {
+    @include text-hide();
+}
+```
+
+## Mixin text-truncate
+
+### Description
+_Mixin for truncating text.<br />
+It requires inline-block or block for proper styling._
+
+### Usage: 
+Truncating text in specific class
+
+```
+.exampleTruncateTextClass {
+    @include text-truncate();
+}
+```
+
+## Mixin _font-variant
+
+### Description
+_Helper (mixin) which is used in ```font``` mixin for assigning values to proper keys_
+
+### Parameters
+- `$styles` - mapable object with variables like ```font-family```, ```font-size```, ```font-weight```, ```letter-spacing```, ```text-transform``` (**required**)
+- `$color` - color which should be assigned to font (as default it's used ```false```)
+- `$line-height` - line height which should be assigned to font (as default it's used ```false```)
+- `$align` - text alignment which should be assigned to font (as default it's used ```false```)
+
+
+## Mixin font
+
+### Description
+_Mixin which helps assign consistent font values for given class_
+
+### Parameters
+- `$variant` - font variant which should be assigned to font (```$font-variants``` will be search through for this value) (as default it's used ```base```)
+- `$color` - color which should be assigned to font (as default it's used ```false```)
+- `$line-height` - line height which should be assigned to font (as default it's used ```false```)
+- `$align` - text alignment which should be assigned to font (as default it's used ```false```)
+- `$responsive` - font responsiveness (as default it's used ```true```)
+
+### Usage: 
+Assigning h1 font variation with red color and without responsiveness
 
 ```
 .exampleClass {
-    color: color(primary, light)
+   @include font($variant: h1, $color: #ff0000, $responsive: false);
+}
+```
+
+## Mixin link-variant
+
+### Description
+_Mixin styling color to given one, setting cursor type to pointer and setting adequate values ​​for hover and focus actions<br />
+Mainly used for consistent links styling._
+
+### Parameters
+- `$color` - name of color (**required**)
+
+### Usage: 
+Styling link with blue color
+
+```
+.exampleLinkClass {
+    @include link-variant(#0000ff);
 }
 ```

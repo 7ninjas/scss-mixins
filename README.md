@@ -31,6 +31,7 @@ Example:
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 - [Fonts](./docs/fonts.md)
+- [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
 
