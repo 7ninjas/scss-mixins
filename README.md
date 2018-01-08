@@ -27,6 +27,7 @@ Example:
 ### Table of contents
 
 - [Variables](./docs/variables.md)
+- [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
@@ -34,7 +35,6 @@ Example:
 - [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
-- [Animations](./docs/animations.md)
 
 ### License
 Released under the MIT License.
