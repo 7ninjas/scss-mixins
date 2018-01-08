@@ -33,6 +33,7 @@ Example:
 - [Fonts](./docs/fonts.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
+- [Animations](./docs/animations.md)
 
 ### License
 Released under the MIT License.
