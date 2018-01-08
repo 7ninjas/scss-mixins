@@ -18,9 +18,15 @@ _Specify a font name, URL where it can be found, font weight and font style_
 
 ### Usage: 
 
-Changing font size for devices with higher screen resolution than small devices
+Define font Poppins from `../fonts` folder. 
 
 ```
 @include font-face(Poppins, '../fonts/poppins-v3-latin-ext-500', 500, italic);
 ```
-
+Each kind of font's file should have the same naming pattern. For example: 
+```javascript
+poppins-v3-latin-ext-500.eot
+poppins-v3-latin-ext-500.woff
+poppins-v3-latin-ext-500.ttf
+poppins-v3-latin-ext-500.svg
+```
