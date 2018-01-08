@@ -1,0 +1,11 @@
+$transition-duration: .3s !default;
+$transition-timing-function: linear !default;
+$transition-delay: 0s !default;
+
+@mixin transitionStyles($args: all, $duration: $transition-duration, $function: $transition-timing-function, $delay: $transition-delay) {
+  $value: ();
+  @each $i in $args {
+    $value: append($value, #{$i} #{$duration} #{$function} #{$delay}, comma);
+  }
+  transition: $value;
+}

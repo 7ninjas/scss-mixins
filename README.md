@@ -26,15 +26,16 @@ Example:
 
 ### Table of contents
 
-- [Variables](./docs/variables.md)
 - [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 - [Fonts](./docs/fonts.md)
+- [Transitions](./docs/transitions.md)
 - [Typography](./docs/typography.md)
 - [Units](./docs/units.md)
 - [Utils](./docs/utils.md)
+- [Variables](./docs/variables.md)
 
 ### License
 Released under the MIT License.
