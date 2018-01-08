@@ -3,7 +3,7 @@ _File includes helper for adding @font-face rules_
 
 ### List of content:
 
-- [Mixin font-face](#mixin-media-breakpoint-up)
+- [Mixin font-face](#mixin-font-face)
 
 ## Mixin font-face
 
