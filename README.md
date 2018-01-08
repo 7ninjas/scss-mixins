@@ -29,14 +29,7 @@ Example:
 - [Variables](./docs/variables.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
+- [Colors](./docs/colors.md)
 
-
-### Versioning
-
-- **05.01.2018 - v0.0.1**     
-    - Fixed: 
-        - update readme.md
-        - change project structure
-            
 ### License
 Released under the MIT License.
