@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - added utils.scss
 - added transitions.scss
 - added flex.scss
+- added shapes.scss
  
 :bug: Fixed:
 - updated readme
