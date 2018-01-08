@@ -31,6 +31,8 @@ Example:
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 - [Fonts](./docs/fonts.md)
+- [Units](./docs/units.md)
+- [Utils](./docs/utils.md)
 
 ### License
 Released under the MIT License.

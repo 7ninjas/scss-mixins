@@ -1,5 +1,5 @@
 # _breakpoints.scss
-_Breakpoint viewport sizes and media queries._
+_File includes breakpoint viewport sizes and media queries._
 
 ### List of content:
 
