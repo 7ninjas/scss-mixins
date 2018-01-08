@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 :rocket: New feature:
 - added changelog
 - added colors.scss
+- added typography.scss
  
 :bug: Fixed:
 - updated readme

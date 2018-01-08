@@ -1,0 +1,89 @@
+@import '~bootstrap/scss/mixins/text-hide';
+@import '~bootstrap/scss/mixins/text-truncate';
+@import 'units';
+@import 'breakpoints';
+
+$font-variants: (
+  base: (
+    base: (
+      font-size: $font-size-base,
+    )
+  ),
+  h1: (
+    base: (
+      font-size: 4rem,
+    ),
+    sm: (
+      font-size: 2rem,
+    )
+  ),
+) !default;
+
+@mixin _font-variant($styles, $color: false, $line-height: false, $align: false) {
+  @if not $line-height {
+    $line-height: map-get($styles, line-height);
+  }
+  $font-family: map-get($styles, font-family);
+  $font-size: map-get($styles, font-size);
+  $font-weight: map-get($styles, font-weight);
+  $letter-spacing: map-get($styles, letter-spacing);
+  $text-transform: map-get($styles, text-transform);
+
+  @if $font-family {
+    font-family: $font-family;
+  }
+  @if $font-size {
+    font-size: $font-size;
+  }
+  @if $font-weight {
+    font-weight: $font-weight;
+  }
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+  @if $text-transform {
+    text-transform: $text-transform;
+  }
+  @if $line-height {
+    line-height: $line-height;
+  }
+  @if $color {
+    color: $color;
+  }
+  @if $align {
+    text-align: $align;
+  }
+}
+
+@mixin font($variant: base, $color: false, $line-height: false, $align: false, $responsive: true) {
+  $variants: map-get($font-variants, $variant);
+  @each $breakpoint, $styles in $variants {
+    @if $breakpoint == base {
+      @include _font-variant($styles, $color, $line-height, $align);
+    } @else {
+      @if $responsive {
+        @include media-breakpoint-down($breakpoint) {
+          @include _font-variant($styles, $color, $line-height, $align);
+        }
+      }
+    }
+  }
+}
+
+@mixin link-variant($color) {
+  color: $color;
+  cursor: pointer;
+
+  &::before {
+    color: $color;
+  }
+
+  &::after {
+    background: $color;
+  }
+
+  @include hover-focus {
+    color: rgba($color, .8);
+    text-decoration: none;
+  }
+}
