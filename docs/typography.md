@@ -11,7 +11,7 @@ _File includes mixins which help create consistent and proper styling of fonts_
 
 
 ### Default variables
-_Default variables declared in file to be used mainly in ```font``` mixin._
+_Default variables declared in file will be used mainly in ```font``` mixin._
 
 ```scss
 $font-variants: (
