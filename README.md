@@ -30,6 +30,7 @@ Example:
 - [Breakpoints](./docs/breakpoints.md)
 - [Base](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
+- [Utils](./docs/utils.md)
 
 ### License
 Released under the MIT License.
