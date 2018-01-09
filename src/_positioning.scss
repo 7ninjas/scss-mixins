@@ -2,11 +2,10 @@
 @import '~bootstrap/scss/mixins/size';
 
 $z-indexes: (
-  'outdated-browser',
   'modal',
-  'site-header',
-  'page-wrapper',
-  'site-footer'
+  'header',
+  'body',
+  'footer'
 ) !default;
 
 @function z($name) {
