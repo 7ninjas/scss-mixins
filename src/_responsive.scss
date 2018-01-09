@@ -63,12 +63,16 @@
   } @else if $list-length == 2 {
     $mixin: nth($list, 1);
     $name: nth($list, 2);
-    // TODO if $mixin not down,only,up - error
+    if($mixin != 'down' || $mixin != 'only' || $mixin != 'up') {
+      @error 'oops! something went wrong'
+    }
   } @else if $list-length == 3 {
     $mixin: nth($list, 1);
     $lower: nth($list, 2);
     $upper: nth($list, 3);
-    // TODO if $mixin not between - error
+    if($mixin != 'between') {
+      @error 'oops! something went wrong'
+    }
   }
 
   // TODO if $name, lower, upper not in $breakpoint-keys - error
