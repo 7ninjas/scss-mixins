@@ -9,7 +9,7 @@ _File includes breakpoint viewport sizes and media queries._
 
 
 ### Default variables
-_Default variables which are required in mixins located in file_
+_Default variables which are required in mixins located in file. They are set with most common values._
 
 ```scss
 $grid-columns: 12 !default;
@@ -34,12 +34,15 @@ $container-max-widths: (
 ### Description
 _Mixin for setting auto left and right margins_
 
-### Usage: 
-Changing font size for devices with higher screen resolution than small devices
+### Usage:
+Setting child element centered relatively to parent element
 
 ```scss
-.exampleClass {
-    @include center();
+.exampleParentClass {
+
+    .exampleChildClass {
+        @include center();
+    }
 }
 ```
 
@@ -47,24 +50,19 @@ Changing font size for devices with higher screen resolution than small devices
 ## Mixin container
 
 ### Description
-_Media of at most the maximum breakpoint width. No query for the largest breakpoint.<br />
-Makes the content of class apply to the given breakpoint and narrower._
+_Mixin which helps with proper displaying container with flex property and 100% width._
 
 ### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
+- `$fluid` - variable which indicates if container should be fluid (as default it's used ```$grid-fluid```)
+- `$gutter` - object with width of gutters for different resolutions  (as default it's used ```$grid-gutter-widths```)
+- `$max-widths` - object with max width of container for different resolutions (as default it's used ```$container-max-widths```)
 
 ### Usage: 
-
-
-#### Case
-Changing font size for devices with lower screen resolution than large devices
+Assigned fluid grid for container without gutters.
 
 ```scss
-.exampleClass {
-    @include media-breakpoint-down (lg) {
-        font-size: 14px;
-    }
+.exampleContainerClass {
+     @include container(true, $gutter: false);
 }
 ```
 
@@ -72,12 +70,14 @@ Changing font size for devices with lower screen resolution than large devices
 ## Mixin col
 
 ### Description
-_Media of at most the maximum breakpoint width. No query for the largest breakpoint.<br />
-Makes the content of class apply to the given breakpoint and narrower._
+_Mixin which helps with set number of columns with their size, gutters, offset and alignment._
 
 ### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
+- `$size` - variable which indicates if container should be fluid (as default it's used ```$grid-columns```)
+- `$columns` - object with width of gutters for different resolutions  (as default it's used ```$grid-columns```)
+- `$gutter-widths` - object with max width of container for different resolutions (as default it's used ```$grid-gutter-widths```)
+- `$offset` - object with max width of container for different resolutions (as default it's used ```0```)
+- `$align` - object with max width of container for different resolutions (as default it's used ```auto```)
 
 ### Usage: 
 
@@ -86,7 +86,7 @@ Makes the content of class apply to the given breakpoint and narrower._
 Changing font size for devices with lower screen resolution than large devices
 
 ```scss
-.exampleClass {
+.exampleColClass {
     @include media-breakpoint-down (lg) {
         font-size: 14px;
     }
