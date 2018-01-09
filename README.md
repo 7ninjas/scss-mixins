@@ -28,7 +28,7 @@ Example:
 
 - [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
-- [Base](./docs/breakpoints.md)
+- [Base](./docs/base.md)
 - [Colors](./docs/colors.md)
 - [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
