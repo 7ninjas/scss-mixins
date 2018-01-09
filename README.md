@@ -34,6 +34,7 @@ Example:
 - [Fonts](./docs/fonts.md)
 - [Forms](./docs/forms.md)
 - [Hover](./docs/hover.md)
+- [Icons](./docs/icons.md)
 - [Lists](./docs/lists.md)
 - [Responsive](./docs/responsive.md)
 - [Shapes](./docs/shapes.md)
