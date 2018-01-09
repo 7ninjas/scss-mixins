@@ -49,11 +49,10 @@ Assigned media with aspect ratio 4:3
 ## Mixin responsive-breakpoint
 
 ### Description
-_Mixin which helps handling with breakpoints on different screen resolutions_
+_Helper for handling with breakpoints on different screen resolutions_
 
 ### Parameters
-- `$breakpoint-query` - value of transition property (***required***)
-
+- `$breakpoint-query` - string with given media breakpoint type and optionally breakpoint name (ie. 'only, down, up, between') (***required***)
 
 
 ## Mixin responsive-col
