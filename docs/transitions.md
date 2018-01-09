@@ -1,5 +1,5 @@
 # _transitions.scss
-_File includes mixin which set transition properties_
+_File includes mixin which sets transition properties_
 
 ### List of content:
 
