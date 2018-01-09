@@ -29,7 +29,7 @@ $z-indexes: (
 ## Mixin size
 
 ### Description
-_Bootstrap helper which helps _
+_Bootstrap helper which helps setting width and height of element_
 
 ### Parameters
 - `$width` - variable describing width (***required***)
