@@ -75,8 +75,6 @@
     }
   }
 
-  // TODO if $name, lower, upper not in $breakpoint-keys - error
-
   @if $mixin == 'down' {
     @include media-breakpoint-down($name) {
       @content;
@@ -103,11 +101,3 @@
     }
   }
 }
-
-// TODO: test it @artem
-// @include responsive-col((
-//  down xs: 12,
-//  up sm: 4,
-//  between sm md: 3,
-//  up xxl: 2
-// ))
