@@ -1,8 +1,10 @@
 # _positioning.scss
-_File includes _
+_File includes function and mixins which help with positioning different type of elements_
 
 ### List of content:
 
+- [Mixin size](#function-size) (bootstrap 4.0.0-beta)
+- [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
 - [Function z](#function-z)
 - [Mixin pseudo](#mixin-pseudo)
 - [Mixin position-variant](#mixin-position-variant)
@@ -24,120 +26,137 @@ $z-indexes: (
 ) !default;
 ```
 
+## Mixin size
+
+### Description
+_Bootstrap helper which helps _
+
+### Parameters
+- `$width` - variable describing width (***required***)
+- `$height` - variable describing height (as default it's used ```$width```)
+
+
+## Mixin clearfix
+
+### Description
+_Bootstrap mixin which helps with wrapping containers_
+
+
 ## Function z
 
 ### Description
-_Helper used in mixins to find proper size with given key_
+_Function which sets z-index value appropriate to name's position in ```$z-indexes```.<br />
+Thanks to this solution the order has been preserved for every item.<br />
+If ```$z-indexes``` doesn't contain given name there will be displayed error with appropriate information_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```$spacing-sizes``` map (**required**)
-
-
-## Mixin ml
-
-### Description
-_Mixin which helps to add ```margin-left``` to class_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```margin-left``` (as default it's used ```1```)
+- `$name` - string with name which should be included in ```$z-indexes``` (***required***)
 
 ### Usage: 
-Assigned 2rem of left margin to class
+Assigned appropriate z-index for header
 
 ```scss
-.exampleClass {
-    @include ml(4);
+.exampleZClass {
+    @include z('header');
 }
 ```
 
 
-## Mixin mt
+## Mixin pseudo
 
 ### Description
-_Mixin which helps to add ```margin-top``` to class_
+_Mixin which helps with positioning element with content, display and position properties._
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-top``` (as default it's used ```1```)
+- `$display` - variable which will be used as a value for ```display``` (as default it's used ```block```)
+- `$pos` - variable which will be used as a value for ```position``` (as default it's used ```absolute```)
+- `$content` - variable which will be used as a value for ```content``` (as default it's used empty string)
 
 ### Usage: 
-Assigned 2rem of top margin to class
+Assigned element with inline display and fixed position
 
 ```scss
-.exampleClass {
-    @include mt(4);
+.examplePseudoClass {
+    @include pseudo($display: inline, $pos: fixed);
 }
 ```
 
 
-## Mixin mr
+## Mixin position-variant
 
 ### Description
-_Mixin which helps to add ```margin-right``` to class_
+_Helper for position mixins which helps handling position type and optionally top right bottom and left properties_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-right``` (as default it's used ```1```)
+- `$position` - variable which will be used as a value for ```position``` (***required***)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (***required***)
+
+
+## Mixin absolute
+
+### Description
+_Mixin which helps to add position absolute with additional (optional) properties to class_
+
+### Parameters
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
 
 ### Usage: 
-Assigned 2rem of right margin to class
+Assigned position absolute without additional properties
 
 ```scss
-.exampleClass {
-    @include mr(4);
+.exampleAbsoluteClass {
+    @include absolute();
 }
 ```
 
 
-## Mixin mb
+## Mixin fixed
 
 ### Description
-_Mixin which helps to add ```margin-bottom``` to class_
+_Mixin which helps to add position fixed with additional (optional) properties to class_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-bottom``` (as default it's used ```1```)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
 
 ### Usage: 
-Assigned 2rem of bottom margin to class
+Assigned position fixed without additional properties
 
 ```scss
-.exampleClass {
-    @include mb(4);
+.exampleFixedClass {
+    @include fixed();
 }
 ```
 
-
-## Mixin mx
+## Mixin relative
 
 ### Description
-_Mixin which helps to add ```margin-right``` and ```margin-left``` to class_
+_Mixin which helps to add position relative with additional (optional) properties to class_
 
 ### Parameters
-- `$r` - value for ```margin-right``` (as default it's used ```1```)
-- `$l` - value for ```margin-left``` (as default it's used ```null```)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
 
 ### Usage: 
-Assigned 2rem of right margin and 1rem of left margin to class
+Assigned position relative without additional properties
 
 ```scss
-.exampleClass {
-    @include mx(4, 3);
+.exampleRelativeClass {
+    @include relative();
 }
 ```
 
-
-## Mixin my
+## Mixin sticky
 
 ### Description
-_Mixin which helps to add ```margin-top``` and ```margin-bottom``` to class_
+_Mixin which helps to add position sticky with additional (optional) properties to class_
 
 ### Parameters
-- `$t` - value for ```margin-top``` (as default it's used ```1```)
-- `$b` - value for ```margin-bottom``` (as default it's used ```null```)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
 
 ### Usage: 
-Assigned 2rem of top margin and 1rem of bottom margin to class
+Assigned position sticky without additional properties
 
 ```scss
-.exampleClass {
-    @include my(4, 3);
+.exampleStickyClass {
+    @include sticky();
 }
 ```
