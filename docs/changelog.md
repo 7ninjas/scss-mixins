@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 - added shapes.scss
 - added spacing.scss
 - added images.scss
+- added lists.scss
  
 :bug: Fixed:
 - updated readme
