@@ -35,6 +35,7 @@ Example:
 - [Forms](./docs/forms.md)
 - [Lists](./docs/lists.md)
 - [Positioning](./docs/positioning.md)
+- [Responsive](./docs/responsive.md)
 - [Shapes](./docs/shapes.md)
 - [Spacing](./docs/spacing.md)
 - [Transitions](./docs/transitions.md)
