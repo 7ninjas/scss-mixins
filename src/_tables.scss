@@ -1,0 +1,65 @@
+$table-bg: transparent;
+$table-cell-padding: 5px;
+$table-border-width: $border-width;
+$table-border-color: $gray-light;
+
+@mixin table($background: $table-bg, $cell-padding: $table-cell-padding) {
+  width: 100%;
+  max-width: 100%;
+  background-color: $background;
+
+  th,
+  td {
+    padding: $cell-padding;
+    vertical-align: top;
+    border-top: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+}
+
+@mixin table-bordered ($border-width: $table-border-width, $border-color: $table-border-color){
+  border: $border-width solid $border-color;
+
+  th,
+  td {
+    border: $border-width solid $border-color;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * $border-width);
+    }
+  }
+}
+
+@mixin table-responsible () {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+@mixin table-striped ($bg-color: transparentize(#000, .95)) {
+  tbody tr:nth-of-type(odd) {
+    background-color: $bg-color;
+  }
+}
+
+@mixin table-hover($hover-color: transparentize(#000, 0.9)) {
+  tbody tr {
+    @include hover {
+      background-color: $hover-color;
+    }
+  }
+}
