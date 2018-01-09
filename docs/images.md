@@ -10,23 +10,14 @@ _File includes bootstrap mixins for images._
 ## Mixin img-fluid
 
 ### Description
-_Mixin for keeping image from scaling beyond the width of their parents_
-
-### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
+_Mixin for keeping image from scaling beyond the width of their parents._
 
 ### Usage: 
-
-
-#### Case
-Changing font size for devices with higher screen resolution than small devices
+Set maximum relative to the parent and override the height to auto
 
 ```scss
-.exampleClass {
-    @include media-breakpoint-up (sm) {
-        font-size: 16px;
-    }
+.exampleImgFluidClass {
+    @include img-fluid ()
 }
 ```
 
@@ -34,23 +25,10 @@ Changing font size for devices with higher screen resolution than small devices
 ## Mixin img-retina
 
 ### Description
-_Media of at most the maximum breakpoint width. No query for the largest breakpoint.<br />
-Makes the content of class apply to the given breakpoint and narrower._
+_Helper for setting background-image and -size in retina._
 
 ### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
-
-### Usage: 
-
-
-#### Case
-Changing font size for devices with lower screen resolution than large devices
-
-```scss
-.exampleClass {
-    @include media-breakpoint-down (lg) {
-        font-size: 14px;
-    }
-}
-```
+- `$file-1x` - image's placement for default resolution (**required**)
+- `$file-2x` - image's placement for at least 2dppx resolution (**required**)
+- `$width-1x` - width of image (**required**)
+- `$height-1x` - height of image (**required**)
