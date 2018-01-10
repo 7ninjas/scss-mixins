@@ -5,7 +5,7 @@ _File includes function and mixins which help with positioning different type of
 
 - [Mixin size](#function-size) (bootstrap 4.0.0-beta)
 - [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
-- [Function z](#function-z)
+- [Function z-index](#function-z-index)
 - [Mixin pseudo](#mixin-pseudo)
 - [Mixin position-variant](#mixin-position-variant)
 - [Mixin absolute](#mixin-absolute)
@@ -42,7 +42,7 @@ _Bootstrap helper which helps setting width and height of element_
 _Bootstrap mixin which helps with wrapping containers_
 
 
-## Function z
+## Function z-index
 
 ### Description
 _Function which sets z-index value appropriate to name's position in ```$z-indexes```.<br />
@@ -57,7 +57,7 @@ Assigned appropriate z-index for header
 
 ```scss
 .exampleZClass {
-    @include z('header');
+    @include z-index('header');
 }
 ```
 

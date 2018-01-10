@@ -8,7 +8,7 @@ $z-indexes: (
   'footer'
 ) !default;
 
-@function z($name) {
+@function z-index($name) {
   @if index($z-indexes, $name) {
     @return (length($z-indexes) - index($z-indexes, $name)) + 1;
   } @else {
