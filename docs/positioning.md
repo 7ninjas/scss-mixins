@@ -3,11 +3,8 @@ _File includes function and mixins which help with positioning different type of
 
 ### List of content:
 
-- [Mixin size](#function-size) (bootstrap 4.0.0-beta)
-- [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
 - [Function z-index](#function-z-index)
 - [Mixin pseudo](#mixin-pseudo)
-- [Mixin position-variant](#mixin-position-variant)
 - [Mixin absolute](#mixin-absolute)
 - [Mixin fixed](#mixin-fixed)
 - [Mixin relative](#mixin-relative)
@@ -25,22 +22,6 @@ $z-indexes: (
   'footer'
 ) !default;
 ```
-
-## Mixin size
-
-### Description
-_Bootstrap helper which helps setting width and height of element_
-
-### Parameters
-- `$width` - variable describing width (***required***)
-- `$height` - variable describing height (as default it's used ```$width```)
-
-
-## Mixin clearfix
-
-### Description
-_Bootstrap mixin which helps with wrapping containers_
-
 
 ## Function z-index
 
@@ -65,7 +46,7 @@ Assigned appropriate z-index for header
 ## Mixin pseudo
 
 ### Description
-_Mixin which helps with positioning element with content, display and position properties._
+_Mixin which helps with positioning pseudo elements with content, display and position properties._
 
 ### Parameters
 - `$display` - variable which will be used as a value for ```display``` (as default it's used ```block```)
@@ -77,19 +58,16 @@ Assigned element with inline display and fixed position
 
 ```scss
 .examplePseudoClass {
-    @include pseudo($display: inline, $pos: fixed);
+   &:before {
+       @include pseudo(block, absolute);
+       ...
+    }
+   &:after {
+       @include pseudo();
+       ...
+   }
 }
 ```
-
-
-## Mixin position-variant
-
-### Description
-_Helper for position mixins which helps handling position type and optionally top right bottom and left properties_
-
-### Parameters
-- `$position` - variable which will be used as a value for ```position``` (***required***)
-- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (***required***)
 
 
 ## Mixin absolute
@@ -105,7 +83,7 @@ Assigned position absolute without additional properties
 
 ```scss
 .exampleAbsoluteClass {
-    @include absolute();
+   @include absolute(top 0 left 0 bottom 0);;
 }
 ```
 
@@ -123,7 +101,7 @@ Assigned position fixed without additional properties
 
 ```scss
 .exampleFixedClass {
-    @include fixed();
+    @include fixed(left 50% bottom 150px);
 }
 ```
 

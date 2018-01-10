@@ -17,10 +17,9 @@ $z-indexes: (
   }
 }
 
-@mixin pseudo($display: block, $pos: absolute, $content: '') {
+@mixin pseudo($display: block, $content: '') {
   content: $content;
   display: $display;
-  position: $pos;
 }
 
 @mixin position-variant($position, $args) {
