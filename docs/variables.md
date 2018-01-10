@@ -1,2 +1,2 @@
-# example.variables.scss
+# variables.scss.example
 

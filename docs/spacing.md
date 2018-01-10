@@ -3,7 +3,6 @@ _File includes function and mixins which add margins and paddings in many variat
 
 ### List of content:
 
-- [Function spacing](#function-spacing)
 - [Mixin ml](#mixin-ml)
 - [Mixin mt](#mixin-mt)
 - [Mixin mr](#mixin-mr)
@@ -35,14 +34,6 @@ $spacing-sizes: (
 ) !default;
 $spacing-important: false !default;
 ```
-
-## Function spacing
-
-### Description
-_Helper used in mixins to find proper size with given key_
-
-### Parameters
-- `$size` - variable which will be used as a value for ```$spacing-sizes``` map (**required**)
 
 
 ## Mixin ml

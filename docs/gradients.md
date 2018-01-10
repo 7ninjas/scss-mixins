@@ -74,8 +74,6 @@ Assigned directional background gradient to class
 ```
 
 
-
-
 ## Mixin gradient-x-three-colors
 
 ### Description
@@ -95,7 +93,6 @@ Assigned horizontal three-colors background gradient to class
    @include gradient-x-three-colors(#f00, #0f0, 80%, #00f);
 }
 ```
-
 
 
 ## Mixin gradient-y-three-colors
@@ -119,7 +116,6 @@ Assigned vertical three-colors background gradient to class
 ```
 
 
-
 ## Mixin gradient-radial
 
 ### Description
@@ -137,7 +133,6 @@ Assigned radial gradient with the shape of a circle
    @include gradient-radial(#f00, #0f0);
 }
 ```
-
 
 
 ## Mixin gradient-striped

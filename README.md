@@ -37,10 +37,7 @@
 - [Shapes](./docs/shapes.md)
 - [Spacing](./docs/spacing.md)
 - [Tables](./docs/tables.md)
-- [Transitions](./docs/transitions.md)
 - [Typography](./docs/typography.md)
-- [Units](./docs/units.md)
-- [Utils](./docs/utils.md)
 - [Variables](./docs/variables.md)
 
 
@@ -104,10 +101,7 @@ scss-mixins/
 │   ├── shapes.md
 │   ├── spacing.md
 │   ├── tables.md
-│   ├── transitions.md
 │   ├── typography.md
-│   ├── units.md
-│   ├── utils.md
 │   ├── variables.md
 └── src/
     ├── _animations.scss

@@ -6,7 +6,6 @@ _File includes mixins which help to keeping consistent input's and textarea's st
 - [Mixin resizable](#mixin-flex)
 - [Mixin input](#mixin-input)
 - [Mixin textarea](#mixin-textarea)
-- [Mixin input-focus](#mixin-input-focus)
 
 
 ## Mixin resizable
@@ -58,9 +57,3 @@ User can simply change styles of textarea by changing input variables in `variab
    @include textarea();
 }
 ```
-
-
-## Mixin input-focus
-
-### Description
-_Helper mixin which helps to style inputs that has focus. Used in [Mixin input](#mixin-input)_
