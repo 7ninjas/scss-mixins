@@ -1,4 +1,4 @@
-# _flex.scss
+# _forms.scss
 _File includes mixins which help to keeping consistent input's and textarea's styles_
 
 ### List of content:
