@@ -39,6 +39,7 @@ Example:
 - [Icons](./docs/icons.md)
 - [Images](./docs/images.md)
 - [Lists](./docs/lists.md)
+- [Positioning](./docs/positioning.md)
 - [Responsive](./docs/responsive.md)
 - [Shapes](./docs/shapes.md)
 - [Spacing](./docs/spacing.md)
