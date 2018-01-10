@@ -2,7 +2,8 @@
 _File includes function and mixins which help with positioning different type of elements_
 
 ### List of content:
-
+- [Mixin size](#function-size) (bootstrap 4.0.0-beta)
+- [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
 - [Function z-index](#function-z-index)
 - [Mixin pseudo](#mixin-pseudo)
 - [Mixin absolute](#mixin-absolute)
@@ -22,6 +23,23 @@ $z-indexes: (
   'footer'
 ) !default;
 ```
+
+
+## Mixin size
+
+### Description
+_Bootstrap helper which helps setting width and height of element_
+
+### Parameters
+- `$width` - variable describing width (***required***)
+- `$height` - variable describing height (as default it's used ```$width```)
+
+
+## Mixin clearfix
+
+### Description
+_Bootstrap helper. Applicable to parent class if children elements use float property. If you don't use this, the container won't get any height_
+
 
 ## Function z-index
 
