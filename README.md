@@ -63,12 +63,9 @@ Several quick start options are available:
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
-[![David](https://img.shields.io/david/expressjs/express.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![dependency Status](https://img.shields.io/david/7ninjas/scss-mixins?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap?type=dev)
-[![CSS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css?compression=gzip&label=CSS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/css/bootstrap.min.css)
-[![JS gzip size](http://img.badgesize.io/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/twbs/bootstrap/tree/v4-dev/dist/js/bootstrap.min.js)
 
 ## What's included
 
