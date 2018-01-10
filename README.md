@@ -33,6 +33,7 @@ Example:
 - [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
 - [Forms](./docs/forms.md)
+- [Gradients](./docs/gradients.md)
 - [Grid](./docs/grid.md)
 - [Hover](./docs/hover.md)
 - [Icons](./docs/icons.md)
