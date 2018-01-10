@@ -14,7 +14,7 @@ $table-strip-opacity: 0.05 !default;
 
 // Table hovered
 $table-hover-color: #000 !default;
-$table-hover-opacity: 0.05 !default;
+$table-hover-opacity: 0.1 !default;
 
 // Table bordered
 $table-border-width: 1px !default;
@@ -61,7 +61,7 @@ $table-border-color: #e6e6e6 !default;
   }
 }
 
-@mixin table($bordered: $table-bordered, $responsible:$table-responsible, $striped: $table-striped, $hovered:$table-hovered) {
+@mixin table($bordered: $table-bordered, $responsible: $table-responsible, $striped: $table-striped, $hovered: $table-hovered) {
   width: 100%;
   max-width: 100%;
   background-color: $table-background;
