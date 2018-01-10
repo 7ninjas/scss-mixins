@@ -22,7 +22,6 @@
 ### Table of contents
 
 - [Animations](./docs/animations.md)
-- [Base](./docs/base.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
 - [Flex](./docs/flex.md)
@@ -59,7 +58,7 @@ Import `base` file to your core `scss` file for importing all mixins from packag
 
 Example:
 ```scss
-@import '~scss-mixins/components/base'
+@import '~scss-mixins/src/base'
 ```
 
 
@@ -68,9 +67,9 @@ Example:
 [![npm](https://img.shields.io/npm/v/npm.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 [![npm](https://img.shields.io/npm/l/express.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
+[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 [![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
@@ -81,6 +80,7 @@ Within the download you'll find logically grouped files like this:
 
 ```
 scss-mixins/
+├── _base.scss
 ├── CHANGELOG.md
 ├── _variables.scss.example
 ├── docs/
@@ -107,7 +107,6 @@ scss-mixins/
 │   ├── variables.md
 └── src/
     ├── _animations.scss
-    ├── _base.scss
     ├── _breakpoints.scss
     ├── _colors.scss
     ├── _flex.scss
