@@ -17,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - added lists.scss
 - added shapes.scss
 - added spacing.scss
+- added tables.scss
 - added transitions.scss
 - added typography.scss
 - added units.scss
