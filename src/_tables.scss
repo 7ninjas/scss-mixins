@@ -1,29 +1,25 @@
-$table-bg: transparent;
-$table-cell-padding: 5px;
-$table-border-width: $border-width;
-$table-border-color: $gray-light;
+// Table variants
+$table-bordered: true !default;
+$table-responsible: true !default;
+$table-striped: true !default;
+$table-hovered: true !default;
 
-@mixin table($background: $table-bg, $cell-padding: $table-cell-padding) {
-  width: 100%;
-  max-width: 100%;
-  background-color: $background;
+// Table variables
+$table-background: transparent !default;
+$table-cell-padding: 5px !default;
 
-  th,
-  td {
-    padding: $cell-padding;
-    vertical-align: top;
-    border-top: $table-border-width solid $table-border-color;
-  }
+// Table striped
+$table-strip-color: #000 !default;
+$table-strip-opacity: 0.05 !default;
 
-  thead th {
-    vertical-align: bottom;
-    border-bottom: (2 * $table-border-width) solid $table-border-color;
-  }
+// Table hovered
+$table-hover-color: #000 !default;
+$table-hover-opacity: 0.05 !default;
 
-  tbody + tbody {
-    border-top: (2 * $table-border-width) solid $table-border-color;
-  }
-}
+// Table bordered
+$table-border-width: 1px !default;
+$table-border-color: #e6e6e6 !default;
+
 
 @mixin table-bordered ($border-width: $table-border-width, $border-color: $table-border-color){
   border: $border-width solid $border-color;
@@ -31,12 +27,14 @@ $table-border-color: $gray-light;
   th,
   td {
     border: $border-width solid $border-color;
+
   }
 
   thead {
     th,
     td {
-      border-bottom-width: (2 * $border-width);
+      border-top: (2 * $table-border-width) solid $table-border-color;
+      border-bottom: (2 * $table-border-width) solid $table-border-color;
     }
   }
 }
@@ -47,19 +45,50 @@ $table-border-color: $gray-light;
     width: 100%;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 0;
   }
 }
 
-@mixin table-striped ($bg-color: transparentize(#000, .95)) {
+@mixin table-striped ($color: $table-strip-color, $opacity: $table-strip-opacity) {
   tbody tr:nth-of-type(odd) {
-    background-color: $bg-color;
+    background-color: rgba(rgb($color), $opacity);
   }
 }
 
-@mixin table-hover($hover-color: transparentize(#000, 0.9)) {
-  tbody tr {
-    @include hover {
-      background-color: $hover-color;
-    }
+@mixin table-hovered($color: $table-hover-color, $opacity: $table-hover-opacity) {
+  tbody tr:hover {
+    background-color: rgba(rgb($color), $opacity);
+  }
+}
+
+@mixin table($bordered: $table-bordered, $responsible:$table-responsible, $striped: $table-striped, $hovered:$table-hovered) {
+  width: 100%;
+  max-width: 100%;
+  background-color: $table-background;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  @if $bordered == true {
+    @include table-bordered();
+  }
+  @if $responsible == true {
+    @include table-responsible();
+  }
+  @if $striped == true {
+    @include table-striped();
+  }
+  @if $hovered == true {
+    @include table-hovered();
   }
 }
