@@ -70,26 +70,24 @@ Assigned fluid grid for container without gutters.
 ## Mixin col
 
 ### Description
-_Mixin which helps with set number of columns with their size, gutters, offset and alignment._
+_Mixin which helps with indicate number of columns with their size, gutters, offset and alignment._
 
 ### Parameters
-- `$size` - variable which indicates if container should be fluid (as default it's used ```$grid-columns```)
-- `$columns` - object with width of gutters for different resolutions  (as default it's used ```$grid-columns```)
-- `$gutter-widths` - object with max width of container for different resolutions (as default it's used ```$grid-gutter-widths```)
-- `$offset` - object with max width of container for different resolutions (as default it's used ```0```)
-- `$align` - object with max width of container for different resolutions (as default it's used ```auto```)
+- `$size` - variable which indicates size of each column (as default it's used ```$grid-columns```)
+- `$columns` - variable which indicates number of columns  (as default it's used ```$grid-columns```)
+- `$gutter-widths` - variable which indicates width of each gutter (as default it's used ```$grid-gutter-widths```)
+- `$offset` - variable which indicates size of offset (as default it's used ```0```)
+- `$align` - variable which indicates alignment of columns (as default it's used ```auto```)
 
 ### Usage: 
 
 
 #### Case
-Changing font size for devices with lower screen resolution than large devices
+Set 12 columns with size 24 and left alignment to given class
 
 ```scss
 .exampleColClass {
-    @include media-breakpoint-down (lg) {
-        font-size: 14px;
-    }
+    @include col($size: 24, $columns: 12, $align: left);
 }
 ```
 
