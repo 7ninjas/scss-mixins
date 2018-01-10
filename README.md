@@ -8,13 +8,12 @@
   <p align="center">
     `scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.
     <br>
-    <a href="https://github.com/7ninjas/scss-mixins/docs/"><strong>Discover Scss Mixins docs »</strong></a>
-    <br>
+    [comment]: <<a href="#"><strong>Explore Best Practices »</strong></a>>
     <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
-    ·
+    ◦
     <a href="https://7ninjas.com/careers/">Carrers</a>
-    ·
+    ◦
     <a href="https://7ninjas.com/contact/">Contact</a>
   </p>
 </p>
@@ -35,6 +34,7 @@
 - [Icons](./docs/icons.md)
 - [Images](./docs/images.md)
 - [Lists](./docs/lists.md)
+- [Positioning](./docs/positioning.md)
 - [Responsive](./docs/responsive.md)
 - [Shapes](./docs/shapes.md)
 - [Spacing](./docs/spacing.md)
@@ -70,8 +70,9 @@ Example:
 
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-
 [![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+
+[![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 
 ## What's included
@@ -80,11 +81,11 @@ Within the download you'll find logically grouped files like this:
 
 ```
 scss-mixins/
+├── CHANGELOG.md
+├── _variables.scss.example
 ├── docs/
 │   ├── animations.md
-│   ├── base.md
 │   ├── breakpoints.md
-│   ├── changelog.md
 │   ├── colors.md
 │   ├── flex.md
 │   ├── fonts.md
@@ -95,6 +96,7 @@ scss-mixins/
 │   ├── images.md
 │   ├── lists.md
 │   ├── responsive.md
+│   ├── positioning.md
 │   ├── shapes.md
 │   ├── spacing.md
 │   ├── tables.md
@@ -117,6 +119,7 @@ scss-mixins/
     ├── _icons.scss
     ├── _images.scss
     ├── _lists.scss
+    ├── _positioning.scss
     ├── _responsive.scss
     ├── _shapes.scss
     ├── _spacing.scss

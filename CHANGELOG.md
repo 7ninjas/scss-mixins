@@ -15,6 +15,8 @@ All notable changes to this project will be documented in this file.
 - added icons.scss
 - added images.scss
 - added lists.scss
+- added positioning.scss
+- added responsive.scss
 - added shapes.scss
 - added spacing.scss
 - added tables.scss
