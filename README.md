@@ -28,11 +28,12 @@ Example:
 
 - [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
-- [Base](./docs/breakpoints.md)
+- [Base](./docs/base.md)
 - [Colors](./docs/colors.md)
 - [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
 - [Forms](./docs/forms.md)
+- [Grid](./docs/grid.md)
 - [Hover](./docs/hover.md)
 - [Icons](./docs/icons.md)
 - [Images](./docs/images.md)
