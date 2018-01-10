@@ -55,7 +55,7 @@ Use mixin without any parameters if you want to make your table bordered, respon
 
 ```scss
 table.exampleTable {
-  @include table();
+  @include table;
 }
 ```
 
@@ -113,7 +113,7 @@ Use mixin with any parameters if you want to use mixin with default variables.
 
 ```scss
 table.borderedTable {
-  @include table-bordered();
+  @include table-bordered;
 }
 ```
 
@@ -137,7 +137,7 @@ Make table horizontal scrollable on devices with small screen resolution.
 
 ```scss
 table.responsibleTable {
-  @include table-bordered();
+  @include table-bordered;
 }
 ```
 
@@ -159,7 +159,7 @@ Use mixin with any parameters if you want to use mixin with default variables.
 
 ```scss
 table.stripedTable {
-  @include table-striped();
+  @include table-striped;
 }
 ```
 
@@ -189,7 +189,7 @@ Use mixin with any parameters if you want to use mixin with default variables.
 
 ```scss
 table.stripedTable {
-  @include table-striped();
+  @include table-striped;
 }
 ```
 
