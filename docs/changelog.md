@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - added colors.scss
 - added fonts.scss
 - added forms.scss
+- added gradients.scss
 - added typography.scss
 - added units.scss
 - added utils.scss
@@ -16,7 +17,11 @@ All notable changes to this project will be documented in this file.
 - added shapes.scss
 - added spacing.scss
 - added positioning.scss
+- added images.scss
 - added lists.scss
+- added grid.scss
+- added hover.scss
+- added icons.scss
  
 :bug: Fixed:
 - updated readme
