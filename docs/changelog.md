@@ -16,7 +16,11 @@ All notable changes to this project will be documented in this file.
 - added flex.scss
 - added shapes.scss
 - added spacing.scss
+- added images.scss
 - added lists.scss
+- added grid.scss
+- added hover.scss
+- added icons.scss
  
 :bug: Fixed:
 - updated readme
