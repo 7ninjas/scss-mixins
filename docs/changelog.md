@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - added grid.scss
 - added hover.scss
 - added icons.scss
+- added tables.scss
  
 :bug: Fixed:
 - updated readme
