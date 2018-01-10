@@ -8,7 +8,6 @@
   <p align="center">
     `scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.
     <br>
-    [comment]: <<a href="#"><strong>Explore Best Practices »</strong></a>>
     <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
     ◦
@@ -64,14 +63,17 @@ Example:
 
 ## Status
 
-[![npm](https://img.shields.io/npm/v/npm.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
-[![npm](https://img.shields.io/npm/l/express.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![npm](https://img.shields.io/npm/v/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
+[![npm](https://img.shields.io/npm/dt/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
+[![license](https://img.shields.io/github/license/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 [![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+
+[![GitHub stars](https://img.shields.io/github/stars/7ninjas/scss-mixins.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![GitHub issues](https://img.shields.io/github/issues/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+
 
 
 ## What's included
@@ -80,8 +82,8 @@ Within the download you'll find logically grouped files like this:
 
 ```
 scss-mixins/
-├── _base.scss
 ├── CHANGELOG.md
+├── _base.scss
 ├── _variables.scss.example
 ├── docs/
 │   ├── animations.md
