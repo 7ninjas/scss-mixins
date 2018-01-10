@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 - added colors.scss
 - added fonts.scss
 - added forms.scss
+- added gradients.scss
 - added typography.scss
 - added units.scss
 - added utils.scss
