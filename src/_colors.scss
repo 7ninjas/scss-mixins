@@ -15,6 +15,14 @@ $colors: (
     light: lighten($color-secondary, $color-shade-amount),
     dark: darken($color-secondary, $color-shade-amount),
     trans: transparentize($color-secondary, $color-trans-amount)
+  ),
+  gray: (
+    base: #999,
+    dark: #7c7575,
+    darker: #2d2d2d,
+    darkest: #242222,
+    light: #e6e6e6,
+    lighter: #fafafa,
   )
 ) !default;
 
