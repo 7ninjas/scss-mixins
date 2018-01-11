@@ -82,12 +82,15 @@ $table-border-color: #e6e6e6 !default;
   @if $bordered == true {
     @include table-bordered();
   }
+
   @if $responsible == true {
     @include table-responsible();
   }
+
   @if $striped == true {
     @include table-striped();
   }
+
   @if $hovered == true {
     @include table-hovered();
   }

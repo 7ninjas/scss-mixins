@@ -4,6 +4,7 @@
   "description": "",
   "main": "src/components/_base.scss",
   "scripts": {
+    "stylelint": "stylelint src/**/*.scss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/7ninjas/scss-mixins#readme",
   "dependencies": {
-    "bootstrap": "4.0.0-beta"
+    "bootstrap": "4.0.0-beta",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-scss": "^2.2.0"
   }
 }

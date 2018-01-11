@@ -111,12 +111,15 @@ $input-error-message-color: $brand-primary !default;
 
 @mixin textarea() {
   @include input();
+
   height: auto;
   //padding: $input-padding-y $input-padding-x;
 
   @if ($textarea-resizable) {
     @include resizable($textarea-resizable-direction);
-  } @else {
+  }
+
+  @else {
     resize: none;
   }
 }

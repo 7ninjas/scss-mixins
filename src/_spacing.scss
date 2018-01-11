@@ -1,5 +1,5 @@
 $spacing-sizes: (
-  0: 0rem,
+  0: 0,
   1: 0.25rem,
   2: 0.5rem,
   3: 1rem,
@@ -18,7 +18,9 @@ $spacing-important: false !default;
 @mixin ml($size : 1) {
   @if ($size == 'auto') {
     margin-left: auto #{if($spacing-important, '!important', '')};
-  } @else {
+  }
+
+  @else {
     margin-left: spacing($size) #{if($spacing-important, '!important', '')};
   }
 }
@@ -30,7 +32,9 @@ $spacing-important: false !default;
 @mixin mr($size : 1) {
   @if ($size == 'auto') {
     margin-right: auto #{if($spacing-important, '!important', '')};
-  } @else {
+  }
+
+  @else {
     margin-right: spacing($size) #{if($spacing-important, '!important', '')};
   }
 }
@@ -43,10 +47,14 @@ $spacing-important: false !default;
   @if ($r and $l) {
     @include mr($r);
     @include ml($l);
-  } @else if ($r and not $l) {
+  }
+
+  @else if ($r and not $l) {
     @include mr($r);
     @include ml($r);
-  } @else {
+  }
+
+  @else {
     @error "mx(#{$r}, #{$l}): Invalid parameters. Expects mx($size) or mx($r, $l)"
   }
 }
@@ -55,44 +63,54 @@ $spacing-important: false !default;
   @if ($t and $b) {
     @include mt($t);
     @include mb($b);
-  } @else if ($t and not $b) {
+  }
+
+  @else if ($t and not $b) {
     @include mt($t);
     @include mb($t);
-  } @else {
+  }
+
+  @else {
     @error "my(#{$t}, #{$b}): Invalid parameters. Expects my($size) or my($t, $b)"
   }
 }
 
 @mixin m($t : 1, $r: null, $b: null, $l: null) {
   @if ($t and $r and $b and $l) {
-
     @include mt($t);
     @include mr($r);
     @include mb($b);
     @include ml($l);
 
-  } @else if ($t and $r and $b and not $l) {
+  }
 
+  @else if ($t and $r and $b and not $l) {
     @include mt($t);
     @include mx($r);
     @include mb($b);
 
-  } @else if ($t and $r and not $b and not $l) {
+  }
 
+  @else if ($t and $r and not $b and not $l) {
     @include my($t);
     @include mx($r);
 
-  } @else if ($t and not $r and not $b and not $l) {
+  }
 
+  @else if ($t and not $r and not $b and not $l) {
     @if ($t == 'auto') {
       @include my(0); //be explicit about what the browser does
       @include mx(auto);
-    } @else {
+    }
+
+    @else {
       @include my($t);
       @include mx($t);
     }
 
-  } @else {
+  }
+
+  @else {
     @error "m(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects m($size), m($y, $x), m($t, $x, $b) or m($t, $r, $b, $l)"
   }
 }
@@ -118,10 +136,14 @@ $spacing-important: false !default;
   @if ($r and $l) {
     @include pr($r);
     @include pl($l);
-  } @else if ($r and not $l) {
+  }
+
+  @else if ($r and not $l) {
     @include pr($r);
     @include pl($r);
-  } @else {
+  }
+
+  @else {
     @error "px(#{$r}, #{$l}): Invalid parameters. Expects px($size) or px($r, $l)"
   }
 }
@@ -130,10 +152,14 @@ $spacing-important: false !default;
   @if ($t and $b) {
     @include pt($t);
     @include pb($b);
-  } @else if ($t and not $b) {
+  }
+
+  @else if ($t and not $b) {
     @include pt($t);
     @include pb($t);
-  } @else {
+  }
+
+  @else {
     @error "py(#{$t}, #{$b}): Invalid parameters. Expects py($size) or py($t, $b)"
   }
 }
@@ -144,17 +170,25 @@ $spacing-important: false !default;
     @include pr($r);
     @include pb($b);
     @include pl($l);
-  } @else if ($t and $r and $b and not $l) {
+  }
+
+  @else if ($t and $r and $b and not $l) {
     @include pt($t);
     @include px($r);
     @include pb($b);
-  } @else if ($t and $r and not $b and not $l) {
+  }
+
+  @else if ($t and $r and not $b and not $l) {
     @include py($t);
     @include px($r);
-  } @else if ($t and not $r and not $b and not $l) {
+  }
+
+  @else if ($t and not $r and not $b and not $l) {
     @include py($t);
     @include px($t);
-  } @else {
+  }
+
+  @else {
     @error "p(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects p($size), p($y, $x), p($t, $x, $b) or p($t, $r, $b, $l)"
   }
 }
