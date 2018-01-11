@@ -24,7 +24,7 @@ Assign hardware acceleration with default values.
 
 ```scss
 .exampleAnimationClass {
-    @include hardware();
+    @include hardware;
 }
 ```
 
