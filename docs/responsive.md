@@ -66,7 +66,7 @@ Assigned size of columns for different screen resolutions.
    ));
 }
 ```
-
+Mixin `responsive-col` helps to create columns for different breakpoints in simpler way  in contrast to the way implemented below
 
 ```scss
   .exampleClass {
@@ -84,6 +84,3 @@ Assigned size of columns for different screen resolutions.
   }
 
 ```
-
-
-
