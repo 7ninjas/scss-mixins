@@ -1,5 +1,5 @@
 # _lists.scss
-_File includes mixin with helper to unstyle list_
+_File includes mixin to unstyle list_
 
 ### List of content:
 
@@ -9,4 +9,13 @@ _File includes mixin with helper to unstyle list_
 ## Mixin list-unstyled
 
 ### Description
-_Helper mixin which removes default browser padding and list-style_
+_Mixin which removes default browser padding and list-style_
+
+### Usage: 
+Removed default browser list style
+
+```scss
+.exampleImgFluidClass {
+    @include list-unstyled ()
+}
+```

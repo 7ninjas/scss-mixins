@@ -5,7 +5,6 @@ _File includes mixins which_
 
 - [Mixin responsive-prop](#mixin-responsive-prop)
 - [Mixin responsive-embed](#mixin-responsive-embed)
-- [Mixin responsive-breakpoint](#mixin-responsive-breakpoint)
 - [Mixin responsive-col](#mixin-responsive-col)
 
 
@@ -45,14 +44,6 @@ Assigned media with aspect ratio 4:3
   @include responsive-embed(4,3);
 }
 ```
-
-## Mixin responsive-breakpoint
-
-### Description
-_Helper for handling with breakpoints on different screen resolutions_
-
-### Parameters
-- `$breakpoint-query` - string with given media breakpoint type and optionally breakpoint name (ie. 'only, down, up, between') (***required***)
 
 
 ## Mixin responsive-col

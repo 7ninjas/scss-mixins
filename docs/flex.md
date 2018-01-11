@@ -5,7 +5,6 @@ _File includes mixins which help using flex features in easiest way_
 
 - [Mixin flex](#mixin-flex)
 - [Mixin inline-flex](#mixin-inline-flex)
-- [Mixin flex-variant](#mixin-flex-variant)
 
 
 ## Mixin flex
@@ -127,16 +126,3 @@ Assign `display: inline-flex` property to the class and wrap flex items onto mul
    @include flex($wrap: wrap);
 }
 ```
-
-
-## Mixin flex-variant
-
-### Description
-_Helper mixin which helps to create `flex` and `inline-flex` mixins_
-
-### Parameters
-- `$display` - defines type of flex element
-- `$direction` - defines the direction of items in the flex container
-- `$cross` - defines how flex items are laid out along the cross axis
-- `$main` - defines the alignment along the main axis
-- `$wrap` - defines how flex items will wrap onto multiple lines
