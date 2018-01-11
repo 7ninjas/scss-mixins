@@ -1,14 +1,18 @@
 @mixin flex-variant($display, $direction: false, $cross: false, $main: false, $wrap: false) {
   display: $display;
+
   @if $direction {
     flex-direction: $direction;
   }
+
   @if $cross {
     align-items: $cross;
   }
+
   @if $main {
     justify-content: $main;
   }
+
   @if $wrap {
     flex-wrap: $wrap;
   }

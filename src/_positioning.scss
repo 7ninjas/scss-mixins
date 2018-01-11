@@ -11,8 +11,11 @@ $z-indexes: (
 @function z-index($name) {
   @if index($z-indexes, $name) {
     @return (length($z-indexes) - index($z-indexes, $name)) + 1;
-  } @else {
+  }
+
+  @else {
     @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+
     @return null;
   }
 }
@@ -25,10 +28,12 @@ $z-indexes: (
 @mixin position-variant($position, $args) {
   @each $o in top right bottom left {
     $i: index($args, $o);
+
     @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
       #{$o}: nth($args, $i + 1);
     }
   }
+
   position: $position;
 }
 
@@ -49,5 +54,6 @@ $z-indexes: (
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
+
   @include position-variant(sticky, $args);
 }

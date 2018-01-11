@@ -24,6 +24,7 @@ $container-max-widths: (
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
   @include center();
 
   @if $gutter {
@@ -51,8 +52,8 @@ $container-max-widths: (
 @mixin col($size: $grid-columns, $columns: $grid-columns, $gutter-widths: $grid-gutter-widths, $offset: 0, $align: auto) {
   $ratios: ($size / $columns);
   $cycle: floor($columns / $size);
-  align-self: $align;
 
+  align-self: $align;
   display: inline-flex;
   flex-wrap: wrap;
   min-width: 0; // FF adjustment for responsive images
@@ -60,7 +61,9 @@ $container-max-widths: (
 
   @if $offset > 0 {
     margin-left: percentage($offset / $columns);
-  } @else {
+  }
+
+  @else {
     margin-left: 0;
   }
 

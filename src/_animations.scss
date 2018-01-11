@@ -2,5 +2,6 @@
   @if $backface {
     backface-visibility: hidden;
   }
+
   perspective: $perspective;
 }
