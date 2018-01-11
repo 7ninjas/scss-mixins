@@ -1,5 +1,5 @@
 # _responsive.scss
-_File includes mixins which_
+_File includes mixins which helps to make responsive grid columns, _
 
 ### List of content:
 
