@@ -88,7 +88,7 @@ Assign property `display: inline-flex;` to the class without any extra propertie
 
 ```scss
 .exampleFlex {
-   @include flex();
+   @include flex;
 }
 ```
 

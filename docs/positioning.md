@@ -81,7 +81,7 @@ Assigned element with inline display and fixed position
        ...
     }
    &:after {
-       @include pseudo();
+       @include pseudo;
        ...
    }
 }
@@ -136,7 +136,7 @@ Assigned position relative without additional properties
 
 ```scss
 .exampleRelativeClass {
-    @include relative();
+    @include relative;
 }
 ```
 
@@ -153,6 +153,6 @@ Assigned position sticky without additional properties
 
 ```scss
 .exampleStickyClass {
-    @include sticky();
+    @include sticky;
 }
 ```

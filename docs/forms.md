@@ -23,7 +23,7 @@ Make block with class `exampleResize` resizable
 
 ```scss
 .exampleResize {
-   @include resizable();
+   @include resizable;
 }
 ```
 
@@ -38,7 +38,7 @@ User can simply change styles of inputs by changing input variables in `variable
 
 ```scss
 .exampleInput {
-   @include input();
+   @include input;
 }
 ```
 
@@ -55,7 +55,7 @@ User can simply change styles of textarea by changing input variables in `variab
 
 ```scss
 .exampleTextarea {
-   @include textarea();
+   @include textarea;
 }
 ```
 

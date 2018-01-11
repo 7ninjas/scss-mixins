@@ -17,7 +17,7 @@ Set maximum relative to the parent and override the height to auto
 
 ```scss
 .exampleImgFluidClass {
-    @include img-fluid ()
+    @include img-fluid;
 }
 ```
 
