@@ -2,6 +2,7 @@
   "name": "@7ninjas/scss-mixins",
   "version": "0.0.1",
   "description": "",
+  "keywords": ["scss","mixin","css","style","styling","7ninjas","bootstrap","react", "grid", "flex", "mixins", "less", "responsive", "web", "front-end"],
   "main": "src/components/_base.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
