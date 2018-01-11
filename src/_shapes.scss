@@ -14,14 +14,14 @@
     border-left: $size solid transparent;
     border-right: $size solid transparent;
     border-top: $size solid $color;
-    margin-top: 0 - round( $size / 2.5 );
+    margin-top: 0 - round($size / 2.5);
   }
 
   @else if $direction == up {
     border-bottom: $size solid $color;
     border-left: $size solid transparent;
     border-right: $size solid transparent;
-    margin-bottom: 0 - round( $size / 2.5 );
+    margin-bottom: 0 - round($size / 2.5);
   }
 
   @else if $direction == right {

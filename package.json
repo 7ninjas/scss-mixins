@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/components/_base.scss",
   "scripts": {
-    "stylelint": "stylelint src/**/*.scss",
+    "stylelint": "stylelint **/*.scss **/*.scss.example",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -55,7 +55,7 @@ $spacing-important: false !default;
   }
 
   @else {
-    @error "mx(#{$r}, #{$l}): Invalid parameters. Expects mx($size) or mx($r, $l)"
+    @error "mx(#{$r}, #{$l}): Invalid parameters. Expects mx($size) or mx($r, $l)";
   }
 }
 
@@ -71,7 +71,7 @@ $spacing-important: false !default;
   }
 
   @else {
-    @error "my(#{$t}, #{$b}): Invalid parameters. Expects my($size) or my($t, $b)"
+    @error "my(#{$t}, #{$b}): Invalid parameters. Expects my($size) or my($t, $b)";
   }
 }
 
@@ -81,20 +81,17 @@ $spacing-important: false !default;
     @include mr($r);
     @include mb($b);
     @include ml($l);
-
   }
 
   @else if ($t and $r and $b and not $l) {
     @include mt($t);
     @include mx($r);
     @include mb($b);
-
   }
 
   @else if ($t and $r and not $b and not $l) {
     @include my($t);
     @include mx($r);
-
   }
 
   @else if ($t and not $r and not $b and not $l) {
@@ -107,11 +104,10 @@ $spacing-important: false !default;
       @include my($t);
       @include mx($t);
     }
-
   }
 
   @else {
-    @error "m(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects m($size), m($y, $x), m($t, $x, $b) or m($t, $r, $b, $l)"
+    @error "m(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects m($size), m($y, $x), m($t, $x, $b) or m($t, $r, $b, $l)";
   }
 }
 
@@ -144,7 +140,7 @@ $spacing-important: false !default;
   }
 
   @else {
-    @error "px(#{$r}, #{$l}): Invalid parameters. Expects px($size) or px($r, $l)"
+    @error "px(#{$r}, #{$l}): Invalid parameters. Expects px($size) or px($r, $l)";
   }
 }
 
@@ -160,7 +156,7 @@ $spacing-important: false !default;
   }
 
   @else {
-    @error "py(#{$t}, #{$b}): Invalid parameters. Expects py($size) or py($t, $b)"
+    @error "py(#{$t}, #{$b}): Invalid parameters. Expects py($size) or py($t, $b)";
   }
 }
 
@@ -189,6 +185,6 @@ $spacing-important: false !default;
   }
 
   @else {
-    @error "p(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects p($size), p($y, $x), p($t, $x, $b) or p($t, $r, $b, $l)"
+    @error "p(#{$t}, #{$r}, #{$b}, #{$l}): Invalid parameters. Expects p($size), p($y, $x), p($t, $x, $b) or p($t, $r, $b, $l)";
   }
 }

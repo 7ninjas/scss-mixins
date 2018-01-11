@@ -20,14 +20,12 @@ $table-hover-opacity: 0.1 !default;
 $table-border-width: 1px !default;
 $table-border-color: #e6e6e6 !default;
 
-
-@mixin table-bordered ($border-width: $table-border-width, $border-color: $table-border-color){
+@mixin table-bordered ($border-width: $table-border-width, $border-color: $table-border-color) {
   border: $border-width solid $border-color;
 
   th,
   td {
     border: $border-width solid $border-color;
-
   }
 
   thead {

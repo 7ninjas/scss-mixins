@@ -73,7 +73,7 @@
     $mixin: nth($list, 1);
     $name: nth($list, 2);
     if($mixin != 'down' || $mixin != 'only' || $mixin != 'up') {
-      @error 'oops! something went wrong'
+      @error 'oops! something went wrong';
     }
   }
 
@@ -82,7 +82,7 @@
     $lower: nth($list, 2);
     $upper: nth($list, 3);
     if($mixin != 'between') {
-      @error 'oops! something went wrong'
+      @error 'oops! something went wrong';
     }
   }
 
