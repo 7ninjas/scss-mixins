@@ -1,0 +1,9 @@
+$font-size-base: 16px !default;
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function to-rem($value) {
+  @return strip-unit($value) / strip-unit($font-size-base) * 1rem;
+}

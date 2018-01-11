@@ -1,0 +1,76 @@
+@import 'breakpoints';
+
+$grid-columns: 12 !default;
+$grid-fluid: false !default;
+$grid-gutter-widths: (
+  xl: 30px,
+  lg: 30px,
+  md: 30px,
+  sm: 30px,
+) !default;
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px,
+) !default;
+
+@mixin center() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin container($fluid: $grid-fluid, $gutter: $grid-gutter-widths, $max-widths: $container-max-widths) {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include center();
+
+  @if $gutter {
+    @each $breakpoint, $gutter in $gutter {
+      @include media-breakpoint-down($breakpoint) {
+        padding-left: ($gutter / 2);
+        padding-right: ($gutter / 2);
+      }
+    }
+  }
+
+  & > * {
+    min-width: 0;
+  }
+
+  @if not $fluid {
+    @each $breakpoint, $container-max-width in $max-widths {
+      @include media-breakpoint-up($breakpoint) {
+        max-width: $container-max-width;
+      }
+    }
+  }
+}
+
+@mixin col($size: $grid-columns, $columns: $grid-columns, $gutter-widths: $grid-gutter-widths, $offset: 0, $align: auto) {
+  $ratios: ($size / $columns);
+  $cycle: floor($columns / $size);
+
+  align-self: $align;
+  display: inline-flex;
+  flex-wrap: wrap;
+  min-width: 0; // FF adjustment for responsive images
+  width: percentage($ratios);
+
+  @if $offset > 0 {
+    margin-left: percentage($offset / $columns);
+  }
+
+  @else {
+    margin-left: 0;
+  }
+
+  @each $breakpoint, $gutter in $gutter-widths {
+    @include media-breakpoint-down($breakpoint) {
+      padding-left: ($gutter / 2);
+      padding-right: ($gutter / 2);
+    }
+  }
+}

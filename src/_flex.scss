@@ -1,0 +1,32 @@
+@mixin flex-variant($display, $direction: false, $cross: false, $main: false, $wrap: false) {
+  display: $display;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $cross {
+    align-items: $cross;
+  }
+
+  @if $main {
+    justify-content: $main;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  // fix
+  & > * {
+    min-width: 0;
+  }
+}
+
+@mixin flex($direction: false, $cross: false, $main: false, $wrap: false) {
+  @include flex-variant(flex, $direction: $direction, $cross: $cross, $main: $main, $wrap: $wrap);
+}
+
+@mixin inline-flex($direction: false, $cross: false, $main: false, $wrap: false) {
+  @include flex-variant(inline-flex, $direction: $direction, $cross: $cross, $main: $main, $wrap: $wrap);
+}

@@ -1,5 +1,5 @@
 # _breakpoints.scss
-_Breakpoint viewport sizes and media queries._
+_File includes breakpoint viewport sizes and media queries._
 
 ### List of content:
 
@@ -14,7 +14,7 @@ _Breakpoints are defined as a map of (name: minimum width), order from small to 
 xs: 0, sm: 544px, md: 768px, lg: 992px, xl: 1200px)<br />
 The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default._
 
-```
+```scss
 $grid-breakpoints: (
   xs: 0,
   sm: 544px,
@@ -40,7 +40,7 @@ Makes the content of class apply to the given breakpoint and wider._
 #### Case
 Changing font size for devices with higher screen resolution than small devices
 
-```
+```scss
 .exampleClass {
     @include media-breakpoint-up (sm) {
         font-size: 16px;
@@ -65,7 +65,7 @@ Makes the content of class apply to the given breakpoint and narrower._
 #### Case
 Changing font size for devices with lower screen resolution than large devices
 
-```
+```scss
 .exampleClass {
     @include media-breakpoint-down (lg) {
         font-size: 14px;
@@ -90,7 +90,7 @@ Changing font size for devices with lower screen resolution than large devices
 #### Case
 Changing font size for devices with screen resolution between medium and large devices
 
-```
+```scss
 .exampleClass {
     @include media-breakpoint-between (md, lg) {
         font-size: 14px;
@@ -116,7 +116,7 @@ Makes the content of class apply only to the given breakpoint, not viewports any
 #### Case
 Changing font size for devices with lower screen resolution than large devices
 
-```
+```scss
 .exampleClass {
     @include media-breakpoint-only (lg) {
         font-size: 14px;
