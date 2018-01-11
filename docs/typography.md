@@ -5,9 +5,7 @@ _File includes mixins which help create consistent and proper styling of fonts_
 
 - [Mixin text-hide](#mixin-text-hide) (bootstrap 4.0.0-beta)
 - [Mixin text-truncate](#mixin-text-truncate) (bootstrap 4.0.0-beta)
-- [Mixin _font-variant](#mixin-_font-variant)
 - [Mixin font](#mixin-font)
-- [Mixin link-variant](#mixin-link-variant)
 
 
 ### Default variables
@@ -17,15 +15,24 @@ _Default variables declared in file will be used mainly in ```font``` mixin._
 $font-variants: (
   base: (
     base: (
+      font-family: 'Proxima Nova' sans-serif,
       font-size: $font-size-base,
+      font-weight: 400,
+      letter-spacing: 1px,
+      line-height: 1.3
     )
   ),
   h1: (
     base: (
-      font-size: 4rem,
+      font-size: 26px,
+      font-weight: 500,
+      letter-spacing: 3px,
+      line-height: 1.5
     ),
     sm: (
-      font-size: 2rem,
+      font-size: 16px,
+      letter-spacing: 2px,
+      line-height: 1.8
     )
   ),
 ) !default;
@@ -60,17 +67,6 @@ Truncating text in specific class
 }
 ```
 
-## Mixin _font-variant
-
-### Description
-_Helper (mixin) which is used in ```font``` mixin for assigning values to proper keys_
-
-### Parameters
-- `$styles` - mapable object with variables like ```font-family```, ```font-size```, ```font-weight```, ```letter-spacing```, ```text-transform``` (**required**)
-- `$color` - color which should be assigned to font (as default it's used ```false```)
-- `$line-height` - line height which should be assigned to font (as default it's used ```false```)
-- `$align` - text alignment which should be assigned to font (as default it's used ```false```)
-
 
 ## Mixin font
 
@@ -79,34 +75,48 @@ _Mixin which helps assign consistent font values for given class_
 
 ### Parameters
 - `$variant` - font variant which should be assigned to font (```$font-variants``` will be search through for this value) (as default it's used ```base```)
-- `$color` - color which should be assigned to font (as default it's used ```false```)
-- `$line-height` - line height which should be assigned to font (as default it's used ```false```)
-- `$align` - text alignment which should be assigned to font (as default it's used ```false```)
-- `$responsive` - font responsiveness (as default it's used ```true```)
+- `$color` - color which should be assigned to font
+- `$line-height` - line height which should be assigned to font
+- `$align` - text alignment which should be assigned to font
+- `$responsive` - font responsiveness
 
 ### Usage: 
-Assigning h1 font variation with red color and without responsiveness
+
+#### Case 1
+Set `h1` font variation from `$font-variants` variable map.
+In this case h1 contains styles for base and sm variation. 
+That means that for sm breakpoint and narrower styles will be applied from sm variation. 
+For there rest - styles will be taken from base variation.
 
 ```scss
 .exampleClass {
-   @include font($variant: h1, $color: #ff0000, $responsive: false);
+   @include font(h1);
 }
 ```
 
-## Mixin link-variant
-
-### Description
-_Mixin styling color to given one, setting cursor type to pointer and setting adequate values ​​for hover and focus actions.<br />
-Mainly used for consistent links styling._
-
-### Parameters
-- `$color` - name of color (**required**)
-
-### Usage: 
-Styling link with blue color
+#### Case 2
+Set `h1` font variation styles from `$font-variants` variable and change font color for all breakpoints.
 
 ```scss
-.exampleLinkClass {
-    @include link-variant(#0000ff);
+.exampleClass {
+   @include font(h1, #000);
+}
+```
+
+#### Case 3
+Set `h1` font variation styles from `$font-variants` variable and change text align for all breakpoints.
+
+```scss
+.exampleClass {
+   @include font(h1, $align: right);
+}
+```
+
+#### Case 5
+Set `h1` font variation styles and disable applying styles for breakpoints defined for `h1` variant in `$font-variants` variable.
+
+```scss
+.exampleClass {
+   @include font(h1, $responsive: false);
 }
 ```

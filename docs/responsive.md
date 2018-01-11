@@ -1,5 +1,5 @@
 # _responsive.scss
-_File includes mixins which_
+_File includes mixins which helps to make responsive grid columns, embed objects and create responsible properties_
 
 ### List of content:
 
@@ -11,25 +11,25 @@ _File includes mixins which_
 ## Mixin responsive-prop
 
 ### Description
-_Mixin which helps handling css properties on different screen resolutions_
+_Mixin which helps create css properties for each breakpoints_
 
 ### Parameters
 - `$prop` - css property (***required***)
 - `$breakpoints` - object with specified values for each needed screen resolution (***required***)
 ### Usage: 
-Assigned top margin for different screen resolutions for example container
+
+Assigned top margin for different screen resolutions
 
 ```scss
-.exampleResponsivePropClass {
-  $margin-top: (xxl: 160px, xl: 160px, lg: 130px, md: 100px, sm: 70px, xs: 50px);
-  @include responsive-prop(margin-top, $margin-top);
+.exampleClass {
+  @include responsive-prop(margin-top, (xxl: 160px, xl: 160px, lg: 130px, md: 100px, sm: 70px, xs: 50px));
 }
 ```
 
 ## Mixin responsive-embed
 
 ### Description
-_Mixin which helps handling with media on different screen resolutions_
+_Mixin which helps make embed objects responsible_
 
 ### Parameters
 - `$x` - value of horizontal aspect ratio (as default it's used ```16```)
@@ -55,11 +55,32 @@ _Mixin which helps handling with size of columns on different screen resolutions
 - `$breakpoints` - object with specified values for each needed screen resolution (***required***)
 
 ### Usage: 
-Assigned size of columns for different screen resolutions for example container
+Assigned size of columns for different screen resolutions. 
 
 ```scss
-.exampleResponsiveColClass {
-  $breakpoints: (xxl: 200px, xl: 180px, lg: 150px, md: 100px, sm: 80px, xs: 50px);
-  @include responsive-col($breakpoints);
+.exampleCol {
+   @include responsive-col((
+     down sm: 12,
+     between md lg: 3,
+     up xl: 2
+   ));
 }
+```
+Mixin `responsive-col` helps to create columns for different breakpoints in simpler way  in contrast to the way implemented below
+
+```scss
+  .exampleClass {
+    @include media-breakpoint-up(xl) {
+      @include col(2);
+    }
+  
+    @include media-breakpoint-between(md, lg) {
+      @include col(3);
+    }
+  
+    @include media-breakpoint-down(sm) {
+      @include col(12);
+    }
+  }
+
 ```

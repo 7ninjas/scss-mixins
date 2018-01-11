@@ -6,15 +6,24 @@
 $font-variants: (
   base: (
     base: (
+      font-family: 'Proxima Nova' sans-serif,
       font-size: $font-size-base,
+      font-weight: 400,
+      letter-spacing: 1px,
+      line-height: 1.3
     )
   ),
   h1: (
     base: (
-      font-size: 4rem,
+      font-size: 26px,
+      font-weight: 500,
+      letter-spacing: 3px,
+      line-height: 1.5
     ),
     sm: (
-      font-size: 2rem,
+      font-size: 16px,
+      letter-spacing: 2px,
+      line-height: 1.8
     )
   ),
 ) !default;
@@ -32,24 +41,31 @@ $font-variants: (
   @if $font-family {
     font-family: $font-family;
   }
+
   @if $font-size {
     font-size: $font-size;
   }
+
   @if $font-weight {
     font-weight: $font-weight;
   }
+
   @if $letter-spacing {
     letter-spacing: $letter-spacing;
   }
+
   @if $text-transform {
     text-transform: $text-transform;
   }
+
   @if $line-height {
     line-height: $line-height;
   }
+
   @if $color {
     color: $color;
   }
+
   @if $align {
     text-align: $align;
   }
@@ -57,10 +73,13 @@ $font-variants: (
 
 @mixin font($variant: base, $color: false, $line-height: false, $align: false, $responsive: true) {
   $variants: map-get($font-variants, $variant);
+
   @each $breakpoint, $styles in $variants {
     @if $breakpoint == base {
       @include _font-variant($styles, $color, $line-height, $align);
-    } @else {
+    }
+
+    @else {
       @if $responsive {
         @include media-breakpoint-down($breakpoint) {
           @include _font-variant($styles, $color, $line-height, $align);
@@ -83,7 +102,7 @@ $font-variants: (
   }
 
   @include hover-focus {
-    color: rgba($color, .8);
+    color: rgba($color, 0.8);
     text-decoration: none;
   }
 }

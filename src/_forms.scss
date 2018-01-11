@@ -7,12 +7,12 @@ $brand-primary: #2189ff !default;
 $gray-lighter: #e6e6e6 !default;
 
 //Input
-$input-color: $black !default;
+$input-color: #212121 !default;
 $input-placeholder-color: #ccc !default;
 $input-bg: $gray-lighter !default;
 $input-border-width: 1px !default;
 $input-border-color: #ccc !default;
-$input-border-radius: $border-radius !default;
+$input-border-radius: 10px !default;
 $input-box-shadow: false !default;
 $input-padding-y: 9px !default;
 $input-padding-x: 20px !default;
@@ -111,12 +111,15 @@ $input-error-message-color: $brand-primary !default;
 
 @mixin textarea() {
   @include input();
+
   height: auto;
   //padding: $input-padding-y $input-padding-x;
 
   @if ($textarea-resizable) {
     @include resizable($textarea-resizable-direction);
-  } @else {
+  }
+
+  @else {
     resize: none;
   }
 }
