@@ -28,7 +28,15 @@ $colors: (
     light: lighten($color-secondary, $color-shade-amount),
     dark: darken($color-secondary, $color-shade-amount),
     trans: transparentize($color-secondary, $color-trans-amount)
-  )
+  ),
+  gray: (
+    base: #999,
+    dark: #7c7575,
+    darker: #2d2d2d,
+    darkest: #242222,
+    light: #e6e6e6,
+    lighter: #fafafa,
+    )
 ) !default;
 ```
 
@@ -42,10 +50,21 @@ _Function which helps to retrieve color from colors map_
 - `$color-variant` - color variant from ```colors``` map (as default it's used ```base```)
 
 ### Usage: 
-Assigned light shade of primary color to class
+
+#### Case 1
+Assigned `base` variant of `gray` color (`#999`) to class
 
 ```scss
 .exampleClass {
-    color: color(primary, light)
+    color: color(gray);
+}
+```
+
+#### Case 1
+Assigned `darkest` variant of `gray` color (`#242222`) to class
+
+```scss
+.exampleClass {
+    color: color(gray, darkest);
 }
 ```
