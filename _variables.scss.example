@@ -1,31 +1,30 @@
 // Variables
 
-
 // Palette
 $colors: (
-        gray: (
-                black: #242222,
-                darker: #2d2d2d,
-                dark: #7c7575,
-                base: #999,
-                light: #e6e6e6,
-                magic: #f4f5f7,
-                lighter: #fafafa,
-                white: #fff,
-        ),
-        primary: (
-                base: #ed1a3b,
-                dark: #b72126,
-        ),
-        secondary: (
-                base: #2189ff,
-                dark: #086bdc,
-                darker: #052141,
-                darkest: #041a33,
-        ),
-        herlandia: (
-                base: #d996f3,
-        ),
+  gray: (
+    black: #242222,
+    darker: #2d2d2d,
+    dark: #7c7575,
+    base: #999,
+    light: #e6e6e6,
+    magic: #f4f5f7,
+    lighter: #fafafa,
+    white: #fff,
+  ),
+  primary: (
+    base: #ed1a3b,
+    dark: #b72126,
+  ),
+  secondary: (
+    base: #2189ff,
+    dark: #086bdc,
+    darker: #052141,
+    darkest: #041a33,
+  ),
+  herlandia: (
+    base: #d996f3,
+  ),
 );
 $color-shade-amount: 20%;
 $color-trans-amount: 0.4;
@@ -46,8 +45,6 @@ $brand-secondary-black: #041a33;
 $color-success: #6acb00;
 $color-error: #ed1a3b;
 $color-warning: #ffb11f;
-
-
 
 // Bootstrap reboot
 $enable-hover-media-query: false;
@@ -71,216 +68,212 @@ $link-hover-decoration: underline;
 $table-cell-padding: 0;
 $paragraph-margin-bottom: 0;
 
-
-
 // Breakpoints
 $grid-breakpoints: (
-        xs: 0,
-        sm: 544px,
-        md: 768px,
-        lg: 992px,
-        xl: 1200px,
-        xxl: 1600px
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
 );
-
 
 // Grid
 $grid-columns: 12;
 $grid-fluid: false;
 $grid-gutter-widths: (
-        xl: 30px,
-        lg: 30px,
-        md: 30px,
-        sm: 30px,
+  xl: 30px,
+  lg: 30px,
+  md: 30px,
+  sm: 30px,
 );
 $container-max-widths: (
-        sm: 576px,
-        md: 720px,
-        lg: 940px,
-        xl: 1140px,
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px,
 );
-
 
 // Positioning
 $z-indexes: (
-        'header-opened',
-        'intercom',
-        'header',
-        'body',
-        'standard',
+  'header-opened',
+  'intercom',
+  'header',
+  'body',
+  'standard',
 );
 
 // Spacing
 $spacing-sizes: (
-        0: 0,
-        1: 15px,
-        2: 30px,
-        3: 50px,
-        4: 90px,
-        5: 120px,
-        6: 180px,
-        7: 200px,
-        8: 300px,
+  0: 0,
+  1: 15px,
+  2: 30px,
+  3: 50px,
+  4: 90px,
+  5: 120px,
+  6: 180px,
+  7: 200px,
+  8: 300px,
 );
 $spacing-important: false;
 
 // Typography
 $font-variants: (
-        base: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: $font-size-base,
-                        font-weight: 400,
-                        line-height: 30px,
-                )
-        ),
-        sm: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 16px,
-                        font-weight: 300,
-                        line-height: 36px,
-                ),
-        ),
-        xs: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 12px,
-                        font-weight: 400,
-                        line-height: 24px,
-                ),
-        ),
-        h1: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 80px,
-                        font-weight: 500,
-                        line-height: 80px,
-                        text-transform: uppercase,
-                ),
-                lg: (
-                        font-size: 60px,
-                        line-height: 60px,
-                ),
-                sm: (
-                        font-size: 40px,
-                        line-height: 40px,
-                ),
-        ),
-        h2: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 50px,
-                        line-height: 55px,
-                        font-weight: 300,
-                        text-transform: uppercase,
-                ),
-                md: (
-                        font-size: 40px,
-                        line-height: 44px,
-                )
-        ),
-        h3: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 46px,
-                        line-height: 50px,
-                        font-weight: 500,
-                        text-transform: uppercase,
-                ),
-                lg: (
-                        font-size: 40px,
-                        line-height: 44px,
-                ),
-                md: (
-                        font-size: 30px,
-                        line-height: 33px,
-                )
-        ),
-        h4: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 36px,
-                        line-height: 40px,
-                        font-weight: 500,
-                        letter-spacing: 1px,
-                        text-transform: uppercase,
-                ),
-                md: (
-                        font-size: 30px,
-                        line-height: 33px,
-                )
-        ),
-        h5: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 14px,
-                        font-weight: 700,
-                        line-height: 38px,
-                        letter-spacing: 2px,
-                        text-transform: uppercase,
-                ),
-                sm: (
-                        font-size: 11px,
-                        line-height: 30px,
-                )
-        ),
-        h6: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 24px,
-                        font-weight: 300,
-                        line-height: 42px,
-                ),
-        ),
-        btn: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 18px,
-                        font-weight: 500,
-                        letter-spacing: 2px,
-                        text-transform: uppercase
-                )
-        ),
-        btn-sm: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 14px,
-                        font-weight: 700,
-                        letter-spacing: 1px,
-                        text-transform: uppercase
-                ),
-        ),
-        nav: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 20px,
-                        font-weight: 500,
-                ),
-        ),
-        nav-header: (
-                base: (
-                        font-family: $font-family-secondary,
-                        font-size: 50px,
-                        line-height: 55px,
-                        font-weight: 700,
-                ),
-                xs: (
-                        font-size: 36px,
-                )
-        ),
-        case-study-default-title: (
-                base: (
-                        font-family: $font-family-base,
-                        font-size: 24px,
-                        font-weight: 300,
-                        line-height: 58px,
-                ),
-                sm: (
-                        font-size: 30px,
-                        line-height: 50px,
-                )
-        ),
+  base: (
+    base: (
+      font-family: $font-family-base,
+      font-size: $font-size-base,
+      font-weight: 400,
+      line-height: 30px,
+    )
+  ),
+  sm: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 16px,
+      font-weight: 300,
+      line-height: 36px,
+    ),
+  ),
+  xs: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 12px,
+      font-weight: 400,
+      line-height: 24px,
+    ),
+  ),
+  h1: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 80px,
+      font-weight: 500,
+      line-height: 80px,
+      text-transform: uppercase,
+    ),
+    lg: (
+      font-size: 60px,
+      line-height: 60px,
+    ),
+    sm: (
+      font-size: 40px,
+      line-height: 40px,
+    ),
+  ),
+  h2: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 50px,
+      line-height: 55px,
+      font-weight: 300,
+      text-transform: uppercase,
+    ),
+    md: (
+      font-size: 40px,
+      line-height: 44px,
+    )
+  ),
+  h3: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 46px,
+      line-height: 50px,
+      font-weight: 500,
+      text-transform: uppercase,
+    ),
+    lg: (
+      font-size: 40px,
+      line-height: 44px,
+    ),
+    md: (
+      font-size: 30px,
+      line-height: 33px,
+    )
+  ),
+  h4: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 36px,
+      line-height: 40px,
+      font-weight: 500,
+      letter-spacing: 1px,
+      text-transform: uppercase,
+    ),
+    md: (
+      font-size: 30px,
+      line-height: 33px,
+    )
+  ),
+  h5: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 14px,
+      font-weight: 700,
+      line-height: 38px,
+      letter-spacing: 2px,
+      text-transform: uppercase,
+    ),
+    sm: (
+      font-size: 11px,
+      line-height: 30px,
+    )
+  ),
+  h6: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 24px,
+      font-weight: 300,
+      line-height: 42px,
+    ),
+  ),
+  btn: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 18px,
+      font-weight: 500,
+      letter-spacing: 2px,
+      text-transform: uppercase
+    )
+  ),
+  btn-sm: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 14px,
+      font-weight: 700,
+      letter-spacing: 1px,
+      text-transform: uppercase
+    ),
+  ),
+  nav: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 20px,
+      font-weight: 500,
+    ),
+  ),
+  nav-header: (
+    base: (
+      font-family: $font-family-secondary,
+      font-size: 50px,
+      line-height: 55px,
+      font-weight: 700,
+    ),
+    xs: (
+      font-size: 36px,
+    )
+  ),
+  case-study-default-title: (
+    base: (
+      font-family: $font-family-base,
+      font-size: 24px,
+      font-weight: 300,
+      line-height: 58px,
+    ),
+    sm: (
+      font-size: 30px,
+      line-height: 50px,
+    )
+  ),
 );
 
 // Borders
@@ -327,7 +320,6 @@ $input-error-message-color: $brand-primary;
 // Layout
 $header-height: 80px;
 $aside-offset: $header-height;
-
 
 // Tables
 // Table variants
