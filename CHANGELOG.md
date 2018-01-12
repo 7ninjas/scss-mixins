@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 - added typography.scss
 - added units.scss
 - added utils.scss
+- run linters on each commit - git hooks
  
 :bug: Fixed:
 - updated readme
