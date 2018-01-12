@@ -4,7 +4,7 @@ _File includes function and mixins which help with positioning different type of
 ### List of content:
 - [Mixin size](#function-size) (bootstrap 4.0.0-beta)
 - [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
-- [Function z-index](#function-z-index)
+- [Mixin z-index](#mixin-z-index)
 - [Mixin pseudo](#mixin-pseudo)
 - [Mixin absolute](#mixin-absolute)
 - [Mixin fixed](#mixin-fixed)
@@ -41,11 +41,11 @@ _Bootstrap helper which helps setting width and height of element_
 _Bootstrap helper. Applicable to parent class if children elements use float property. If you don't use this, the container won't get any height_
 
 
-## Function z-index
+## Mixin z-index
 
 ### Description
-_Function which sets z-index value appropriate to name's position in ```$z-indexes```.<br />
-Thanks to this solution the order has been preserved for every item.<br />
+_Mixin which sets z-index value appropriate to name's position in ```$z-indexes```.   
+Thanks to this solution the order has been preserved for every item.    
 If ```$z-indexes``` doesn't contain given name there will be displayed error with appropriate information_
 
 ### Parameters

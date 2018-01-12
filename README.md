@@ -18,6 +18,43 @@
 </p>
 
 
+### Table of contents
+
+- [Animations](./docs/animations.md)
+- [Breakpoints](./docs/breakpoints.md)
+- [Flex](./docs/flex.md)
+- [Fonts](./docs/fonts.md)
+- [Gradients](./docs/gradients.md)
+- [Grid](./docs/grid.md)
+- [Hover](./docs/hover.md)
+- [Icons](./docs/icons.md)
+- [Images](./docs/images.md)
+- [Lists](./docs/lists.md)
+- [Positioning](./docs/positioning.md)
+- [Responsive](./docs/responsive.md)
+- [Shapes](./docs/shapes.md)
+- [Spacing](./docs/spacing.md)
+- [Typography](./docs/typography.md)
+- [Variables](./docs/variables.md)
+
+
+## Quick start
+
+Several quick start options are available:
+
+- Clone the repo: `git clone https://github.com/7ninjas/scss-mixins.git`
+- Install with [npm](https://www.npmjs.com/): `npm install @7ninjas/scss-mixins`
+- Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
+
+### Usage
+Import `_all.scss` file to your core `scss` file for importing all mixins from package
+
+Example:
+```scss
+@import '~scss-mixins/all'
+```
+
+
 ## Status
 
 [![npm](https://img.shields.io/npm/v/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
@@ -44,11 +81,11 @@ Several quick start options are available:
 - Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
 
 ### Usage
-Import `base` file to your core `scss` file for importing all mixins from package
+Import `all` file to your core `scss` file for importing all mixins from package
 
 Example:
 ```scss
-@import '~scss-mixins/src/base'
+@import '~scss-mixins/all'
 ```
 
 
@@ -149,7 +186,7 @@ Example:
 - [Full documentation](./docs/positioning.md)
 - [Mixin size](./docs/positioning.md#function-size)
 - [Mixin clearfix](./docs/positioning.md#mixin-clearfix)
-- [Function z-index](./docs/positioning.md#function-z-index)
+- [Mixin z-index](./docs/positioning.md#mixin-z-index)
 - [Mixin pseudo](./docs/positioning.md#mixin-pseudo)
 - [Mixin absolute](./docs/positioning.md#mixin-absolute)
 - [Mixin fixed](./docs/positioning.md#mixin-fixed)
@@ -212,58 +249,6 @@ Example:
 
 - [Full documentation](./docs/variables.md)
 </details>
-
-## What's included
-
-Within the download you'll find logically grouped files like this:
-
-```
-scss-mixins/
-├── CHANGELOG.md
-├── _base.scss
-├── _variables.scss.example
-├── docs/
-│   ├── animations.md
-│   ├── breakpoints.md
-│   ├── colors.md
-│   ├── flex.md
-│   ├── fonts.md
-│   ├── gradients.md
-│   ├── grid.md
-│   ├── hover.md
-│   ├── icons.md
-│   ├── images.md
-│   ├── lists.md
-│   ├── responsive.md
-│   ├── positioning.md
-│   ├── shapes.md
-│   ├── spacing.md
-│   ├── tables.md
-│   ├── typography.md
-│   ├── variables.md
-└── src/
-    ├── _animations.scss
-    ├── _breakpoints.scss
-    ├── _colors.scss
-    ├── _flex.scss
-    ├── _fonts.scss
-    ├── _forms.scss
-    ├── _gradients.scss
-    ├── _grid.scss
-    ├── _hover.scss
-    ├── _icons.scss
-    ├── _images.scss
-    ├── _lists.scss
-    ├── _positioning.scss
-    ├── _responsive.scss
-    ├── _shapes.scss
-    ├── _spacing.scss
-    ├── _tables.scss
-    ├── _trancitions.scss
-    ├── _typography.scss
-    ├── _units.scss
-    ├── _utils.scss
-```
 
 
 ## Bugs and feature requests

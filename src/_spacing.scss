@@ -14,8 +14,10 @@ $spacing-important: false !default;
   @return map-get($spacing-sizes, $size);
 }
 
+//todo remove spaces
+
 // Margin
-@mixin ml($size : 1) {
+@mixin ml($size: 1) {
   @if ($size == 'auto') {
     margin-left: auto #{if($spacing-important, '!important', '')};
   }
@@ -25,11 +27,11 @@ $spacing-important: false !default;
   }
 }
 
-@mixin mt($size : 1) {
+@mixin mt($size: 1) {
   margin-top: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin mr($size : 1) {
+@mixin mr($size: 1) {
   @if ($size == 'auto') {
     margin-right: auto #{if($spacing-important, '!important', '')};
   }
@@ -39,11 +41,11 @@ $spacing-important: false !default;
   }
 }
 
-@mixin mb($size : 1) {
+@mixin mb($size: 1) {
   margin-bottom: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin mx($r : 1, $l : null) {
+@mixin mx($r: 1, $l: null) {
   @if ($r and $l) {
     @include mr($r);
     @include ml($l);
@@ -59,7 +61,7 @@ $spacing-important: false !default;
   }
 }
 
-@mixin my($t : 1, $b : null) {
+@mixin my($t: 1, $b: null) {
   @if ($t and $b) {
     @include mt($t);
     @include mb($b);
@@ -75,7 +77,7 @@ $spacing-important: false !default;
   }
 }
 
-@mixin m($t : 1, $r: null, $b: null, $l: null) {
+@mixin m($t: 1, $r: null, $b: null, $l: null) {
   @if ($t and $r and $b and $l) {
     @include mt($t);
     @include mr($r);
@@ -112,11 +114,11 @@ $spacing-important: false !default;
 }
 
 // Padding
-@mixin pl($size : 1) {
+@mixin pl($size: 1) {
   padding-left: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin pt($size : 1) {
+@mixin pt($size: 1) {
   padding-top: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
@@ -124,11 +126,11 @@ $spacing-important: false !default;
   padding-right: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin pb($size : 1) {
+@mixin pb($size: 1) {
   padding-bottom: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin px($r : 1, $l : null) {
+@mixin px($r: 1, $l: null) {
   @if ($r and $l) {
     @include pr($r);
     @include pl($l);
@@ -144,7 +146,7 @@ $spacing-important: false !default;
   }
 }
 
-@mixin py($t : 1, $b : null) {
+@mixin py($t: 1, $b: null) {
   @if ($t and $b) {
     @include pt($t);
     @include pb($b);

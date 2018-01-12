@@ -15,16 +15,24 @@ _Mixin which helps changing size, color and stroke of svg icon_
 - `$color` - color which icon should be filled (as default it's used ```false```)
 - `$width` - width of icon (as default it's used ```false```)
 - `$height` - height of icon (as default it's used ```$width```)
-- `$stroke` - stroke of icon (as default it's used ```base```)
 
 ### Usage: 
 
 
-#### Case
-Set icons properties so it will be filled with red color, has green stroke and will be 10px width and 20px height.
-
+#### Example
 ```scss
+// Set icons properties so it will be filled with red color, has green stroke and will be 10px width and 20px height.
 .exampleClass {
-    @include svg-icon(red, 10px, 20px, green);
+    @include svg-icon(red);
+}
+
+// Set icons properties so it will be filled with red color and icon size. Height and width of the icon will be 10px
+.exampleClass {
+    @include svg-icon(red, 10px);
+}
+
+// Set icons properties so it will be filled with red color and icon size. Height of the icon will be 10px and width 20px
+.exampleClass {
+    @include svg-icon(red, 10px, 20px);
 }
 ```

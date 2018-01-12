@@ -1,3 +1,5 @@
+$font-size-base: 16px !default;
+
 // List
 // https://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
 @function first($list) {
@@ -29,4 +31,12 @@
   $split-arr: append($split-arr, $string);
 
   @return $split-arr;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function to-rem($value) {
+  @return strip-unit($value) / strip-unit($font-size-base) * 1rem;
 }

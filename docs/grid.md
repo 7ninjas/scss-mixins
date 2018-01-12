@@ -15,16 +15,14 @@ _Default variables which are required in mixins located in file. They are set wi
 $grid-columns: 12 !default;
 $grid-fluid: false !default;
 $grid-gutter-widths: (
-  xl: 30px,
-  lg: 30px,
-  md: 30px,
-  sm: 30px,
+  down sm: 40px,
+  up sm: 30px,
 ) !default;
 $container-max-widths: (
-  sm: 576px,
+  sm: 540px,
   md: 720px,
-  lg: 940px,
-  xl: 1140px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 ```
 

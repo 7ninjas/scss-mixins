@@ -1,9 +1,69 @@
-@import '../node_modules/bootstrap/scss/mixins/breakpoints';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import 'utils';
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 544px,
+  sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px
 ) !default;
+
+// bootstrap breakpoints
+
+@mixin media-breakpoint-variant($breakpoint-query) {
+  $breakpoint-keys: map-keys($grid-breakpoints);
+
+  $list: str-split('' + $breakpoint-query, ' ');
+  $list-length: length($list);
+  $mixin: false;
+  $name: false;
+  $lower: false;
+  $upper: false;
+
+  @if $list-length == 1 {
+    $mixin: 'only';
+    $name: nth($list, 1);
+  }
+
+  @else if $list-length == 2 {
+    $mixin: nth($list, 1);
+    $name: nth($list, 2);
+    if($mixin != 'down' || $mixin != 'only' || $mixin != 'up') {
+      @error 'Oops! Invalid breakpoint.';
+    }
+  }
+
+  @else if $list-length == 3 {
+    $mixin: nth($list, 1);
+    $lower: nth($list, 2);
+    $upper: nth($list, 3);
+    if($mixin != 'between') {
+      @error 'Oops! Invalid breakpoint.';
+    }
+  }
+
+  @if $mixin == 'down' {
+    @include media-breakpoint-down($name) {
+      @content;
+    }
+  }
+
+  @else if $mixin == 'only' {
+    @include media-breakpoint-only($name) {
+      @content;
+    }
+  }
+
+  @else if $mixin == 'up' {
+    @include media-breakpoint-up($name) {
+      @content;
+    }
+  }
+
+  @else if $mixin == 'between' {
+    @include media-breakpoint-between($lower, $upper) {
+      @content;
+    }
+  }
+}

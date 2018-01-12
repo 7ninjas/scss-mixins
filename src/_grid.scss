@@ -1,39 +1,42 @@
 @import 'breakpoints';
 @import 'flex';
 
+// Default variables
 $grid-columns: 12 !default;
 $grid-fluid: false !default;
 $grid-gutter-widths: (
-  xl: 30px,
-  lg: 30px,
-  md: 30px,
-  sm: 30px,
+  down sm: 40px,
+  up sm: 30px,
 ) !default;
 $container-max-widths: (
-  sm: 576px,
+  sm: 540px,
   md: 720px,
-  lg: 940px,
-  xl: 1140px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 
+// Mixins
 @mixin center() {
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin container($fluid: $grid-fluid, $gutter: $grid-gutter-widths, $max-widths: $container-max-widths) {
-  @include flex($wrap: wrap);
-  @include center();
-  width: 100%;
-  
+@mixin gutter($gutter: $grid-gutter-widths) {
   @if $gutter {
-    @each $breakpoint, $gutter-width in $gutter {
-      @include media-breakpoint-down($breakpoint) {
+    @each $breakpoint-query, $gutter-width in $gutter {
+      @include media-breakpoint-variant($breakpoint-query) {
         padding-left: ($gutter-width / 2);
         padding-right: ($gutter-width / 2);
       }
     }
   }
+}
+
+@mixin container($fluid: $grid-fluid, $gutter: $grid-gutter-widths, $max-widths: $container-max-widths) {
+  @include flex($wrap: wrap);
+  @include center();
+  @include gutter($gutter);
+  width: 100%;
 
   @if not $fluid {
     @each $breakpoint, $container-max-width in $max-widths {
@@ -48,26 +51,15 @@ $container-max-widths: (
   $ratios: ($size / $columns);
   $cycle: floor($columns / $size);
 
+  @include inline-flex($wrap: wrap);
+  @include gutter($gutter);
   align-self: $align;
-  display: inline-flex;
-  flex-wrap: wrap;
   min-width: 0; // FF adjustment for responsive images
   width: percentage($ratios);
 
   @if $offset > 0 {
     margin-left: percentage($offset / $columns);
-  }
-
-  @else {
+  } @else {
     margin-left: 0;
-  }
-
-  @if $gutter {
-    @each $breakpoint, $gutter-width in $gutter {
-      @include media-breakpoint-down($breakpoint) {
-        padding-left: ($gutter-width / 2);
-        padding-right: ($gutter-width / 2);
-      }
-    }
   }
 }
