@@ -23,8 +23,8 @@
 <details>
  <summary>Animations</summary>
  
-   ## [Documentation](./docs/animations.md)
-   ## [Mixin hardware](./docs/animations.md)
+   - [Documentation](./docs/animations.md)
+   - [Mixin hardware](./docs/animations.md#mixin-hardware)
  </details>
  
 - [Animations](./docs/animations.md)
