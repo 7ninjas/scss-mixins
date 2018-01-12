@@ -54,7 +54,7 @@ Example:
 
 ### Table of contents
 
-<details open open>
+<details open>
  <summary>Animations</summary>
  
 - [Full documentation](./docs/animations.md)
