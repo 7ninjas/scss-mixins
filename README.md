@@ -20,13 +20,13 @@
 
 ### Table of contents
 
-<details open>
+<details open open>
  <summary>Animations</summary>
  
 - [Full documentation](./docs/animations.md)
 - [Mixin hardware](./docs/animations.md#mixin-hardware)
 </details>
-<details>
+<details open>
   <summary>Breakpoints</summary>
   
 - [Full documentation](./docs/breakpoints.md)
@@ -35,26 +35,26 @@
 - [Mixin media-breakpoint-between](./docs/breakpoints.md#mixin-media-breakpoint-between)
 - [Mixin media-breakpoint-only](./docs/breakpoints.md#mixin-media-breakpoint-only)
 </details>
-<details>
+<details open>
   <summary>Colors</summary>
   
 - [Full documentation](./docs/colors.md)
 - [Function color](./docs/colors.md##function-color)
 </details>
-<details>
+<details open>
   <summary>Flex</summary>
   
 - [Full documentation](./docs/flex.md)
 - [Mixin flex](./docs/flex.md#mixin-flex)
 - [Mixin inline-flex](./docs/flex.md#mixin-inline-flex)
 </details>
-<details>
+<details open>
   <summary>Fonts</summary>
   
 - [Full documentation](./docs/fonts.md)
 - [Mixin font-face](./docs/fonts.md#mixin-font-face)
 </details>
-<details>
+<details open>
   <summary>Forms</summary>
   
 - [Full documentation](./docs/forms.md)
@@ -62,7 +62,7 @@
 - [Mixin input](./docs/forms.md#mixin-input)
 - [Mixin textarea](./docs/forms.md#mixin-textarea)
 </details>
-<details>
+<details open>
   <summary>Gradients</summary>
   
 - [Full documentation](./docs/gradients.md)
@@ -74,7 +74,7 @@
 - [Mixin gradient-radial](./docs/gradients.md#function-gradient-radial)
 - [Mixin gradient-striped](./docs/gradients.md#function-gradient-striped)
 </details>
-<details>
+<details open>
   <summary>Grid</summary>
   
 - [Full documentation](./docs/grid.md)
@@ -82,7 +82,7 @@
 - [Mixin container](./docs/grid.md#mixin-container)
 - [Mixin col](./docs/grid.md#mixin-col)
 </details>
-<details>
+<details open>
   <summary>Hover</summary>
   
 - [Full documentation](./docs/hover.md)
@@ -91,25 +91,25 @@
 - [Mixin plain-hover-focus](./docs/hover.md#mixin-plain-hover-focus)
 - [Mixin hover-focus-active](./docs/hover.md#mixin-hover-focus-active)
 </details>
-<details>
+<details open>
   <summary>Icons</summary>
   
 - [Full documentation](./docs/icons.md)
 - [Mixin svg-icon](./docs/icons.md#mixin-svg-icon)
 </details>
-<details>
+<details open>
   <summary>Images</summary>
 
 - [Full documentation](./docs/images.md)
 - [Mixin svg-icon](./docs/images.md#mixin-svg-icon)
 </details>
-<details>
+<details open>
   <summary>Lists</summary>
 
 - [Full documentation](./docs/lists.md)
 - [Mixin list-unstyled](./docs/lists.md#mixin-list-unstyled)
 </details>
-<details>
+<details open>
   <summary>Positioning</summary>
 
 - [Full documentation](./docs/positioning.md)
@@ -122,7 +122,7 @@
 - [Mixin relative](./docs/positioning.md#mixin-relative)
 - [Mixin sticky](./docs/positioning.md#mixin-sticky)
 </details>
-<details>
+<details open>
   <summary>Responsive</summary>
 
 - [Full documentation](./docs/responsive.md)
@@ -130,13 +130,13 @@
 - [Mixin responsive-embed](./docs/responsive.md#mixin-responsive-embed)
 - [Mixin responsive-col](./docs/responsive.md#mixin-responsive-col)
 </details>
-<details>
+<details open>
   <summary>Shapes</summary>
 
 - [Full documentation](./docs/shapes.md)
 - [Mixin css-triangle](./docs/shapes.md#mixin-css-triangle)
 </details>
-<details>
+<details open>
   <summary>Spacing</summary>
 
 - [Full documentation](./docs/spacing.md)
@@ -155,7 +155,7 @@
 - [Mixin py](./docs/spacing.md#mixin-py)
 - [Mixin p](./docs/spacing.md#mixin-p)
 </details>
-<details>
+<details open>
   <summary>Tables</summary>
 
 - [Full documentation](./docs/tables.md)
@@ -165,7 +165,7 @@
 - [Mixin table-striped](./docs/tables.md#mixin-table-striped)
 - [Mixin table-hover](./docs/tables.md#mixin-table-hover)
 </details>
-<details>
+<details open>
   <summary>Typography</summary>
 
 - [Full documentation](./docs/typography.md)
@@ -173,7 +173,7 @@
 - [Mixin text-truncate](./docs/typography.md#mixin-text-truncate)
 - [Mixin font](./docs/typography.md#mixin-font)
 </details>
-<details>
+<details open>
   <summary>Variables</summary>
 
 - [Full documentation](./docs/variables.md)
