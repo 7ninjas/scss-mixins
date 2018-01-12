@@ -21,10 +21,10 @@ $grid-gutter-widths: (
   sm: 30px,
 ) !default;
 $container-max-widths: (
-  sm: 576px,
+  sm: 540px,
   md: 720px,
-  lg: 940px,
-  xl: 1140px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 ```
 

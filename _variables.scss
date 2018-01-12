@@ -1,33 +1,28 @@
 // Variables
 // Palette
-$colors: (
-  gray: (
-    black: #242222,
-    darker: #2d2d2d,
-    dark: #7c7575,
-    base: #999,
-    light: #e6e6e6,
-    magic: #f4f5f7,
-    lighter: #fafafa,
-    white: #fff,
-  ),
-  primary: (
-    base: #ed1a3b,
-    dark: #b72126,
-  ),
-  secondary: (
-    base: #2189ff,
-    dark: #086bdc,
-    darker: #052141,
-    darkest: #041a33,
-  ),
-  herlandia: (
-    base: #d996f3,
-  ),
-);
-$color-shade-amount: 20%;
-$color-trans-amount: 0.4;
+$color-shade-amount: 15%;
+$color-trans-amount: 0.5;
 
+$color-black: #242222;
+$color-gray-darker: #2d2d2d;
+$color-gray-dark: #7c7575;
+$color-gray: #999;
+$color-gray-light: #e6e6e6;
+$color-gray-lighter: #fafafa;
+$color-white: #fff;
+
+$color-primary-darker: #2d2d2d;
+$color-primary-dark: #7c7575;
+$color-primary: #999;
+$color-primary-light: #e6e6e6;
+$color-primary-lighter: #fafafa;
+
+$color-secondary: blue;
+$color-secondary-dark: darken($color-secondary, $color-shade-amount);
+$color-secondary-light: lighten($color-secondary, $color-shade-amount);
+$color-secondary-trans: transparentize($color-secondary, $color-trans-amount);
+
+// todo
 $black: #212121;
 $gray: #999;
 $gray-light: #e6e6e6;
@@ -44,6 +39,7 @@ $brand-secondary-black: #041a33;
 $color-success: #6acb00;
 $color-error: #ed1a3b;
 $color-warning: #ffb11f;
+// todo -------
 
 // Bootstrap reboot
 $enable-hover-media-query: false;
@@ -67,6 +63,8 @@ $link-hover-decoration: underline;
 $table-cell-padding: 0;
 $paragraph-margin-bottom: 0;
 
+//todo check bootstrap vars
+
 // Breakpoints
 $grid-breakpoints: (
   xs: 0,
@@ -87,19 +85,18 @@ $grid-gutter-widths: (
   sm: 30px,
 );
 $container-max-widths: (
-  sm: 576px,
+  sm: 540px,
   md: 720px,
-  lg: 940px,
-  xl: 1140px,
+  lg: 960px,
+  xl: 1140px
 );
 
 // Positioning
 $z-indexes: (
-  'header-opened',
+  'modal',
   'intercom',
-  'header',
+  'tooltip',
   'body',
-  'standard',
 );
 
 // Spacing
@@ -232,10 +229,8 @@ $font-variants: (
       font-weight: 500,
       letter-spacing: 2px,
       text-transform: uppercase
-    )
-  ),
-  btn-sm: (
-    base: (
+    ),
+    sm: (
       font-family: $font-family-base,
       font-size: 14px,
       font-weight: 700,
@@ -249,29 +244,6 @@ $font-variants: (
       font-size: 20px,
       font-weight: 500,
     ),
-  ),
-  nav-header: (
-    base: (
-      font-family: $font-family-secondary,
-      font-size: 50px,
-      line-height: 55px,
-      font-weight: 700,
-    ),
-    xs: (
-      font-size: 36px,
-    )
-  ),
-  case-study-default-title: (
-    base: (
-      font-family: $font-family-base,
-      font-size: 24px,
-      font-weight: 300,
-      line-height: 58px,
-    ),
-    sm: (
-      font-size: 30px,
-      line-height: 50px,
-    )
   ),
 );
 

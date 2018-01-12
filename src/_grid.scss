@@ -1,5 +1,6 @@
 @import 'breakpoints';
 
+// Default variables
 $grid-columns: 12 !default;
 $grid-fluid: false !default;
 $grid-gutter-widths: (
@@ -9,12 +10,13 @@ $grid-gutter-widths: (
   sm: 30px,
 ) !default;
 $container-max-widths: (
-  sm: 576px,
+  sm: 540px,
   md: 720px,
-  lg: 940px,
-  xl: 1140px,
+  lg: 960px,
+  xl: 1140px
 ) !default;
 
+// Mixins
 @mixin center() {
   margin-left: auto;
   margin-right: auto;
