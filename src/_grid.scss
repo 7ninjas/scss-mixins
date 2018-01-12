@@ -49,9 +49,8 @@ $container-max-widths: (
   $ratios: ($size / $columns);
   $cycle: floor($columns / $size);
 
+  @include inline-flex($wrap: wrap);
   align-self: $align;
-  display: inline-flex;
-  flex-wrap: wrap;
   min-width: 0; // FF adjustment for responsive images
   width: percentage($ratios);
 
