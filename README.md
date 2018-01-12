@@ -22,10 +22,8 @@
 
 - [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
-- [Colors](./docs/colors.md)
 - [Flex](./docs/flex.md)
 - [Fonts](./docs/fonts.md)
-- [Forms](./docs/forms.md)
 - [Gradients](./docs/gradients.md)
 - [Grid](./docs/grid.md)
 - [Hover](./docs/hover.md)
@@ -36,7 +34,6 @@
 - [Responsive](./docs/responsive.md)
 - [Shapes](./docs/shapes.md)
 - [Spacing](./docs/spacing.md)
-- [Tables](./docs/tables.md)
 - [Typography](./docs/typography.md)
 - [Variables](./docs/variables.md)
 
@@ -54,7 +51,7 @@ Import `base` file to your core `scss` file for importing all mixins from packag
 
 Example:
 ```scss
-@import '~scss-mixins/src/base'
+@import '~scss-mixins/base'
 ```
 
 
