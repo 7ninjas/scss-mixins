@@ -6,6 +6,7 @@
   "rules": {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "indentation": [2]
+    "indentation": [2],
+    "at-rule-empty-line-before": null
   }
 }
