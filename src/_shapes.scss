@@ -1,6 +1,6 @@
 @import 'positioning';
 
-@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
+@mixin triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
   @include pseudo($pos: $position);
 
   height: 0;
