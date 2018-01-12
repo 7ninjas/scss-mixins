@@ -20,7 +20,7 @@
 
 ### Table of contents
 
-<details>
+<details open>
  <summary>Animations</summary>
  
 - [Full documentation](./docs/animations.md)
