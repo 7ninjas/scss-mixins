@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.0.0-alpha] - 2018-01-05
 :rocket: New feature:
 - added changelog
 - added animations.scss
