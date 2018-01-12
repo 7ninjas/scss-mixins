@@ -47,11 +47,11 @@ Several quick start options are available:
 - Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
 
 ### Usage
-Import `base` file to your core `scss` file for importing all mixins from package
+Import `_all.scss` file to your core `scss` file for importing all mixins from package
 
 Example:
 ```scss
-@import '~scss-mixins/base'
+@import '~scss-mixins/all'
 ```
 
 
@@ -81,11 +81,11 @@ Several quick start options are available:
 - Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
 
 ### Usage
-Import `base` file to your core `scss` file for importing all mixins from package
+Import `all` file to your core `scss` file for importing all mixins from package
 
 Example:
 ```scss
-@import '~scss-mixins/src/base'
+@import '~scss-mixins/all'
 ```
 
 
