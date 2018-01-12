@@ -36,6 +36,7 @@ $container-max-widths: (
   @include flex($wrap: wrap);
   @include center();
   @include gutter($gutter);
+
   width: 100%;
 
   @if not $fluid {
@@ -53,13 +54,15 @@ $container-max-widths: (
 
   @include inline-flex($wrap: wrap);
   @include gutter($gutter);
+
   align-self: $align;
   min-width: 0; // FF adjustment for responsive images
   width: percentage($ratios);
 
   @if $offset > 0 {
     margin-left: percentage($offset / $columns);
-  } @else {
+  }
+  @else {
     margin-left: 0;
   }
 }

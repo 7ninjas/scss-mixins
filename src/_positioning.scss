@@ -18,7 +18,6 @@ $z-indexes: (
   }
 }
 
-
 @mixin pseudo($display: block, $content: '') {
   content: $content;
   display: $display;
