@@ -3,10 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "keywords": ["scss","mixin","css","style","styling","7ninjas","bootstrap","react", "grid", "flex", "mixins", "less", "responsive", "web", "front-end", "css-modules", "sass"],
-  "main": "src/components/_base.scss",
+  "main": "_base.scss",
   "scripts": {
-    "stylelint": "stylelint **/*.scss **/*.scss.example",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stylelint": "stylelint **/*.scss **/*.scss.example"
   },
   "repository": {
     "type": "git",

@@ -39,7 +39,6 @@ Setting child element centered relatively to parent element
 
 ```scss
 .exampleParentClass {
-
     .exampleChildClass {
         @include center();
     }
@@ -58,7 +57,26 @@ _Mixin which helps with proper displaying container with flex property and 100% 
 - `$max-widths` - object with max width of container for different resolutions (as default it's used ```$container-max-widths```)
 
 ### Usage: 
-Assigned fluid grid for container without gutters.
+
+#### Case 1
+Assigned grid container with gutters
+```scss
+.exampleContainerClass {
+     @include container();
+}
+```
+
+#### Case 2 
+Assigned fluid grid container.
+
+```scss
+.exampleContainerClass {
+     @include container(true);
+}
+```
+
+#### Case 3
+Assigned grid container without gutters.
 
 ```scss
 .exampleContainerClass {
@@ -66,28 +84,60 @@ Assigned fluid grid for container without gutters.
 }
 ```
 
-
 ## Mixin col
 
 ### Description
-_Mixin which helps with indicate number of columns with their size, gutters, offset and alignment._
+_Mixin which helps to create columns with their size, gutters, offset and alignment._
 
 ### Parameters
-- `$size` - variable which indicates size of each column (as default it's used ```$grid-columns```)
-- `$columns` - variable which indicates number of columns  (as default it's used ```$grid-columns```)
-- `$gutter-widths` - variable which indicates width of each gutter (as default it's used ```$grid-gutter-widths```)
-- `$offset` - variable which indicates size of offset (as default it's used ```0```)
-- `$align` - variable which indicates alignment of columns (as default it's used ```auto```)
+- `$size` - variable which define size of each column (**default `12`**)
+- `$columns` - variable which define number of columns (**default `12`**)
+- `$gutter-widths` - variable which define width of each gutter (**default values for each breakpoints defined in ```$grid-gutter-widths```**)
+- `$offset` - variable which define size of offset (**default `0`**)
+- `$align` - variable which define alignment of columns (**default `auto`**)
 
 ### Usage: 
 
-
-#### Case
-Set 12 columns with size 24 and left alignment to given class
-
+#### Case 1
+Define styles for block that used 12 column out of the possible default 12 per container.
 ```scss
-.exampleColClass {
-    @include col($size: 24, $columns: 12, $align: left);
+.exampleColumn {
+    @include col();
 }
 ```
 
+
+#### Case 2
+Define styles for block that used 3 column out of the possible default 12 per container.
+```scss
+.exampleColumn {
+    @include col(3);
+}
+```
+
+#### Case 3
+Define styles for block that used 2 column out of the possible 5 per container.
+```scss
+.exampleColumn {
+    @include col(2, 5);
+}
+```
+
+
+#### Case 4
+Define styles for block that used 2 column out of the possible 12
+and set 5 columns offset.
+```scss
+.exampleColumn {
+    @include col(2, $offset: 5);
+}
+```
+
+#### Case 5
+Define styles for block that used 2 column out of the possible 12
+and align it to the center of the container.
+```scss
+.exampleColumn {
+    @include col(2, $align: center);
+}
+```
