@@ -21,8 +21,9 @@
 ### Table of contents
 
 <details>
- <summary>[Animations](./docs/animations.md)</summary>
-   - [Mixin hardware](#mixin-hardware)
+ <summary>Animations</summary>
+   ## [Documentation](./docs/animations.md)
+   ## [Mixin hardware](./docs/animations.md #mixin-hardware)
  </details>
  
 - [Animations](./docs/animations.md)
