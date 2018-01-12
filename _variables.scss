@@ -22,24 +22,10 @@ $color-secondary-dark: darken($color-secondary, $color-shade-amount);
 $color-secondary-light: lighten($color-secondary, $color-shade-amount);
 $color-secondary-trans: transparentize($color-secondary, $color-trans-amount);
 
-// todo
-$black: #212121;
-$gray: #999;
-$gray-light: #e6e6e6;
-$gray-lighter: #f2f2f2;
-$white: #fff;
-
-$brand-primary: #ed1a3b;
-$brand-primary-dark: #b72126;
-$brand-secondary: #2189ff;
-$brand-secondary-dark: #086bdc;
-$brand-secondary-darker: #052141;
-$brand-secondary-black: #041a33;
-
 $color-success: #6acb00;
 $color-error: #ed1a3b;
 $color-warning: #ffb11f;
-// todo -------
+
 
 // Bootstrap reboot
 $enable-hover-media-query: false;
@@ -51,19 +37,17 @@ $font-weight-base: normal;
 $line-height-base: $font-size-base;
 $dt-font-weight: $font-weight-base;
 
-$body-color: $white;
-$body-bg: $white;
-$text-muted: $gray-light;
+$body-color: $color-white;
+$body-bg: $color-white;
+$text-muted: $color-gray-light;
 
-$link-color: $brand-secondary;
+$link-color: $color-secondary;
 $link-decoration: none;
 $link-hover-color: $link-color;
 $link-hover-decoration: underline;
 
 $table-cell-padding: 0;
 $paragraph-margin-bottom: 0;
-
-//todo check bootstrap vars
 
 // Breakpoints
 $grid-breakpoints: (
@@ -244,71 +228,3 @@ $font-variants: (
     ),
   ),
 );
-
-// Borders
-$border-radius: 0.15rem;
-$border-radius-xl: 0.625rem;
-$border-width: 1px;
-$border-color: transparentize($gray, 0.7);
-$box-shadow: 0 20px 54px rgba(0, 0, 0, 0.15);
-
-// Transitions
-$transition-duration: 0.2s;
-$transition-timing-function: ease-in-out;
-$transition-delay: 0s;
-
-// Input
-$input-color: $black;
-$input-placeholder-color: #ccc;
-$input-bg: $gray-lighter;
-$input-border-width: 1px;
-$input-border-color: #ccc;
-$input-border-radius: $border-radius;
-$input-box-shadow: false;
-$input-padding-y: 9px;
-$input-padding-x: 20px;
-
-$input-disabled-bg: #f0f0f0;
-
-$input-focus-color: $input-color;
-$input-focus-bg: $input-bg;
-$input-focus-border-color: #75b6ff;
-$input-focus-box-shadow: $input-box-shadow;
-
-// Textarea
-$textarea-resizable: false;
-$textarea-resizable-direction: vertical;
-
-// Forms error
-$input-error-color: $input-color;
-$input-error-bg: $input-bg;
-$input-error-border-color: $brand-primary;
-$input-error-box-shadow: $input-box-shadow;
-$input-error-message-color: $brand-primary;
-
-// Layout
-$header-height: 80px;
-$aside-offset: $header-height;
-
-// Tables
-// Table variants
-$table-bordered: true;
-$table-responsible: true;
-$table-striped: true;
-$table-hovered: true;
-
-// Table variables
-$table-background: transparent;
-$table-cell-padding: 5px;
-
-// Table striped
-$table-strip-color: #000;
-$table-strip-opacity: 0.05;
-
-// Table hovered
-$table-hover-color: #000;
-$table-hover-opacity: 0.1;
-
-// Table bordered
-$table-border-width: 1px;
-$table-border-color: #e6e6e6;
