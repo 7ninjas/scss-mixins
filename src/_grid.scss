@@ -1,4 +1,5 @@
 @import 'breakpoints';
+@import "flex";
 
 // Default variables
 $grid-columns: 12 !default;
@@ -23,11 +24,9 @@ $container-max-widths: (
 }
 
 @mixin container($fluid: $grid-fluid, $gutter: $grid-gutter-widths, $max-widths: $container-max-widths) {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
+  @include flex($wrap: wrap);
   @include center();
+  width: 100%;
 
   @if $gutter {
     @each $breakpoint, $gutter in $gutter {
@@ -37,11 +36,6 @@ $container-max-widths: (
       }
     }
   }
-
-  & > * {
-    min-width: 0;
-  }
-
   @if not $fluid {
     @each $breakpoint, $container-max-width in $max-widths {
       @include media-breakpoint-up($breakpoint) {
