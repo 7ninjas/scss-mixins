@@ -15,8 +15,8 @@ alternatively set `flex-direction`, `align-items`, `justify-content` and `flex-w
 
 ### Parameters
 - `$direction` - defines the direction of items in the flex container
-- `$cross` - defines how flex items are laid out along the cross axis
-- `$main` - defines the alignment along the main axis
+- `$align` - defines how flex items are laid out along the cross axis
+- `$justify` - defines the alignment along the main axis
 - `$wrap` - defines how flex items will wrap onto multiple lines
 
 ### Usage: 
@@ -44,7 +44,7 @@ Assign `display: flex` property to the class and define how flex items are laid 
 
 ```scss
 .exampleFlex {
-   @include flex($align-items: flex-end);
+   @include flex($align: flex-end);
 }
 ```
 
@@ -53,7 +53,7 @@ Assign `display: flex` property to the class and defines alignment of flex items
 
 ```scss
 .exampleFlex {
-   @include flex($main: space-between);
+   @include flex($justify: space-between);
 }
 ```
 
@@ -76,8 +76,8 @@ alternatively set `flex-direction`, `align-items`, `justify-content` and `flex-w
 
 ### Parameters
 - `$direction` - defines the direction of items in the flex container
-- `$cross` - defines how flex items are laid out along the cross axis
-- `$main` - defines the alignment along the main axis
+- `$align` - defines how flex items are laid out along the cross axis
+- `$justify` - defines the alignment along the main axis
 - `$wrap` - defines how flex items will wrap onto multiple lines
 
 ### Usage: 
@@ -86,8 +86,8 @@ alternatively set `flex-direction`, `align-items`, `justify-content` and `flex-w
 Assign property `display: inline-flex;` to the class without any extra properties.
 
 ```scss
-.exampleFlex {
-   @include flex;
+.exampleInlineFlex {
+   @include inline-flex;
 }
 ```
 
@@ -95,8 +95,8 @@ Assign property `display: inline-flex;` to the class without any extra propertie
 Assign `display: inline-flex` property to the class and define the direction of items in the flex container.
 
 ```scss
-.exampleFlex {
-    @include flex($direction: column);
+.exampleInlineFlex {
+    @include inline-flex($direction: column);
 }
 ```
 
@@ -104,8 +104,8 @@ Assign `display: inline-flex` property to the class and define the direction of 
 Assign `display: inline-flex` property to the class and define how flex items are laid out along the cross axis.
 
 ```scss
-.exampleFlex {
-   @include flex($align-items: flex-end);
+.exampleInlineFlex {
+   @include inline-flex($align: flex-end);
 }
 ```
 
@@ -113,8 +113,8 @@ Assign `display: inline-flex` property to the class and define how flex items ar
 Assign `display: inline-flex` property to the class and defines alignment of flex items along the main axis.
 
 ```scss
-.exampleFlex {
-   @include flex($main: space-between);
+.exampleInlineFlex {
+   @include inline-flex($justify: space-between);
 }
 ```
 
@@ -122,7 +122,7 @@ Assign `display: inline-flex` property to the class and defines alignment of fle
 Assign `display: inline-flex` property to the class and wrap flex items onto multiple lines.
 
 ```scss
-.exampleFlex {
-   @include flex($wrap: wrap);
+.exampleInlineFlex {
+   @include inline-flex($wrap: wrap);
 }
 ```

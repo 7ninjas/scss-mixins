@@ -1,16 +1,16 @@
-@mixin flex-variant($display, $direction: false, $cross: false, $main: false, $wrap: false) {
+@mixin flex-variant($display, $direction: false, $align: false, $justify: false, $wrap: false) {
   display: $display;
 
   @if $direction {
     flex-direction: $direction;
   }
 
-  @if $cross {
-    align-items: $cross;
+  @if $align {
+    align-items: $align;
   }
 
-  @if $main {
-    justify-content: $main;
+  @if $justify {
+    justify-content: $justify;
   }
 
   @if $wrap {
@@ -23,10 +23,10 @@
   }
 }
 
-@mixin flex($direction: false, $cross: false, $main: false, $wrap: false) {
-  @include flex-variant(flex, $direction: $direction, $cross: $cross, $main: $main, $wrap: $wrap);
+@mixin flex($direction: false, $align: false, $justify: false, $wrap: false) {
+  @include flex-variant(flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
 }
 
-@mixin inline-flex($direction: false, $cross: false, $main: false, $wrap: false) {
-  @include flex-variant(inline-flex, $direction: $direction, $cross: $cross, $main: $main, $wrap: $wrap);
+@mixin inline-flex($direction: false, $align: false, $justify: false, $wrap: false) {
+  @include flex-variant(inline-flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap);
 }
