@@ -12,7 +12,7 @@ _File includes mixins which help create consistent and proper styling of fonts_
 _Default variables declared in file will be used mainly in ```font``` mixin._
 
 ```scss
-$font-variants: (
+$typography: (
   base: (
     base: (
       font-family: 'Proxima Nova' sans-serif,
@@ -55,7 +55,7 @@ Hiding text in given class
 ## Mixin text-truncate
 
 ### Description
-_Mixin for truncating text.<br />
+_Mixin for truncating text.   
 It requires inline-block or block for proper styling._
 
 ### Usage: 
@@ -74,7 +74,7 @@ Truncating text in specific class
 _Mixin which helps assign consistent font values for given class_
 
 ### Parameters
-- `$variant` - font variant which should be assigned to font (```$font-variants``` will be search through for this value) (as default it's used ```base```)
+- `$variant` - font variant which should be assigned to font (```$typography``` will be search through for this value) (as default it's used ```base```)
 - `$color` - color which should be assigned to font
 - `$line-height` - line height which should be assigned to font
 - `$align` - text alignment which should be assigned to font
@@ -83,7 +83,7 @@ _Mixin which helps assign consistent font values for given class_
 ### Usage: 
 
 #### Case 1
-Set `h1` font variation from `$font-variants` variable map.
+Set `h1` font variation from `$typography` variable map.
 In this case h1 contains styles for base and sm variation. 
 That means that for sm breakpoint and narrower styles will be applied from sm variation. 
 For there rest - styles will be taken from base variation.
@@ -95,7 +95,7 @@ For there rest - styles will be taken from base variation.
 ```
 
 #### Case 2
-Set `h1` font variation styles from `$font-variants` variable and change font color for all breakpoints.
+Set `h1` font variation styles from `$typography` variable and change font color for all breakpoints.
 
 ```scss
 .exampleClass {
@@ -104,7 +104,7 @@ Set `h1` font variation styles from `$font-variants` variable and change font co
 ```
 
 #### Case 3
-Set `h1` font variation styles from `$font-variants` variable and change text align for all breakpoints.
+Set `h1` font variation styles from `$typography` variable and change text align for all breakpoints.
 
 ```scss
 .exampleClass {
@@ -113,7 +113,7 @@ Set `h1` font variation styles from `$font-variants` variable and change text al
 ```
 
 #### Case 5
-Set `h1` font variation styles and disable applying styles for breakpoints defined for `h1` variant in `$font-variants` variable.
+Set `h1` font variation styles and disable applying styles for breakpoints defined for `h1` variant in `$typography` variable.
 
 ```scss
 .exampleClass {

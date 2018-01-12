@@ -1,8 +1,9 @@
 @import '~bootstrap/scss/mixins/text-hide';
 @import '~bootstrap/scss/mixins/text-truncate';
+@import 'utils';
 @import 'breakpoints';
 
-$font-variants: (
+$typography: (
   base: (
     base: (
       font-family: 'Proxima Nova' sans-serif,
@@ -71,7 +72,7 @@ $font-variants: (
 }
 
 @mixin font($variant: base, $color: false, $line-height: false, $align: false, $responsive: true) {
-  $variants: map-get($font-variants, $variant);
+  $variants: map-get($typography, $variant);
 
   @each $breakpoint, $styles in $variants {
     @if $breakpoint == base {
