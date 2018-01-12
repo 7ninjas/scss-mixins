@@ -20,6 +20,11 @@
 
 ### Table of contents
 
+<details>
+ <summary>[Animations](./docs/animations.md)</summary>
+   - [Mixin hardware](#mixin-hardware)
+ </details>
+ 
 - [Animations](./docs/animations.md)
 - [Breakpoints](./docs/breakpoints.md)
 - [Colors](./docs/colors.md)
@@ -68,6 +73,7 @@ Example:
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 [![GitHub issues](https://img.shields.io/github/issues/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 [![GitHub stars](https://img.shields.io/github/stars/7ninjas/scss-mixins.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
