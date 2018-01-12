@@ -1,4 +1,4 @@
-@mixin svg-icon($color: false, $width: false, $height: $width, $stroke: false) {
+@mixin svg-icon($color: false, $width: false, $height: $width) {
   display: inline-flex;
   flex-shrink: 0;
   height: $height;
@@ -6,9 +6,5 @@
 
   @if $color {
     fill: $color;
-  }
-
-  @if $stroke {
-    stroke: $stroke;
   }
 }
