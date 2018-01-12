@@ -17,7 +17,7 @@ The map defined in the `$grid-breakpoints` global variable is used as the `$brea
 ```scss
 $grid-breakpoints: (
   xs: 0,
-  sm: 544px,
+  sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px
