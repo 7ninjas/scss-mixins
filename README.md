@@ -18,23 +18,6 @@
 </p>
 
 
-## Quick start
-
-Several quick start options are available:
-
-- Clone the repo: `git clone https://github.com/7ninjas/scss-mixins.git`
-- Install with [npm](https://www.npmjs.com/): `npm install @7ninjas/scss-mixins`
-- Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
-
-### Usage
-Import `base` file to your core `scss` file for importing all mixins from package
-
-Example:
-```scss
-@import '~scss-mixins/src/base'
-```
-
-
 ## Status
 
 [![npm](https://img.shields.io/npm/v/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
@@ -50,6 +33,23 @@ Example:
 
 [![GitHub stars](https://img.shields.io/github/stars/7ninjas/scss-mixins.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub watchers](https://img.shields.io/github/watchers/7ninjas/scss-mixins.svg?style=social&label=Watch&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
+
+
+## Quick start
+
+Several quick start options are available:
+
+- Clone the repo: `git clone https://github.com/7ninjas/scss-mixins.git`
+- Install with [npm](https://www.npmjs.com/): `npm install @7ninjas/scss-mixins`
+- Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
+
+### Usage
+Import `base` file to your core `scss` file for importing all mixins from package
+
+Example:
+```scss
+@import '~scss-mixins/src/base'
+```
 
 
 ### Table of contents
