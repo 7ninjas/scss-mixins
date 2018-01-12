@@ -70,61 +70,6 @@ Example:
 [![GitHub stars](https://img.shields.io/github/stars/7ninjas/scss-mixins.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub watchers](https://img.shields.io/github/watchers/7ninjas/scss-mixins.svg?style=social&label=Watch&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
-
-
-## What's included
-
-Within the download you'll find logically grouped files like this:
-
-```
-scss-mixins/
-├── CHANGELOG.md
-├── _base.scss
-├── _variables.scss.example
-├── docs/
-│   ├── animations.md
-│   ├── breakpoints.md
-│   ├── colors.md
-│   ├── flex.md
-│   ├── fonts.md
-│   ├── gradients.md
-│   ├── grid.md
-│   ├── hover.md
-│   ├── icons.md
-│   ├── images.md
-│   ├── lists.md
-│   ├── responsive.md
-│   ├── positioning.md
-│   ├── shapes.md
-│   ├── spacing.md
-│   ├── tables.md
-│   ├── typography.md
-│   ├── variables.md
-└── src/
-    ├── _animations.scss
-    ├── _breakpoints.scss
-    ├── _colors.scss
-    ├── _flex.scss
-    ├── _fonts.scss
-    ├── _forms.scss
-    ├── _gradients.scss
-    ├── _grid.scss
-    ├── _hover.scss
-    ├── _icons.scss
-    ├── _images.scss
-    ├── _lists.scss
-    ├── _positioning.scss
-    ├── _responsive.scss
-    ├── _shapes.scss
-    ├── _spacing.scss
-    ├── _tables.scss
-    ├── _trancitions.scss
-    ├── _typography.scss
-    ├── _units.scss
-    ├── _utils.scss
-```
-
-
 ## Bugs and feature requests
 
 Found bug? Or maybe you've got great idea for feature request? Please first search for existing and closed issues.
