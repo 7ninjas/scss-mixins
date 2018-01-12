@@ -1,4 +1,5 @@
 @import 'breakpoints';
+@import 'flex';
 
 $grid-columns: 12 !default;
 $grid-fluid: false !default;
@@ -21,23 +22,17 @@ $container-max-widths: (
 }
 
 @mixin container($fluid: $grid-fluid, $gutter: $grid-gutter-widths, $max-widths: $container-max-widths) {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
+  @include flex($wrap: wrap);
   @include center();
-
+  width: 100%;
+  
   @if $gutter {
-    @each $breakpoint, $gutter in $gutter {
+    @each $breakpoint, $gutter-width in $gutter {
       @include media-breakpoint-down($breakpoint) {
-        padding-left: ($gutter / 2);
-        padding-right: ($gutter / 2);
+        padding-left: ($gutter-width / 2);
+        padding-right: ($gutter-width / 2);
       }
     }
-  }
-
-  & > * {
-    min-width: 0;
   }
 
   @if not $fluid {
@@ -49,7 +44,7 @@ $container-max-widths: (
   }
 }
 
-@mixin col($size: $grid-columns, $columns: $grid-columns, $gutter-widths: $grid-gutter-widths, $offset: 0, $align: auto) {
+@mixin col($size: $grid-columns, $columns: $grid-columns, $gutter: $grid-gutter-widths, $offset: 0, $align: auto) {
   $ratios: ($size / $columns);
   $cycle: floor($columns / $size);
 
@@ -67,10 +62,12 @@ $container-max-widths: (
     margin-left: 0;
   }
 
-  @each $breakpoint, $gutter in $gutter-widths {
-    @include media-breakpoint-down($breakpoint) {
-      padding-left: ($gutter / 2);
-      padding-right: ($gutter / 2);
+  @if $gutter {
+    @each $breakpoint, $gutter-width in $gutter {
+      @include media-breakpoint-down($breakpoint) {
+        padding-left: ($gutter-width / 2);
+        padding-right: ($gutter-width / 2);
+      }
     }
   }
 }
