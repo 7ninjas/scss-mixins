@@ -186,7 +186,7 @@ Example:
 - [Full documentation](./docs/positioning.md)
 - [Mixin size](./docs/positioning.md#function-size)
 - [Mixin clearfix](./docs/positioning.md#mixin-clearfix)
-- [Function z-index](./docs/positioning.md#function-z-index)
+- [Mixin z-index](./docs/positioning.md#mixin-z-index)
 - [Mixin pseudo](./docs/positioning.md#mixin-pseudo)
 - [Mixin absolute](./docs/positioning.md#mixin-absolute)
 - [Mixin fixed](./docs/positioning.md#mixin-fixed)

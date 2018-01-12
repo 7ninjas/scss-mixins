@@ -4,7 +4,7 @@ _File includes function and mixins which help with positioning different type of
 ### List of content:
 - [Mixin size](#function-size) (bootstrap 4.0.0-beta)
 - [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0-beta)
-- [Mixin z-index](#function-z-index)
+- [Mixin z-index](#mixin-z-index)
 - [Mixin pseudo](#mixin-pseudo)
 - [Mixin absolute](#mixin-absolute)
 - [Mixin fixed](#mixin-fixed)
