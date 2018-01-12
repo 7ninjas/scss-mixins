@@ -23,29 +23,161 @@
 <details>
  <summary>Animations</summary>
  
-   - [Documentation](./docs/animations.md)
-   - [Mixin hardware](./docs/animations.md#mixin-hardware)
- </details>
- 
-- [Animations](./docs/animations.md)
-- [Breakpoints](./docs/breakpoints.md)
-- [Colors](./docs/colors.md)
-- [Flex](./docs/flex.md)
-- [Fonts](./docs/fonts.md)
-- [Forms](./docs/forms.md)
-- [Gradients](./docs/gradients.md)
-- [Grid](./docs/grid.md)
-- [Hover](./docs/hover.md)
-- [Icons](./docs/icons.md)
-- [Images](./docs/images.md)
-- [Lists](./docs/lists.md)
-- [Positioning](./docs/positioning.md)
-- [Responsive](./docs/responsive.md)
-- [Shapes](./docs/shapes.md)
-- [Spacing](./docs/spacing.md)
-- [Tables](./docs/tables.md)
-- [Typography](./docs/typography.md)
-- [Variables](./docs/variables.md)
+- [Full documentation](./docs/animations.md)
+- [Mixin hardware](./docs/animations.md#mixin-hardware)
+</details>
+<details>
+  <summary>Breakpoints</summary>
+  
+- [Full documentation](./docs/breakpoints.md)
+- [Mixin media-breakpoint-up](./docs/breakpoints.md#mixin-media-breakpoint-up)
+- [Mixin media-breakpoint-down](./docs/breakpoints.md#mixin-media-breakpoint-down)
+- [Mixin media-breakpoint-between](./docs/breakpoints.md#mixin-media-breakpoint-between)
+- [Mixin media-breakpoint-only](./docs/breakpoints.md#mixin-media-breakpoint-only)
+</details>
+<details>
+  <summary>Colors</summary>
+  
+- [Full documentation](./docs/colors.md)
+- [Function color](./docs/colors.md##function-color)
+</details>
+<details>
+  <summary>Flex</summary>
+  
+- [Full documentation](./docs/flex.md)
+- [Mixin flex](./docs/flex.md#mixin-flex)
+- [Mixin inline-flex](./docs/flex.md#mixin-inline-flex)
+</details>
+<details>
+  <summary>Fonts</summary>
+  
+- [Full documentation](./docs/fonts.md)
+- [Mixin font-face](./docs/fonts.md#mixin-font-face)
+</details>
+<details>
+  <summary>Forms</summary>
+  
+- [Full documentation](./docs/forms.md)
+- [Mixin resizable](./docs/forms.md#mixin-flex)
+- [Mixin input](./docs/forms.md#mixin-input)
+- [Mixin textarea](./docs/forms.md#mixin-textarea)
+</details>
+<details>
+  <summary>Gradients</summary>
+  
+- [Full documentation](./docs/gradients.md)
+- [Mixin gradient-x](./docs/gradients.md#function-gradient-x)
+- [Mixin gradient-y](./docs/gradients.md#function-gradient-y)
+- [Mixin gradient-directional](./docs/gradients.md#function-gradient-directional)
+- [Mixin gradient-x-three-colors](./docs/gradients.md#function-gradient-x-three-colors)
+- [Mixin gradient-y-three-colors](./docs/gradients.md#function-gradient-y-three-colors)
+- [Mixin gradient-radial](./docs/gradients.md#function-gradient-radial)
+- [Mixin gradient-striped](./docs/gradients.md#function-gradient-striped)
+</details>
+<details>
+  <summary>Grid</summary>
+  
+- [Full documentation](./docs/grid.md)
+- [Mixin center](./docs/grid.md#mixin-center)
+- [Mixin container](./docs/grid.md#mixin-container)
+- [Mixin col](./docs/grid.md#mixin-col)
+</details>
+<details>
+  <summary>Hover</summary>
+  
+- [Full documentation](./docs/hover.md)
+- [Mixin hover](./docs/hover.md#mixin-hover)
+- [Mixin hover-focus](./docs/hover.md#mixin-hover-focus)
+- [Mixin plain-hover-focus](./docs/hover.md#mixin-plain-hover-focus)
+- [Mixin hover-focus-active](./docs/hover.md#mixin-hover-focus-active)
+</details>
+<details>
+  <summary>Icons</summary>
+  
+- [Full documentation](./docs/icons.md)
+- [Mixin svg-icon](./docs/icons.md#mixin-svg-icon)
+</details>
+<details>
+  <summary>Images</summary>
+
+- [Full documentation](./docs/images.md)
+- [Mixin svg-icon](./docs/images.md#mixin-svg-icon)
+</details>
+<details>
+  <summary>Lists</summary>
+
+- [Full documentation](./docs/lists.md)
+- [Mixin list-unstyled](./docs/lists.md#mixin-list-unstyled)
+</details>
+<details>
+  <summary>Positioning</summary>
+
+- [Full documentation](./docs/positioning.md)
+- [Mixin size](./docs/positioning.md#function-size)
+- [Mixin clearfix](./docs/positioning.md#mixin-clearfix)
+- [Function z-index](./docs/positioning.md#function-z-index)
+- [Mixin pseudo](./docs/positioning.md#mixin-pseudo)
+- [Mixin absolute](./docs/positioning.md#mixin-absolute)
+- [Mixin fixed](./docs/positioning.md#mixin-fixed)
+- [Mixin relative](./docs/positioning.md#mixin-relative)
+- [Mixin sticky](./docs/positioning.md#mixin-sticky)
+</details>
+<details>
+  <summary>Responsive</summary>
+
+- [Full documentation](./docs/responsive.md)
+- [Mixin responsive-prop](./docs/responsive.md#mixin-responsive-prop)
+- [Mixin responsive-embed](./docs/responsive.md#mixin-responsive-embed)
+- [Mixin responsive-col](./docs/responsive.md#mixin-responsive-col)
+</details>
+<details>
+  <summary>Shapes</summary>
+
+- [Full documentation](./docs/shapes.md)
+- [Mixin css-triangle](./docs/shapes.md#mixin-css-triangle)
+</details>
+<details>
+  <summary>Spacing</summary>
+
+- [Full documentation](./docs/spacing.md)
+- [Mixin ml](./docs/spacing.md#mixin-ml)
+- [Mixin mt](./docs/spacing.md#mixin-mt)
+- [Mixin mr](./docs/spacing.md#mixin-mr)
+- [Mixin mb](./docs/spacing.md#mixin-mb)
+- [Mixin mx](./docs/spacing.md#mixin-mx)
+- [Mixin my](./docs/spacing.md#mixin-my)
+- [Mixin m](./docs/spacing.md#mixin-m)
+- [Mixin pl](./docs/spacing.md#mixin-pl)
+- [Mixin pt](./docs/spacing.md#mixin-pt)
+- [Mixin pr](./docs/spacing.md#mixin-pr)
+- [Mixin pb](./docs/spacing.md#mixin-pb)
+- [Mixin px](./docs/spacing.md#mixin-px)
+- [Mixin py](./docs/spacing.md#mixin-py)
+- [Mixin p](./docs/spacing.md#mixin-p)
+</details>
+<details>
+  <summary>Tables</summary>
+
+- [Full documentation](./docs/tables.md)
+- [Mixin table](./docs/tables.md#mixin-table)
+- [Mixin table-bordered](./docs/tables.md#mixin-table-bordered)
+- [Mixin table-responsible](./docs/tables.md#mixin-table-responsible)
+- [Mixin table-striped](./docs/tables.md#mixin-table-striped)
+- [Mixin table-hover](./docs/tables.md#mixin-table-hover)
+</details>
+<details>
+  <summary>Typography</summary>
+
+- [Full documentation](./docs/typography.md)
+- [Mixin text-hide](./docs/typography.md#mixin-text-hide)
+- [Mixin text-truncate](./docs/typography.md#mixin-text-truncate)
+- [Mixin font](./docs/typography.md#mixin-font)
+</details>
+<details>
+  <summary>Variables</summary>
+
+- [Full documentation](./docs/variables.md)
+</details>
 
 
 ## Quick start
