@@ -1,5 +1,7 @@
+// Default variables
 $font-size-base: 16px !default;
 
+// Functions
 // List
 // https://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
 @function first($list) {
@@ -33,6 +35,7 @@ $font-size-base: 16px !default;
   @return $split-arr;
 }
 
+// Units
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }

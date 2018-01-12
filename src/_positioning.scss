@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/mixins/clearfix';
 @import '~bootstrap/scss/mixins/size';
 
+// Default variables
 $z-indexes: (
   'modal',
   'header',
@@ -8,13 +9,13 @@ $z-indexes: (
   'footer'
 ) !default;
 
+// Mixins
 @mixin z-index($name) {
   @if index($z-indexes, $name) {
     z-index: (length($z-indexes) - index($z-indexes, $name)) + 1;
   }
   @else {
-    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
-    @return null;
+    @error 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
   }
 }
 
@@ -35,7 +36,6 @@ $z-indexes: (
   position: $position;
 }
 
-// Positioning helpers
 @mixin absolute($args: '') {
   @include position-variant(absolute, $args);
 }

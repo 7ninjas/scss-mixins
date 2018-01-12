@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 @import 'utils';
 
+// Default variables
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -9,8 +10,7 @@ $grid-breakpoints: (
   xl: 1200px
 ) !default;
 
-// bootstrap breakpoints
-
+// Mixins
 @mixin media-breakpoint-variant($breakpoint-query) {
   $breakpoint-keys: map-keys($grid-breakpoints);
 

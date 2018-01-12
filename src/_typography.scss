@@ -2,6 +2,7 @@
 @import '~bootstrap/scss/mixins/text-truncate';
 @import 'breakpoints';
 
+// Default variables
 $typography: (
   base: (
     base: (
@@ -27,6 +28,7 @@ $typography: (
   ),
 ) !default;
 
+// Mixins
 @mixin font-variant($styles, $color: false, $line-height: false, $align: false) {
   @if not $line-height {
     $line-height: map-get($styles, line-height);
