@@ -1,3 +1,4 @@
+// Default variables
 $spacing-sizes: (
   0: 0,
   1: 0.25rem,
@@ -14,8 +15,7 @@ $spacing-important: false !default;
   @return map-get($spacing-sizes, $size);
 }
 
-//todo remove spaces
-
+// Mixins
 // Margin
 @mixin ml($size: 1) {
   @if ($size == 'auto') {
@@ -122,7 +122,7 @@ $spacing-important: false !default;
   padding-top: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
-@mixin pr($size : 1) {
+@mixin pr($size: 1) {
   padding-right: spacing($size) #{if($spacing-important, '!important', '')};
 }
 
