@@ -18,49 +18,13 @@
 </p>
 
 
-### Table of contents
-
-- [Animations](./docs/animations.md)
-- [Breakpoints](./docs/breakpoints.md)
-- [Flex](./docs/flex.md)
-- [Fonts](./docs/fonts.md)
-- [Gradients](./docs/gradients.md)
-- [Grid](./docs/grid.md)
-- [Hover](./docs/hover.md)
-- [Icons](./docs/icons.md)
-- [Images](./docs/images.md)
-- [Lists](./docs/lists.md)
-- [Positioning](./docs/positioning.md)
-- [Responsive](./docs/responsive.md)
-- [Shapes](./docs/shapes.md)
-- [Spacing](./docs/spacing.md)
-- [Typography](./docs/typography.md)
-- [Variables](./docs/variables.md)
-
-
-## Quick start
-
-Several quick start options are available:
-
-- Clone the repo: `git clone https://github.com/7ninjas/scss-mixins.git`
-- Install with [npm](https://www.npmjs.com/): `npm install @7ninjas/scss-mixins`
-- Install with [yarn](https://yarnpkg.com/): `yarn add @7ninjas/scss-mixins`
-
-### Usage
-Import `_all.scss` file to your core `scss` file for importing all mixins from package
-
-Example:
-```scss
-@import '~scss-mixins/all'
-```
-
-
 ## Status
 
 [![npm](https://img.shields.io/npm/v/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 [![npm](https://img.shields.io/npm/l/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 [![npm](https://img.shields.io/npm/dt/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/7ninjas/scss-mixins/develop.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
@@ -203,7 +167,7 @@ Example:
 </details>
 <details open>
   <summary>Shapes</summary>
-
+  
 - [Full documentation](./docs/shapes.md)
 - [Mixin css-triangle](./docs/shapes.md#mixin-css-triangle)
 </details>
