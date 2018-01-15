@@ -18,4 +18,11 @@
 </p>
 
 
-<h3 align="center">Best Practices</h3>
+<h3 align="center">Best Practices - SCSS Styleguide</h3>
+This styleguide document is a key document in a project's life and development. It describes how and why code should be 
+written that way. When used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. 
+However if it's used incorrectly it may add unnecessary or duplicate code. 
+
+Below we present series of hints and tips with which will help 
+you get the best out of Sass.
+
