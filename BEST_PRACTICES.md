@@ -11,7 +11,7 @@
     <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
     ◦
-    <a href="https://7ninjas.com/careers/">Carrers</a>
+    <a href="https://7ninjas.com/careers/">Careers</a>
     ◦
     <a href="https://7ninjas.com/contact/">Contact</a>
   </p>
