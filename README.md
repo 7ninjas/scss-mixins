@@ -9,6 +9,9 @@
     `scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.
     <br>
     <br>
+    <a href="https://github.com/7ninjas/scss-mixins/blob/develop/BEST_PRACTICES.md"><strong>Discover our scss practices »</strong></a>
+    <br>
+    <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
     ◦
     <a href="https://7ninjas.com/careers/">Carrers</a>
