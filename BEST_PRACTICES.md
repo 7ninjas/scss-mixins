@@ -26,3 +26,23 @@ However if it's used incorrectly it may add unnecessary or duplicate code.
 Below we present series of hints and tips with which will help 
 you get the best out of Sass.
 
+### Table of content
+
+- help youself with <b>stylelint</b>
+- naming conventions
+  - don't reuse parent's class name in child's classes
+  - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
+  - class should be described by entity, behaviour, state or look
+  - camelCase in react, rest in hypen-case
+  - color naming
+- spaces and indentations (2) (no tabs)
+- use mixins for margins and paddings
+- don't use hardcoded values in scss
+- assign value to variable in variables.scss
+- first use mixins, then override styles (if needed)
+- never wander too deep -> don't go more than 3 levels deep (add stylelint rule) (red hood example in being lost in code)
+- don't style elements, style classes
+- don't use id if not needed
+- global styles
+- styles from another packages
+- creating JavaScript-specific classes to bind to, prefixed with .js-
