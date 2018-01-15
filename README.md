@@ -24,6 +24,7 @@
 [![npm](https://img.shields.io/npm/l/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 [![npm](https://img.shields.io/npm/dt/@7ninjas/scss-mixins.svg?style=for-the-badge)](https://www.npmjs.com/package/@7ninjas/scss-mixins)
 
+[![CircleCI branch](https://img.shields.io/circleci/project/github/7ninjas/scss-mixins/develop.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
