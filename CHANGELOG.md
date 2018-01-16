@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
 - excluded unnecessary files
 
