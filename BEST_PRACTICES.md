@@ -93,7 +93,7 @@ Good practice:
 ```scss
 @import '~@7ninjas/scss-mixins/all';
 
-.header {
+.title {
   @include font(h1);
 }
 ```
