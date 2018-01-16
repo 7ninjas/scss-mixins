@@ -38,7 +38,7 @@ $font-weight-base: normal;
 $line-height-base: $font-size-base;
 $dt-font-weight: $font-weight-base;
 
-$body-color: $color-white;
+$body-color: $color-black;
 $body-bg: $color-white;
 $text-muted: $color-gray-light;
 

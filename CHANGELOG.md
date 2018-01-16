@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 :bug: Fixed:
 - [Issue #55](https://github.com/7ninjas/scss-mixins/issues/55) updated readme and variable docs with proper file path
 - [Issue #56](https://github.com/7ninjas/scss-mixins/issues/56) fixed if error in breakpoints file
+- [Issue #59](https://github.com/7ninjas/scss-mixins/issues/59) fixed color in variables
 - [Issue #60](https://github.com/7ninjas/scss-mixins/issues/60) updated links in readme
 
 ## [v1.0.0-alpha] - 2018-01-12
