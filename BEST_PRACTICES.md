@@ -28,9 +28,8 @@ you get the best out of Sass.
 
 ### Table of content
 
-- getting started - how to create first project and, how to configure it, how to style my first component
 - reboot.css or normalize.css
-- help youself with <b>stylelint</b>
+- help yourself with <b>stylelint</b>
 - naming conventions
   - don't reuse parent's class name in child's classes
   - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
@@ -55,6 +54,30 @@ you get the best out of Sass.
 We are pretty sure that you've heard or read tale about Little Red Riding Hood. Her mother told her to go straight way 
 to Grandma's house and not stray from the path. The girl promised but soon forgot about her mother's warning. That's how she got in troubles.
 
-With nesting elements story is pretty the same. 
+With nesting elements story is pretty the same. If we nest too much child elements in parent element code will be dirty and messed, so we will have problems while searching for specific class.
+We consider maximum 3 levels of nesting as a good practice. To help keep it you should use stylelint for it.
 
-never wander too deep -> don't go more than 3 levels deep (add stylelint rule) (red hood example in being lost in code)
+```scss
+  // bad
+  .container {
+    .header {
+      .navigation {
+        .firstElement {
+          .firstElementsChild {
+            ...
+            //styles
+          }
+        }
+      }
+    }
+  }
+  
+  //good
+  .container {
+    .header {
+      .navigation {
+        //styles
+      }
+    }
+  }
+```
