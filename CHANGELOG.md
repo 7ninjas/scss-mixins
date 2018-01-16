@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:rocket: New feature:
+- created best practices document
+
 :bug: Fixed:
 - updated readme and variable docs with proper file path
 
