@@ -74,7 +74,7 @@ Example:
   <summary>Colors</summary>
   
 - [Full documentation](./docs/colors.md)
-- [Function color](./docs/colors.md##function-color)
+- [Function color](./docs/colors.md#function-color)
 </details>
 <details open>
   <summary>Flex</summary>
