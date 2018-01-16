@@ -57,27 +57,29 @@ to Grandma's house and not stray from the path. The girl promised but soon forgo
 With nesting elements story is pretty the same. If we nest too much child elements in parent element code will be dirty and messed, so we will have problems while searching for specific class.
 We consider maximum 3 levels of nesting as a good practice. To help keep it you should use stylelint for it.
 
+Good practice:
 ```scss
-  // bad
-  .container {
-    .header {
-      .navigation {
-        .firstElement {
-          .firstElementsChild {
-            ...
-            //styles
-          }
+.container {
+  .header {
+    .navigation {
+      //styles
+    }
+  }
+}
+```
+
+Bad practice:
+```scss
+.container {
+  .header {
+    .navigation {
+      .firstElement {
+        .firstElementsChild {
+          ...
+          //styles
         }
       }
     }
   }
-  
-  //good
-  .container {
-    .header {
-      .navigation {
-        //styles
-      }
-    }
-  }
+}
 ```
