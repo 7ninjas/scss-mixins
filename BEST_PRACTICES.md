@@ -55,6 +55,6 @@ you get the best out of Sass.
 We are pretty sure that you've heard or read tale about Little Red Riding Hood. Her mother told her to go straight way 
 to Grandma's house and not stray from the path. The girl promised but soon forgot about her mother's warning. That's how she got in troubles.
 
-With nesting elements story seems pretty the same. 
+With nesting elements story is pretty the same. 
 
 never wander too deep -> don't go more than 3 levels deep (add stylelint rule) (red hood example in being lost in code)
