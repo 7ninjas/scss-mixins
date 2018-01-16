@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 :bug: Fixed:
 - updated readme and variable docs with proper file path
+-fixed if error in breakpoints file
 
 ## [v1.0.0-alpha] - 2018-01-12
 :rocket: New feature:
