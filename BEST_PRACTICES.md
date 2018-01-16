@@ -28,6 +28,8 @@ you get the best out of Sass.
 
 ### Table of content
 
+- getting started - how to create first project and, how to configure it, how to style my first component
+- reboot.css or normalize.css
 - help youself with <b>stylelint</b>
 - naming conventions
   - don't reuse parent's class name in child's classes
@@ -40,9 +42,15 @@ you get the best out of Sass.
 - don't use hardcoded values in scss
 - assign value to variable in variables.scss
 - first use mixins, then override styles (if needed)
-- never wander too deep -> don't go more than 3 levels deep (add stylelint rule) (red hood example in being lost in code)
+- [Nesting elements](#nesting-elements)
 - don't style elements, style classes
 - don't use id if not needed
 - global styles
 - styles from another packages
 - creating JavaScript-specific classes to bind to, prefixed with .js-
+
+
+### Nesting elements
+
+We are pretty sure that you've heard or read tale about Little Red Riding Hood. She  
+never wander too deep -> don't go more than 3 levels deep (add stylelint rule) (red hood example in being lost in code)
