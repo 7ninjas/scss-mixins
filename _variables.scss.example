@@ -30,6 +30,7 @@ $color-warning: #ffb11f;
 // Bootstrap reboot
 $enable-hover-media-query: false;
 
+$headings-margin-bottom: 8px;
 $font-family-base: 'proxima-nova', Arial, sans-serif;
 $font-family-secondary: 'proxima-nova-extra-condensed', Arial, sans-serif;
 $font-size-base: 16px; // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
@@ -37,7 +38,7 @@ $font-weight-base: normal;
 $line-height-base: $font-size-base;
 $dt-font-weight: $font-weight-base;
 
-$body-color: $color-white;
+$body-color: $color-black;
 $body-bg: $color-white;
 $text-muted: $color-gray-light;
 
