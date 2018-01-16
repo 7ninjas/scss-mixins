@@ -97,7 +97,7 @@ $spacing-sizes: (
 $spacing-important: false;
 
 // Typography
-$font-variants: (
+$typography: (
   base: (
     base: (
       font-family: $font-family-base,

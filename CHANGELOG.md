@@ -4,11 +4,14 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 :rocket: New feature:
 - [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
+- excluded unnecessary files
 
 :bug: Fixed:
 - [Issue #55](https://github.com/7ninjas/scss-mixins/issues/55) updated readme and variable docs with proper file path
 - [Issue #56](https://github.com/7ninjas/scss-mixins/issues/56) fixed if error in breakpoints file
 - [Issue #59](https://github.com/7ninjas/scss-mixins/issues/59) fixed color in variables
+- [Issue #60](https://github.com/7ninjas/scss-mixins/issues/60) updated links in readme
+- updated variables.scss.example
 
 ## [v1.0.0-alpha] - 2018-01-12
 :rocket: New feature:

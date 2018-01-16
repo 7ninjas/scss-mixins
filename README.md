@@ -77,7 +77,7 @@ Example:
   <summary>Colors</summary>
   
 - [Full documentation](./docs/colors.md)
-- [Function color](./docs/colors.md##function-color)
+- [Function color](./docs/colors.md#function-color)
 </details>
 <details open>
   <summary>Flex</summary>
@@ -139,7 +139,7 @@ Example:
   <summary>Images</summary>
 
 - [Full documentation](./docs/images.md)
-- [Mixin svg-icon](./docs/images.md#mixin-svg-icon)
+- [Mixin img-fluid](./docs/images.md#mixin-img-fluid)
 </details>
 <details open>
   <summary>Lists</summary>

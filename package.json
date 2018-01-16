@@ -3,7 +3,7 @@
   "version": "1.0.0-alpha",
   "description": "",
   "keywords": ["scss","mixin","css","style","styling","7ninjas","bootstrap","react", "grid", "flex", "mixins", "less", "responsive", "web", "front-end", "css-modules", "sass"],
-  "main": "_base.scss",
+  "main": "_all.scss",
   "scripts": {
     "stylelint": "stylelint **/*.scss **/*.scss.example"
   },
@@ -22,5 +22,9 @@
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-scss": "^2.2.0"
-  }
+  },
+  "files": [
+    "src/",
+    "_variables.scss.example"
+  ]
 }
