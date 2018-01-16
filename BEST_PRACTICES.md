@@ -28,8 +28,8 @@ you get the best out of Sass.
 
 ### Table of content
 
-- reboot.css or normalize.css
 - help yourself with <b>stylelint</b>
+- reboot.css or normalize.css
 - naming conventions
   - don't reuse parent's class name in child's classes
   - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
@@ -42,7 +42,7 @@ you get the best out of Sass.
 - assign value to variable in variables.scss
 - first use mixins, then override styles (if needed)
 - [Nesting elements](#nesting-elements)
-- don't style elements, style classes
+- [Styling classes](#styling-classes)
 - don't use id if not needed
 - global styles
 - styles from another packages
@@ -81,5 +81,28 @@ Bad practice:
       }
     }
   }
+}
+```
+
+### Styling classes
+
+You should never style element. It's better to add unique class and style it. While styling elements you override previous element's style.
+It may cause unwanted conflicts while using the same element in another place.
+
+Good practice:
+```scss
+@import '~@7ninjas/scss-mixins/all';
+
+.header {
+  @include font(h1);
+}
+```
+
+Bad practice:
+```scss
+@import '~@7ninjas/scss-mixins/all';
+
+h1 {
+  @include font(h1);
 }
 ```
