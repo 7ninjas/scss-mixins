@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 :rocket: New feature:
-- [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created best practices document
+- [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
 
 :bug: Fixed:
 - [Issue #55](https://github.com/7ninjas/scss-mixins/issues/55) updated readme and variable docs with proper file path
