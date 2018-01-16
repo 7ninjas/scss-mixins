@@ -1,6 +1,6 @@
 {
   "name": "@7ninjas/scss-mixins",
-  "version": "1.0.0-alpha",
+  "version": "1.0.0-alpha2",
   "description": "",
   "keywords": ["scss","mixin","css","style","styling","7ninjas","bootstrap","react", "grid", "flex", "mixins", "less", "responsive", "web", "front-end", "css-modules", "sass"],
   "main": "_all.scss",
