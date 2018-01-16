@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:rocket: New feature:
+- excluded unnecessary files
+
 :bug: Fixed:
 - [Issue #55](https://github.com/7ninjas/scss-mixins/issues/55) updated readme and variable docs with proper file path
 - [Issue #56](https://github.com/7ninjas/scss-mixins/issues/56) fixed if error in breakpoints file
