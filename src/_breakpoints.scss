@@ -29,7 +29,7 @@ $grid-breakpoints: (
   @else if $list-length == 2 {
     $mixin: nth($list, 1);
     $name: nth($list, 2);
-    @if($mixin != 'down' || $mixin != 'only' || $mixin != 'up') {
+    @if ($mixin != 'down' || $mixin != 'only' || $mixin != 'up') {
       @error 'Oops! Invalid breakpoint.';
     }
   }
