@@ -52,7 +52,7 @@ Import `all` file to your core `scss` file for importing all mixins from package
 
 Example:
 ```scss
-@import '~scss-mixins/all'
+@import '~@7ninjas/scss-mixins/all';
 ```
 
 

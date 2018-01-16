@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:bug: Fixed:
+- updated readme and variable docs with proper file path
 
 ## [v1.0.0-alpha] - 2018-01-12
 :rocket: New feature:
