@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
 - [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
 - excluded unnecessary files
@@ -12,6 +14,9 @@ All notable changes to this project will be documented in this file.
 - [Issue #59](https://github.com/7ninjas/scss-mixins/issues/59) fixed color in variables
 - [Issue #60](https://github.com/7ninjas/scss-mixins/issues/60) updated links in readme
 - updated variables.scss.example
+
+:wastebasket: Removed:
+- forms documentation
 
 ## [v1.0.0-alpha] - 2018-01-12
 :rocket: New feature:
