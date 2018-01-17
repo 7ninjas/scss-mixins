@@ -36,7 +36,6 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - [Naming conventions](#naming-conventions)
 - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
 - spaces and indentations (2) (no tabs)
-- use mixins for margins and paddings
 - [Margins and paddings](#margins-and-paddings)
 - [Values in variables](#values-in-variables)
 - [Mixins before styles](#mixins-before-styles)
@@ -161,7 +160,11 @@ Bad practice:
 
 ### Mixins before styles
 
-We've seen many different conventions in 
+In styling there are two opposite theories about using mixin in specified order within class. First one says
+that firstly you should use mixin and then declare you own styles. Second one claims that you should do it in opposite order.
+
+We practice the first one and we believe that you should too. It will make your work more clear and lucid. Thanks to that solution
+you can easily override mixins styles and while maintaining it will help you understand styles order faster. 
 
 Good practice:
 ```scss
