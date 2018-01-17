@@ -35,7 +35,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - reboot.css or normalize.css
 - [Naming conventions](#naming-conventions)
 - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
-- spaces and indentations (2) (no tabs)
+- [Consistent spacing](#consistent-spacing)
 - [Margins and paddings](#margins-and-paddings)
 - [Values in variables](#values-in-variables)
 - [Mixins before styles](#mixins-before-styles)
@@ -117,6 +117,38 @@ Bad practice:
 }
 ```
 
+### Consistent spacing
+
+It's very important to keep consistent spacing in whole project. It makes it more easy to read for any developer who will ever have to work with you code.
+
+In our opinion you should always use spaces instead of tabs. Why? Because tab may be represented by a different number of 
+columns depending on your environment and a space is always one column. We also recommend to keep it in 2 indentations. To help with keeping it clean you should use stylelint.
+
+Good practice:
+```scss
+.container {
+  @include pl(2);
+  @include m(1);
+  
+  .title {
+    //styles
+  }
+}
+```
+
+Bad practice:
+```scss
+.container {
+     @include pl(2);
+      @include m(1);
+      
+          
+          
+        .title {
+         //styles
+        }}
+```
+
 ### Margins and paddings
 
 Using mixins for margins and paddings which we prepared will help you work faster and make your code cleaner if you ever want to maintain it.
@@ -135,6 +167,7 @@ Bad practice:
   padding-left: 20px;
   margin: 10px;
 }
+```
 
 ### Values in variables
 
@@ -191,7 +224,7 @@ We are pretty sure that you've heard or read tale about Little Red Riding Hood. 
 to Grandma's house and not stray from the path. The girl promised but soon forgot about her mother's warning. That's how she got in troubles.
 
 With nesting elements story is pretty the same. If we nest too much child elements in parent element code will be dirty and messed, so we will have problems while searching for specific class.
-We consider maximum 3 levels of nesting as a good practice. To help keep it you should use stylelint for it.
+We consider maximum 3 levels of nesting as a good practice. To help with keeping it clean you should use stylelint.
 
 Good practice:
 ```scss
