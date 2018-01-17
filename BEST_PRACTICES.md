@@ -30,16 +30,15 @@ you get the best out of Sass.
 
 - help yourself with <b>stylelint</b>
 - reboot.css or normalize.css
-- naming conventions
+- [Naming conventions](#naming-conventions)
   - don't reuse parent's class name in child's classes
   - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
-  - class should be described by entity, behaviour, state or look
   - camelCase in react, rest in hypen-case
   - color naming
 - spaces and indentations (2) (no tabs)
 - use mixins for margins and paddings
 - don't use hardcoded values in scss
-- assign value to variable in variables.scss
+- [Values in variables](#values-in-variables)
 - first use mixins, then override styles (if needed)
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
@@ -48,6 +47,47 @@ you get the best out of Sass.
 - global styles
 - styles from another packages
 - creating JavaScript-specific classes to bind to, prefixed with .js-
+
+
+### Naming conventions 
+
+Remember that it usually makes more sense to name classes based on their meaning, rather than their appearance. Best way 
+to name class is describe it by entity, behaviour or state.
+
+Good practice:
+```scss
+.errorMessage {
+  color: $color-error;
+}
+```
+
+Bad practice:
+```scss
+.redText {
+  color: red;
+}
+```
+
+### Values in variables
+
+It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
+We believe in clean and ordered codebase so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example)([Documentation](./docs/variables.md)).
+We keep there all important and reusable values. Thanks to that we can easily control number of 
+colors we use in project. What's more our graphic designers can standarize them if there are to many various but similar colors.
+
+Good practice:
+```scss
+.errorMessage {
+  color: $color-error;
+}
+```
+
+Bad practice:
+```scss
+.errorMessage {
+  color: red;
+}
+```
 
 
 ### Nesting elements
