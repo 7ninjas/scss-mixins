@@ -34,7 +34,7 @@ you get the best out of Sass.
   - don't reuse parent's class name in child's classes
   - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
   - camelCase in react, rest in hypen-case
-  - color naming
+- color naming
 - spaces and indentations (2) (no tabs)
 - use mixins for margins and paddings
 - don't use hardcoded values in scss
@@ -52,7 +52,7 @@ you get the best out of Sass.
 ### Naming conventions 
 
 Remember that it usually makes more sense to name classes based on their meaning, rather than their appearance. Best way 
-to name class is describe it by entity, behaviour or state.
+to name class is to describe it by entity, behaviour or state. Rarely element's change their purpose  - more often they change their attributes.
 
 Good practice:
 ```scss
@@ -79,6 +79,7 @@ Good practice:
 ```scss
 .errorMessage {
   color: $color-error;
+  
 }
 ```
 
