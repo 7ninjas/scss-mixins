@@ -6,8 +6,6 @@
   <h3 align="center">7ninjas</h3>
 
   <p align="center">
-    <br>
-    <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
     ◦
     <a href="https://7ninjas.com/careers/">Careers</a>
@@ -29,6 +27,8 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 Below we present series of hints and tips with which will help you get the best out of Sass.</p>
 
 <p align="center"><strong>Be like a Ninja! Style like a Ninja!</strong></p>
+
+<br />
 
 ### Table of content
 
