@@ -43,6 +43,7 @@ you get the best out of Sass.
 - first use mixins, then override styles (if needed)
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
+- [Use class instead of ID](#use-class-instead-of-ID)
 - don't use id if not needed
 - global styles
 - styles from another packages
@@ -86,7 +87,7 @@ Bad practice:
 
 ### Styling classes
 
-You should never style element. It's better to add unique class and style it. While styling elements you override previous element's style.
+You should never style element. It's better to add unique class and style it. While styling elements you override previous style of given element.
 It may cause unwanted conflicts while using the same element in another place.
 
 Good practice:
@@ -103,6 +104,29 @@ Bad practice:
 @import '~@7ninjas/scss-mixins/all';
 
 h1 {
+  @include font(h1);
+}
+```
+
+### Use class instead of ID
+
+Using ids for styling is considered as one of bad practices. As you should already know classes are reusable and ids are unique. 
+Scss doesn't care if you use id or class but efficiency of your further work does.
+
+Good practice:
+```scss
+@import '~@7ninjas/scss-mixins/all';
+
+.title {
+  @include font(h1);
+}
+```
+
+Bad practice:
+```scss
+@import '~@7ninjas/scss-mixins/all';
+
+#title {
   @include font(h1);
 }
 ```
