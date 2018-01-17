@@ -14,6 +14,9 @@ All notable changes to this project will be documented in this file.
 - [Issue #60](https://github.com/7ninjas/scss-mixins/issues/60) updated links in readme
 - updated variables.scss.example
 
+:wastebasket: Removed:
+- forms documentation
+
 ## [v1.0.0-alpha] - 2018-01-12
 :rocket: New feature:
 - added changelog
