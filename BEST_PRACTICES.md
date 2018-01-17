@@ -71,7 +71,7 @@ Bad practice:
 ### Values in variables
 
 It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
-We believe in clean and ordered codebase so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example)([Documentation](./docs/variables.md)).
+We believe in clean and ordered codebase so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example) ([Documentation](./docs/variables.md)).
 We keep there all important and reusable values. Thanks to that we can easily control number of 
 colors we use in project. What's more our graphic designers can standarize them if there are to many various but similar colors.
 
