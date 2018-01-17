@@ -20,11 +20,9 @@
 <p align="center">You know how it is when project is developed by many programmers. Each of them has his own convention in styling so we have to clean it and order it. 
 This document is a key document of styling in a project's life and development created after many hours of practices and researches. We've tried many different
 options but finally decided to use on specyfic solution for each problem. This styleguide describes how and why we write code this way. 
-Used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. However if it's used incorrectly it may add unnecessary or duplicated code. 
+Used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. However if it's used incorrectly it may add unnecessary or duplicated code.</p> 
 
-
-
-Below we present series of hints and tips with which will help you get the best out of Sass.</p>
+<p align="center">Below we present series of hints and tips with which will help you get the best out of Sass.</p>
 
 <p align="center"><strong>Be like a Ninja! Style like a Ninja!</strong></p>
 
@@ -122,23 +120,21 @@ Bad practice:
 
 ### Margins and paddings
 
-We've seen many different conventions in 
+Using mixins for margins and paddings which we prepared will help you work faster and make your code cleaner if you ever want to maintain it.
 
 Good practice:
 ```scss
 .container {
-  @include p(2, 2, 2, 2);
-  @include font(h1, $align: right);
-  padding-left: 5px;
+  @include pl(2);
+  @include m(1);
 }
 ```
 
 Bad practice:
 ```scss
 .container {
-  padding-left: 5px;
-  @include p(2, 2, 2, 2);
-  @include font(h1, $align: right);
+  padding-left: 20px;
+  margin: 10px;
 }
 
 ### Values in variables
