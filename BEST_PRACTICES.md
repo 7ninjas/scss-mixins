@@ -23,35 +23,83 @@ This styleguide document is a key document in a project's life and development. 
 written that way. When used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. 
 However if it's used incorrectly it may add unnecessary or duplicate code. 
 
-Below we present series of hints and tips with which will help 
-you get the best out of Sass.
+Below we present series of hints and tips with which will help you get the best out of Sass.
+
+<p align="center"><strong>Be like a Ninja. Style like a Ninja</strong></p>
 
 ### Table of content
 
 - help yourself with <b>stylelint</b>
+- creating JavaScript-specific classes to bind to, prefixed with .js-
 - reboot.css or normalize.css
 - [Naming conventions](#naming-conventions)
-  - don't reuse parent's class name in child's classes
-  - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
-  - camelCase in react, rest in hypen-case
-- color naming
+- keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
 - spaces and indentations (2) (no tabs)
 - use mixins for margins and paddings
-- don't use hardcoded values in scss
 - [Values in variables](#values-in-variables)
 - first use mixins, then override styles (if needed)
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
 - [Use class instead of ID](#use-class-instead-of-id)
-- don't use id if not needed
 - global styles
 - styles from another packages
-- creating JavaScript-specific classes to bind to, prefixed with .js-
 
 
 ### Naming conventions 
 
-Remember that it usually makes more sense to name classes based on their meaning, rather than their appearance. Best way 
+There are several different conventions of naming your classes. Mainly we use hypen-case naming style but in React we always prefer camelCase way.
+
+- Try to avoid reusing parent's name in child's classes. Even if at the first moment it seems pretty logic later it will only cause you headaches. Browser will still read it but you it will be more problematic for you. 
+Firstly code isn't as clean as it could be. Secondly because in the end scss will be complied to clearer css form reusing parent's name is unnecessary. 
+
+Good practice:
+```scss
+.container {
+  .header {
+    .navigation {
+      //styles
+    }
+  }
+}
+```
+
+Bad practice:
+```scss
+.container {
+  .containers-header {
+    .containers-header-navigation {
+      //styles
+    }
+  }
+  .containers-form {
+    .containers-form-input{
+      //styles
+    }
+  }
+}
+```
+
+- We always use specified naming convention for color variables. Firstly we indicate that it's a color, then it goes name of color. In the end we add type of color (if needed).
+
+Good practice:
+```scss
+$color-primary-darker: #2d2d2d;
+$color-primary-dark: #7c7575;
+$color-primary: #999;
+$color-primary-light: #e6e6e6;
+$color-primary-lighter: #fafafa;
+```
+
+Bad practice:
+```scss
+$dark-color: #2d2d2d;
+$more-grey-grey: #7c7575;
+$grey: #999;
+$almost-white: #e6e6e6;
+$whiter-than-almost-white: #fafafa;
+```
+
+- Remember that it usually makes more sense to name classes based on their meaning, rather than their appearance. Best way 
 to name class is to describe it by entity, behaviour or state. Rarely element's change their purpose  - more often they change their attributes.
 
 Good practice:
@@ -89,7 +137,6 @@ Bad practice:
   color: red;
 }
 ```
-
 
 ### Nesting elements
 
@@ -133,8 +180,6 @@ It may cause unwanted conflicts while using the same element in another place.
 
 Good practice:
 ```scss
-@import '~@7ninjas/scss-mixins/all';
-
 .title {
   @include font(h1);
 }
@@ -142,8 +187,6 @@ Good practice:
 
 Bad practice:
 ```scss
-@import '~@7ninjas/scss-mixins/all';
-
 h1 {
   @include font(h1);
 }
@@ -156,8 +199,6 @@ Scss doesn't care if you use id or class but efficiency of your further work doe
 
 Good practice:
 ```scss
-@import '~@7ninjas/scss-mixins/all';
-
 .title {
   @include font(h1);
 }
@@ -165,8 +206,6 @@ Good practice:
 
 Bad practice:
 ```scss
-@import '~@7ninjas/scss-mixins/all';
-
 #title {
   @include font(h1);
 }
