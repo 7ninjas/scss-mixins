@@ -90,14 +90,6 @@ Example:
 - [Mixin font-face](./docs/fonts.md#mixin-font-face)
 </details>
 <details open>
-  <summary>Forms</summary>
-  
-- [Full documentation](./docs/forms.md)
-- [Mixin resizable](./docs/forms.md#mixin-flex)
-- [Mixin input](./docs/forms.md#mixin-input)
-- [Mixin textarea](./docs/forms.md#mixin-textarea)
-</details>
-<details open>
   <summary>Gradients</summary>
   
 - [Full documentation](./docs/gradients.md)
