@@ -6,7 +6,6 @@
   <h3 align="center">7ninjas</h3>
 
   <p align="center">
-    `scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.
     <br>
     <br>
     <a href="https://7ninjas.com/case-studies/">Portfolio</a>
@@ -19,13 +18,17 @@
 
 
 <h2 align="center">Best Practices - SCSS Styleguide</h2>
-This styleguide document is a key document in a project's life and development. It describes how and why code should be 
-written that way. When used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. 
-However if it's used incorrectly it may add unnecessary or duplicate code. 
 
-Below we present series of hints and tips with which will help you get the best out of Sass.
+<p align="center">You know how it is when project is developed by many programmers. Each of them has his own convention in styling so we have to clean it and order it. 
+This document is a key document of styling in a project's life and development created after many hours of practices and researches. We've tried many different
+options but finally decided to use on specyfic solution for each problem. This styleguide describes how and why we write code this way. 
+Used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. However if it's used incorrectly it may add unnecessary or duplicated code. 
 
-<p align="center"><strong>Be like a Ninja. Style like a Ninja</strong></p>
+
+
+Below we present series of hints and tips with which will help you get the best out of Sass.</p>
+
+<p align="center"><strong>Be like a Ninja! Style like a Ninja!</strong></p>
 
 ### Table of content
 
@@ -36,8 +39,9 @@ Below we present series of hints and tips with which will help you get the best 
 - keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
 - spaces and indentations (2) (no tabs)
 - use mixins for margins and paddings
+- [Margins and paddings](#margins-and-paddings)
 - [Values in variables](#values-in-variables)
-- first use mixins, then override styles (if needed)
+- [Mixins before styles](#mixins-before-styles)
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
 - [Use class instead of ID](#use-class-instead-of-id)
@@ -116,6 +120,27 @@ Bad practice:
 }
 ```
 
+### Margins and paddings
+
+We've seen many different conventions in 
+
+Good practice:
+```scss
+.container {
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+  padding-left: 5px;
+}
+```
+
+Bad practice:
+```scss
+.container {
+  padding-left: 5px;
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+}
+
 ### Values in variables
 
 It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
@@ -135,6 +160,29 @@ Bad practice:
 ```scss
 .errorMessage {
   color: red;
+}
+```
+
+### Mixins before styles
+
+We've seen many different conventions in 
+
+Good practice:
+```scss
+.container {
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+  padding-left: 5px;
+}
+```
+
+Bad practice:
+```scss
+.container {
+  padding-left: 5px;
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+
 }
 ```
 

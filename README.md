@@ -18,6 +18,8 @@
     ◦
     <a href="https://7ninjas.com/contact/">Contact</a>
   </p>
+  
+  <p align="center"><strong>Be like a Ninja! Style like a Ninja!</strong></p>
 </p>
 
 
