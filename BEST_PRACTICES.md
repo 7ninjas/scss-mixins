@@ -43,7 +43,7 @@ you get the best out of Sass.
 - first use mixins, then override styles (if needed)
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
-- [Use class instead of ID](#use-class-instead-of-ID)
+- [Use class instead of ID](#Use-class-instead-of-ID)
 - don't use id if not needed
 - global styles
 - styles from another packages
