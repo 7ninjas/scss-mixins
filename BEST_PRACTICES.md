@@ -55,12 +55,14 @@ Official website: [Stylelint](https://stylelint.io/)
 
 ### Clear default styles
 
-- reboot.css or normalize.css
+While starting new project it is good to clear default browser styles. That's way we recommend you importing reboot
+.css file from [Bootstrap](https://getbootstrap.com/) or normalize.css from [Normalize](https://necolas.github
+.io/normalize.css/).
 
 Good practice:
 ```scss
 :global {
- @import '~bootstrap/scss/reboot';
+  @import '~bootstrap/scss/reboot';
 }
 ```
 
