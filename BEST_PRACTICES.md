@@ -20,7 +20,7 @@
 <p align="center">You know how it is when project is developed by many programmers. Each of them has his own convention in styling so we have to clean it and order it. 
 This document is a key document of styling in a project's life and development created after many hours of practices and researches. We've tried many different
 options but finally decided to use on specyfic solution for each problem. This styleguide describes how and why we write code this way. 
-Used effectively Sass will help in keeping clean, easily maintainable and DRY codebase. However if it's used incorrectly it may add unnecessary or duplicated code.</p> 
+Used effectively Sass will help in keeping clean, easily maintainable and DRY code base. However if it's used incorrectly it may add unnecessary or duplicated code.</p> 
 
 <p align="center">Below we present series of hints and tips with which will help you get the best out of Sass.</p>
 
@@ -30,7 +30,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 
 ### Table of content
 
-- help yourself with <b>stylelint</b>
+- [Stylelint](#stylelint)
 - creating JavaScript-specific classes to bind to, prefixed with .js-
 - reboot.css or normalize.css
 - [Naming conventions](#naming-conventions)
@@ -45,6 +45,13 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - global styles
 - styles from another packages
 
+### Stylelint
+
+We totally recommend you using stylelint while creating stylesheets in your project. It will help avoiding errors and 
+enforce you to use consistent conventions. Linter will analyze your piece of code and if it doesn't pass the rules defined in 
+linter's configuration it will report errors in console so you know what rule has been broken.
+
+Official website: [Stylelint](https://stylelint.io/)
 
 ### Naming conventions 
 
@@ -119,7 +126,7 @@ Bad practice:
 
 ### Declaring order 
 
-As you already should know we like to keep our codebase clear and transparent. That's the main reason why we keep order while declaring classes and their states. 
+As you already should know we like to keep our code base clear and transparent. That's the main reason why we keep order while declaring classes and their states. 
 
 We follow the rule that first state of current class should be declared, then we declare nested children. Thanks to 
 that we can easily see what properties given class can accept before focusing on child classes. Doing it in reverse 
@@ -136,12 +143,12 @@ Good practice:
   }
   
   .button {
-      .hovered {
-        ...
-      }
-      .text {
-        ...
-      }
+    .hovered {
+      ...
+    }
+    .text {
+      ...
+    }
   }
 }
 ```
@@ -222,7 +229,7 @@ Bad practice:
 ### Values in variables
 
 It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
-We believe in clean and ordered codebase so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example) ([Documentation](./docs/variables.md)).
+We believe in clean and ordered code base so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example) ([Documentation](./docs/variables.md)).
 We keep there all important and reusable values. Thanks to that we can easily control number of 
 colors we use in project. What's more our graphic designers can standarize them if there are to many various but similar colors.
 
