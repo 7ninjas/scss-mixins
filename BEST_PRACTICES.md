@@ -31,7 +31,6 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 ### Table of content
 
 - [Stylelint](#stylelint)
-- creating JavaScript-specific classes to bind to, prefixed with .js-
 - reboot.css or normalize.css
 - [Naming conventions](#naming-conventions)
 - [Declaring order](#declaring-order)
@@ -42,6 +41,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - [Nesting elements](#nesting-elements)
 - [Styling classes](#styling-classes)
 - [Use class instead of ID](#use-class-instead-of-id)
+- [Unremovable empty classes](#unremovable-empty-classes)
 - global styles
 - styles from another packages
 
@@ -342,5 +342,27 @@ Bad practice:
 ```scss
 #title {
   @include font(h1);
+}
+```
+
+### Unremovable empty classes
+
+<b>This rule we use only in no React projects.</b> 
+
+Sometimes in projects you need to get an element by it's class name using JavaScript. To make it easier to find, know
+ it's destination or just tell future developer to not remove it we use specific convention while naming it. To class's 
+ name we add `js-` prefix. Also what is important - this class should remain empty to be sure it is used only to find
+ specific element by this class.
+
+Good practice:
+```scss
+.js-specific-class {}
+```
+
+Bad practice:
+```scss
+.specific-class {
+  @include font(h1);
+  color: $red-error;
 }
 ```
