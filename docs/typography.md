@@ -3,8 +3,8 @@ _File includes mixins which help create consistent and proper styling of fonts_
 
 ### List of content:
 
-- [Mixin text-hide](#mixin-text-hide) (bootstrap 4.0.0-beta)
-- [Mixin text-truncate](#mixin-text-truncate) (bootstrap 4.0.0-beta)
+- [Mixin text-hide](#mixin-text-hide) (bootstrap 4.0.0)
+- [Mixin text-truncate](#mixin-text-truncate) (bootstrap 4.0.0)
 - [Mixin font](#mixin-font)
 
 

@@ -3,7 +3,7 @@ _File includes mixin to unstyle list_
 
 ### List of content:
 
-- [Mixin list-unstyled](#mixin-list-unstyled) (bootstrap 4.0.0-beta)
+- [Mixin list-unstyled](#mixin-list-unstyled) (bootstrap 4.0.0)
 
 
 ## Mixin list-unstyled
