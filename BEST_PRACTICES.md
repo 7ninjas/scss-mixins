@@ -42,8 +42,8 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - [Styling classes](#styling-classes)
 - [Use class instead of ID](#use-class-instead-of-id)
 - [Unremovable empty classes](#unremovable-empty-classes)
-- global styles
-- styles from another packages
+- [Styles from another packages](#styles-from-another-packages)
+- [Global styles](#global-styles)
 
 ### Stylelint
 
@@ -364,5 +364,51 @@ Bad practice:
 .specific-class {
   @include font(h1);
   color: $red-error;
+}
+```
+
+### Styles from another packages
+
+While importing styles from another packages you should always use tilde before package's name instead of full path 
+from node modules. It will make your stylesheet easier to read and faster you will know which package you are using.
+
+Good practice:
+```scss
+.container {
+  @import '~bootstrap/scss/reboot';
+}  
+```
+
+Bad practice:
+```scss
+.container {
+  @import 'node_modules/bootstrap/scss/reboot';
+}  
+```
+
+### Global styles
+
+Sometimes we find a package with pretty awesome feature we want to add in our project but it doesn't fit our design. 
+To solve this problem good practice is to overwrite feature's styles with our own but in React it may be very tricky 
+(especially while using CSS Modules). That's why we recommend overwriting them in `:global` class. 
+
+Thanks to that during build step given class will be clear without any dynamically generated, unique, and mapped to the 
+correct styles additional text. They won't be scoped to particular templates but will be accessible from global scope.
+
+Good practice:
+```scss
+:global {
+ #intercom-container {
+   z-index: z('intercom') !important;
+ }
+}
+```
+
+Bad practice:
+```scss
+.specificContainer {
+ #intercom-container {
+   z-index: z('intercom') !important;
+ }
 }
 ```
