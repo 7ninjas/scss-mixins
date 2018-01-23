@@ -31,7 +31,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 ### Table of content
 
 - [Stylelint](#stylelint)
-- reboot.css or normalize.css
+- [Clear default styles](#clear-default-styles)
 - [Naming conventions](#naming-conventions)
 - [Declaring order](#declaring-order)
 - [Consistent spacing](#consistent-spacing)
@@ -52,6 +52,17 @@ enforce you to use consistent conventions. Linter will analyze your piece of cod
 linter's configuration it will report errors in console so you know what rule has been broken.
 
 Official website: [Stylelint](https://stylelint.io/)
+
+### Clear default styles
+
+- reboot.css or normalize.css
+
+Good practice:
+```scss
+:global {
+ @import '~bootstrap/scss/reboot';
+}
+```
 
 ### Naming conventions 
 
