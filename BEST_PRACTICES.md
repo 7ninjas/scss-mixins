@@ -32,17 +32,17 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 
 - [Stylelint](#stylelint)
 - [Clear default styles](#clear-default-styles)
+- [Consistent spacing](#consistent-spacing)
+- [Values in variables](#values-in-variables)
+- [Styles from another packages](#styles-from-another-packages)
 - [Naming conventions](#naming-conventions)
 - [Declaring order](#declaring-order)
-- [Consistent spacing](#consistent-spacing)
-- [Margins and paddings](#margins-and-paddings)
-- [Values in variables](#values-in-variables)
-- [Mixins before styles](#mixins-before-styles)
 - [Nesting elements](#nesting-elements)
+- [Mixins before styles](#mixins-before-styles)
+- [Margins and paddings](#margins-and-paddings)
 - [Styling classes](#styling-classes)
 - [Use class instead of ID](#use-class-instead-of-id)
 - [Unremovable empty classes](#unremovable-empty-classes)
-- [Styles from another packages](#styles-from-another-packages)
 - [Global styles](#global-styles)
 
 ### Stylelint
@@ -64,6 +64,78 @@ Good practice:
 :global {
   @import '~bootstrap/scss/reboot';
 }
+```
+
+### Consistent spacing
+
+It's very important to keep consistent spacing in whole project. It makes it more easy to read for any developer who will ever have to work with you code.
+
+In our opinion you should always use spaces instead of tabs. Why? Because tab may be represented by a different number of 
+columns depending on your environment and a space is always one column. We also recommend to keep it in 2 indentations. To help with keeping it clean you should use stylelint.
+
+Good practice:
+```scss
+.container {
+  @include pl(2);
+  @include m(1);
+  
+  .title {
+    ...
+  }
+}
+```
+
+Bad practice:
+```scss
+.container {
+     @include pl(2);
+      @include m(1);
+      
+          
+          
+        .title {
+         ...
+        }}
+```
+
+### Values in variables
+
+It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
+We believe in clean and ordered code base so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example) ([Documentation](./docs/variables.md)).
+We keep there all important and reusable values. Thanks to that we can easily control number of 
+colors we use in project. What's more our graphic designers can standarize them if there are to many various but similar colors.
+
+Good practice:
+```scss
+.errorMessage {
+  color: $color-error;
+}
+```
+
+Bad practice:
+```scss
+.errorMessage {
+  color: red;
+}
+```
+
+### Styles from another packages
+
+While importing styles from another packages you should always use tilde before package's name instead of full path 
+from node modules. It will make your stylesheet easier to read and faster you will know which package you are using.
+
+Good practice:
+```scss
+.container {
+  @import '~bootstrap/scss/reboot';
+}  
+```
+
+Bad practice:
+```scss
+.container {
+  @import 'node_modules/bootstrap/scss/reboot';
+}  
 ```
 
 ### Naming conventions 
@@ -187,105 +259,6 @@ Bad practice:
 }
 ```
 
-### Consistent spacing
-
-It's very important to keep consistent spacing in whole project. It makes it more easy to read for any developer who will ever have to work with you code.
-
-In our opinion you should always use spaces instead of tabs. Why? Because tab may be represented by a different number of 
-columns depending on your environment and a space is always one column. We also recommend to keep it in 2 indentations. To help with keeping it clean you should use stylelint.
-
-Good practice:
-```scss
-.container {
-  @include pl(2);
-  @include m(1);
-  
-  .title {
-    ...
-  }
-}
-```
-
-Bad practice:
-```scss
-.container {
-     @include pl(2);
-      @include m(1);
-      
-          
-          
-        .title {
-         ...
-        }}
-```
-
-### Margins and paddings
-
-Using mixins for margins and paddings which we prepared will help you work faster and make your code cleaner if you ever want to maintain it.
-
-Good practice:
-```scss
-.container {
-  @include pl(2);
-  @include m(1);
-}
-```
-
-Bad practice:
-```scss
-.container {
-  padding-left: 20px;
-  margin: 10px;
-}
-```
-
-### Values in variables
-
-It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
-We believe in clean and ordered code base so we use file created specially for this purpose - [_variables.scss](./_variables.scss.example) ([Documentation](./docs/variables.md)).
-We keep there all important and reusable values. Thanks to that we can easily control number of 
-colors we use in project. What's more our graphic designers can standarize them if there are to many various but similar colors.
-
-Good practice:
-```scss
-.errorMessage {
-  color: $color-error;
-}
-```
-
-Bad practice:
-```scss
-.errorMessage {
-  color: red;
-}
-```
-
-### Mixins before styles
-
-In styling there are two opposite theories about using mixin in specified order within class. First one says
-that firstly you should use mixin and then declare you own styles. Second one claims that you should do it in opposite order.
-
-We practice the first one and we believe that you should too. It will make your work more clear and lucid. Thanks to that solution
-you can easily override mixins styles and while maintaining it will help you understand styles order faster. 
-
-Good practice:
-```scss
-.container {
-  @include p(2, 2, 2, 2);
-  @include font(h1, $align: right);
-  padding-left: 5px;
-}
-```
-
-Bad practice:
-```scss
-.container {
-  padding-left: 5px;
-  @include p(2, 2, 2, 2);
-  @include font(h1, $align: right);
-}
-```
-
 ### Nesting elements
 
 We are pretty sure that you've heard or read tale about Little Red Riding Hood. Her mother told her to go straight way 
@@ -317,6 +290,52 @@ Bad practice:
       }
     }
   }
+}
+```
+
+### Mixins before styles
+
+In styling there are two opposite theories about using mixin in specified order within class. First one says
+that firstly you should use mixin and then declare you own styles. Second one claims that you should do it in opposite order.
+
+We practice the first one and we believe that you should too. It will make your work more clear and lucid. Thanks to that solution
+you can easily override mixins styles and while maintaining it will help you understand styles order faster. 
+
+Good practice:
+```scss
+.container {
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+  padding-left: 5px;
+}
+```
+
+Bad practice:
+```scss
+.container {
+  padding-left: 5px;
+  @include p(2, 2, 2, 2);
+  @include font(h1, $align: right);
+}
+```
+
+### Margins and paddings
+
+Using mixins for margins and paddings which we prepared will help you work faster and make your code cleaner if you ever want to maintain it.
+
+Good practice:
+```scss
+.container {
+  @include pl(2);
+  @include m(1);
+}
+```
+
+Bad practice:
+```scss
+.container {
+  padding-left: 20px;
+  margin: 10px;
 }
 ```
 
@@ -378,25 +397,6 @@ Bad practice:
   @include font(h1);
   color: $red-error;
 }
-```
-
-### Styles from another packages
-
-While importing styles from another packages you should always use tilde before package's name instead of full path 
-from node modules. It will make your stylesheet easier to read and faster you will know which package you are using.
-
-Good practice:
-```scss
-.container {
-  @import '~bootstrap/scss/reboot';
-}  
-```
-
-Bad practice:
-```scss
-.container {
-  @import 'node_modules/bootstrap/scss/reboot';
-}  
 ```
 
 ### Global styles
