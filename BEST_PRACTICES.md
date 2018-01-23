@@ -34,7 +34,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 - creating JavaScript-specific classes to bind to, prefixed with .js-
 - reboot.css or normalize.css
 - [Naming conventions](#naming-conventions)
-- keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
+- [Declaring order](#declaring-order)
 - [Consistent spacing](#consistent-spacing)
 - [Margins and paddings](#margins-and-paddings)
 - [Values in variables](#values-in-variables)
@@ -114,6 +114,41 @@ Bad practice:
 ```scss
 .redText {
   color: red;
+}
+```
+
+### Declaring order 
+
+As you already should know we like to keep our codebase clear and transparent. That's the main reason why we keep order while declaring classes and their states. 
+We follow the rule that first state of current class should be declared, then we declare nested children. Thanks to that we can easily see what properties given class can accept. 
+
+
+keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
+
+Good practice:
+```scss
+.container {
+  .header {
+    .navigation {
+      //styles
+    }
+  }
+}
+```
+
+Bad practice:
+```scss
+.container {
+  .containers-header {
+    .containers-header-navigation {
+      //styles
+    }
+  }
+  .containers-form {
+    .containers-form-input{
+      //styles
+    }
+  }
 }
 ```
 
