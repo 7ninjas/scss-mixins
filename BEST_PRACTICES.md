@@ -1,16 +1,16 @@
 <p align="center">
-  <a href="https://7ninjas.com/">
+  <a href="https://7ninjas.com/" target="_blank">
     <img src="https://7ninjas.com/assets/7ninjas-logo-250x250.gif" alt="" width=72 height=72>
   </a>
 
   <h3 align="center">7ninjas</h3>
 
   <p align="center">
-    <a href="https://7ninjas.com/case-studies/">Portfolio</a>
+    <a href="https://7ninjas.com/case-studies/" target="_blank">Portfolio</a>
     ◦
-    <a href="https://7ninjas.com/careers/">Careers</a>
+    <a href="https://7ninjas.com/careers/" target="_blank">Careers</a>
     ◦
-    <a href="https://7ninjas.com/contact/">Contact</a>
+    <a href="https://7ninjas.com/contact/" target="_blank">Contact</a>
   </p>
 </p>
 
@@ -51,13 +51,13 @@ We totally recommend you using stylelint while creating stylesheets in your proj
 enforce you to use consistent conventions. Linter will analyze your piece of code and if it doesn't pass the rules defined in 
 linter's configuration it will report errors in console so you know what rule has been broken.
 
-Official website: [Stylelint](https://stylelint.io/)
+Official website: <a href="https://stylelint.io/" target="_blank">Stylelint</a>
 
 ### Clear default styles
 
 While starting new project it is good to clear default browser styles. That's way we recommend you importing reboot
-.css file from [Bootstrap](https://getbootstrap.com/) or normalize.css from [Normalize](https://necolas.github
-.io/normalize.css/).
+.css file from <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> or normalize.css from 
+<a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>.
 
 Good practice:
 ```scss
