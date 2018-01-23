@@ -3,10 +3,10 @@ _File includes breakpoint viewport sizes and media queries._
 
 ### List of content:
 
-- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap 4.0.0-beta)
-- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap 4.0.0-beta)
+- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap 4.0.0)
+- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap 4.0.0)
+- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap 4.0.0)
+- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap 4.0.0)
 
 
 ### Default variables

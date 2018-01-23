@@ -3,10 +3,10 @@ _File includes mixins which helps with styling elements with actions (hover, foc
 
 ### List of content:
 
-- [Mixin hover](#mixin-hover) (bootstrap 4.0.0-beta)
-- [Mixin hover-focus](#mixin-hover-focus) (bootstrap 4.0.0-beta)
-- [Mixin plain-hover-focus](#mixin-plain-hover-focus) (bootstrap 4.0.0-beta)
-- [Mixin hover-focus-active](#mixin-hover-focus-active) (bootstrap 4.0.0-beta)
+- [Mixin hover](#mixin-hover) (bootstrap 4.0.0)
+- [Mixin hover-focus](#mixin-hover-focus) (bootstrap 4.0.0)
+- [Mixin plain-hover-focus](#mixin-plain-hover-focus) (bootstrap 4.0.0)
+- [Mixin hover-focus-active](#mixin-hover-focus-active) (bootstrap 4.0.0)
 
 
 ## Mixin hover
