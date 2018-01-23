@@ -58,7 +58,7 @@ Good practice:
 .container {
   .header {
     .navigation {
-      //styles
+      ...
     }
   }
 }
@@ -69,12 +69,12 @@ Bad practice:
 .container {
   .containers-header {
     .containers-header-navigation {
-      //styles
+      ...
     }
   }
   .containers-form {
     .containers-form-input{
-      //styles
+      ...
     }
   }
 }
@@ -120,18 +120,28 @@ Bad practice:
 ### Declaring order 
 
 As you already should know we like to keep our codebase clear and transparent. That's the main reason why we keep order while declaring classes and their states. 
-We follow the rule that first state of current class should be declared, then we declare nested children. Thanks to that we can easily see what properties given class can accept. 
 
-
-keep order of declaring classes and it states (firstly declare state of current class then declare nested children ie. .active is higher than nested child class)
+We follow the rule that first state of current class should be declared, then we declare nested children. Thanks to 
+that we can easily see what properties given class can accept before focusing on child classes. Doing it in reverse 
+order can mislead you while reading code.
 
 Good practice:
 ```scss
 .container {
-  .header {
-    .navigation {
-      //styles
-    }
+  .active {
+    ...
+  }
+  .hovered {
+    ...
+  }
+  
+  .button {
+      .hovered {
+        ...
+      }
+      .text {
+        ...
+      }
   }
 }
 ```
@@ -139,15 +149,20 @@ Good practice:
 Bad practice:
 ```scss
 .container {
-  .containers-header {
-    .containers-header-navigation {
-      //styles
+  .button {
+    .text {
+      ...
     }
+    .hovered {
+      ...
+    }
+        
+    }
+  .active {
+    ...
   }
-  .containers-form {
-    .containers-form-input{
-      //styles
-    }
+  .hovered {
+    ...
   }
 }
 ```
@@ -166,7 +181,7 @@ Good practice:
   @include m(1);
   
   .title {
-    //styles
+    ...
   }
 }
 ```
@@ -180,7 +195,7 @@ Bad practice:
           
           
         .title {
-         //styles
+         ...
         }}
 ```
 
@@ -215,7 +230,6 @@ Good practice:
 ```scss
 .errorMessage {
   color: $color-error;
-  
 }
 ```
 
@@ -249,7 +263,6 @@ Bad practice:
   padding-left: 5px;
   @include p(2, 2, 2, 2);
   @include font(h1, $align: right);
-
 }
 ```
 
@@ -266,7 +279,7 @@ Good practice:
 .container {
   .header {
     .navigation {
-      //styles
+      ...
     }
   }
 }
@@ -280,7 +293,6 @@ Bad practice:
       .firstElement {
         .firstElementsChild {
           ...
-          //styles
         }
       }
     }
