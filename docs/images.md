@@ -3,7 +3,7 @@ _File includes bootstrap mixins for images._
 
 ### List of content:
 
-- [Mixin img-fluid](#mixin-img-fluid) (bootstrap 4.0.0-beta)
+- [Mixin img-fluid](#mixin-img-fluid) (bootstrap 4.0.0)
 
 
 ## Mixin img-fluid

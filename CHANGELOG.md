@@ -2,10 +2,12 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:rocket: New feature:
+- [Issue #70](https://github.com/7ninjas/scss-mixins/issues/70) upgraded bootstrap to v4.0.0 and updated docs
+- [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
 
 ## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
-- [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
 - excluded unnecessary files
 
 :bug: Fixed:

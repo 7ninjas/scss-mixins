@@ -3,13 +3,13 @@ _File includes mixins which helps create color gradients_
 
 ### List of content:
 
-- [Mixin gradient-x](#mixin-gradient-x)(bootstrap 4.0.0-beta)
-- [Mixin gradient-y](#mixin-gradient-y)(bootstrap 4.0.0-beta)
-- [Mixin gradient-directional](#mixin-gradient-directional)(bootstrap 4.0.0-beta)
-- [Mixin gradient-x-three-colors](#mixin-gradient-x-three-colors)(bootstrap 4.0.0-beta)
-- [Mixin gradient-y-three-colors](#mixin-gradient-y-three-colors)(bootstrap 4.0.0-beta)
-- [Mixin gradient-radial](#mixin-gradient-radial)(bootstrap 4.0.0-beta)
-- [Mixin gradient-striped](#mixin-gradient-striped)(bootstrap 4.0.0-beta)
+- [Mixin gradient-x](#function-gradient-x)(bootstrap 4.0.0)
+- [Mixin gradient-y](#function-gradient-y)(bootstrap 4.0.0)
+- [Mixin gradient-directional](#function-gradient-directional)(bootstrap 4.0.0)
+- [Mixin gradient-x-three-colors](#function-gradient-x-three-colors)(bootstrap 4.0.0)
+- [Mixin gradient-y-three-colors](#function-gradient-y-three-colors)(bootstrap 4.0.0)
+- [Mixin gradient-radial](#function-gradient-radial)(bootstrap 4.0.0)
+- [Mixin gradient-striped](#function-gradient-striped)(bootstrap 4.0.0)
 
 
 ## Mixin gradient-x
