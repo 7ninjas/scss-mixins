@@ -31,6 +31,7 @@ Used effectively Sass will help in keeping clean, easily maintainable and DRY co
 ### Table of content
 
 - [Stylelint](#stylelint)
+- [Overusing elements](#overusing-elements)
 - [Clear default styles](#clear-default-styles)
 - [Consistent spacing](#consistent-spacing)
 - [Values in variables](#values-in-variables)
@@ -52,6 +53,17 @@ enforce you to use consistent conventions. Linter will analyze your piece of cod
 linter's configuration it will report errors in console so you know what rule has been broken.
 
 Official website: <a href="https://stylelint.io/" target="_blank">Stylelint</a>
+
+### Overusing elements
+
+Sometimes (especially when you work with React projects) there is a chance that you will wrap some code in 
+elements without classes just to keep proper conditional statement convention. After some development time you may 
+want to change some styles and out of sudden you may find it difficult. The reason of that may be overusing elements 
+without classes. If you wrap wanted element into 2, 3 or even more elements without classes it may cause you style 
+bugs which will be hard to find.
+
+Solution for that behaviour is not to overuse unclassed elements. Always check if you really need that amount of 
+empty elements. Maybe you can just simply create conditional statement another way?
 
 ### Clear default styles
 
@@ -88,14 +100,14 @@ Good practice:
 Bad practice:
 ```scss
 .container {
-     @include pl(2);
+  @include pl(2);
       @include m(1);
       
           
           
-        .title {
-         ...
-        }}
+    .title {
+     ...
+    }}
 ```
 
 ### Values in variables
