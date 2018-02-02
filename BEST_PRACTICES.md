@@ -417,15 +417,41 @@ Sometimes we find a package with pretty awesome feature we want to add in our pr
 To solve this problem good practice is to overwrite feature's styles with our own but in React it may be very tricky 
 (especially while using CSS Modules). That's why we recommend overwriting them in `:global` class. 
 
+There are two types of components which we want to overwrite in `:global` class:
+- globally used imported components (ie. intercom)
+- locally used imported components (ie. react-select component)
+
+In first case we overwrite component's style in globally available stylesheet with `:global` class and as it's content
+ we overwrite styles for given component. In second one we believe it's a good practice to use local 
+ component's stylesheet to wrap each imported component by normal class and as it's content add `:global` class with 
+ overwriting styles. 
+
 Thanks to that during build step given class will be clear without any dynamically generated, unique, and mapped to the 
 correct styles additional text. They won't be scoped to particular templates but will be accessible from global scope.
 
-Good practice:
+Good practice for global usage:
 ```scss
 :global {
  #intercom-container {
    z-index: z('intercom') !important;
  }
+}
+```
+
+Good practice for local usage:
+```scss
+.cell {
+  @include flex($direction: column);
+
+  :global {
+    .Select.is-focused > .Select-control,
+    .Select-control {
+      border: none;
+      border-bottom: 1px solid $color-gray-darker;
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
 }
 ```
 
