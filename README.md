@@ -90,6 +90,12 @@ Example:
 - [Mixin font-face](./docs/fonts.md#mixin-font-face)
 </details>
 <details open>
+  <summary>Forms</summary>
+  
+- [Full documentation](./docs/forms.md)
+- [Mixin placeholder](./docs/forms.md#mixin-placeholder)
+</details>
+<details open>
   <summary>Gradients</summary>
   
 - [Full documentation](./docs/gradients.md)
