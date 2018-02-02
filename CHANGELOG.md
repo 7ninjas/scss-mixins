@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 :rocket: New feature:
 - [Issue #70](https://github.com/7ninjas/scss-mixins/issues/70) upgraded bootstrap to v4.0.0 and updated docs
 - [Issue #73](https://github.com/7ninjas/scss-mixins/issues/73) added mixin for placeholder in forms mixins
+- [Issue #75](https://github.com/7ninjas/scss-mixins/issues/75) added mixins for buttons
 
 
 ## [v1.0.0-alpha2] - 2018-01-16

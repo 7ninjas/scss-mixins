@@ -71,6 +71,14 @@ Example:
 - [Mixin media-breakpoint-only](./docs/breakpoints.md#mixin-media-breakpoint-only)
 </details>
 <details open>
+  <summary>Buttons</summary>
+  
+- [Full documentation](./docs/buttons.md)
+- [Mixin mixin-button-variant](./docs/buttons.md#mixin-button-variant)
+- [Mixin mixin-button-outline-variant](./docs/buttons.md#mixin-button-outline-variant)
+- [Mixin mixin-button-size](./docs/buttons.md#mixin-button-size)
+</details>
+<details open>
   <summary>Colors</summary>
   
 - [Full documentation](./docs/colors.md)
