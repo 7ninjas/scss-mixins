@@ -214,6 +214,25 @@ Bad practice:
 }
 ```
 
+
+- while working on project you should use lowercase while naming selectors, attributes or classes and describing 
+properties and values. It makes code more readable.
+
+Good practice:
+```scss
+.exampleContainer {
+  color: #aa5gsd;
+}
+```
+
+Bad practice:
+```scss
+.EXAMPLECONTAINER {
+  color: #AA5GSD;
+}
+```
+
+
 - We always use specified naming convention for color variables. Firstly we indicate that it's a color, then it goes name of color. In the end we add type of color (if needed).
 
 Good practice:
