@@ -70,6 +70,11 @@ bugs which will be hard to find.
 Solution for that behaviour is not to overuse unclassed elements. Always check if you really need that amount of 
 empty elements. Maybe you can just simply create conditional statement another way?
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Clear default styles
 
 While starting new project it is good to clear default browser styles. That's way we recommend you importing reboot
@@ -82,6 +87,11 @@ Good practice:
   @import '~bootstrap/scss/reboot';
 }
 ```
+
+**[:top: back to top](#table-of-content)**
+
+----
+
 
 ### Consistent spacing
 
@@ -115,6 +125,11 @@ Bad practice:
     }}
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Values in variables
 
 It's always a good practice to store constant values in one file with adequate naming and reuse them properly. 
@@ -136,6 +151,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Styles from another packages
 
 While importing styles from another packages you should always use tilde before package's name instead of full path 
@@ -154,6 +174,11 @@ Bad practice:
   @import 'node_modules/bootstrap/scss/reboot';
 }  
 ```
+
+**[:top: back to top](#table-of-content)**
+
+----
+
 
 ### Naming conventions 
 
@@ -226,6 +251,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Declaring order 
 
 As you already should know we like to keep our code base clear and transparent. That's the main reason why we keep order while declaring classes and their states. 
@@ -276,6 +306,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Nesting elements
 
 We are pretty sure that you've heard or read tale about Little Red Riding Hood. Her mother told her to go straight way 
@@ -310,6 +345,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Mixins before styles
 
 In styling there are two opposite theories about using mixin in specified order within class. First one says
@@ -336,6 +376,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Margins and paddings
 
 Using mixins for margins and paddings which we prepared will help you work faster and make your code cleaner if you ever want to maintain it.
@@ -355,6 +400,11 @@ Bad practice:
   margin: 10px;
 }
 ```
+
+**[:top: back to top](#table-of-content)**
+
+----
+
 
 ### Styling classes
 
@@ -394,6 +444,11 @@ Bad practice:
 }
 ```
 
+**[:top: back to top](#table-of-content)**
+
+----
+
+
 ### Unremovable empty classes
 
 <b>This rule we use only in no React projects.</b> 
@@ -415,6 +470,11 @@ Bad practice:
   color: $red-error;
 }
 ```
+
+**[:top: back to top](#table-of-content)**
+
+----
+
 
 ### Global styles
 
