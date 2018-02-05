@@ -54,6 +54,8 @@ linter's configuration it will report errors in console so you know what rule ha
 
 Official website: <a href="https://stylelint.io/" target="_blank">Stylelint</a>
 
+**[:top:](#table-of-contents)**
+
 ### Overusing elements
 
 Sometimes (especially when you work with React projects) there is a chance that you will wrap some code in 
