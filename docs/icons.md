@@ -12,9 +12,9 @@ _File includes mixin for styling svg icon._
 _Mixin which helps changing size, color and stroke of svg icon_
 
 ### Parameters
-- `$color` - color which icon should be filled (as default it's used ```false```)
-- `$width` - width of icon (as default it's used ```false```)
-- `$height` - height of icon (as default it's used ```$width```)
+- `$color` - color which icon should be filled (**default ```false```**)
+- `$width` - width of icon (**default ```false```**)
+- `$height` - height of icon (**default ```$width```**)
 
 ### Usage: 
 

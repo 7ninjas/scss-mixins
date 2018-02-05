@@ -42,7 +42,7 @@ $spacing-important: false !default;
 _Mixin which helps to add ```margin-left``` to class_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-left``` (as default it's used ```1```)
+- `$size` - variable which will be used as a value for ```margin-left``` (**default ```1```**)
 
 ### Usage: 
 Assigned 2rem of left margin to class
@@ -60,7 +60,7 @@ Assigned 2rem of left margin to class
 _Mixin which helps to add ```margin-top``` to class_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-top``` (as default it's used ```1```)
+- `$size` - variable which will be used as a value for ```margin-top``` (**default ```1```**)
 
 ### Usage: 
 Assigned 2rem of top margin to class
@@ -78,7 +78,7 @@ Assigned 2rem of top margin to class
 _Mixin which helps to add ```margin-right``` to class_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-right``` (as default it's used ```1```)
+- `$size` - variable which will be used as a value for ```margin-right``` (**default ```1```**)
 
 ### Usage: 
 Assigned 2rem of right margin to class
@@ -96,7 +96,7 @@ Assigned 2rem of right margin to class
 _Mixin which helps to add ```margin-bottom``` to class_
 
 ### Parameters
-- `$size` - variable which will be used as a value for ```margin-bottom``` (as default it's used ```1```)
+- `$size` - variable which will be used as a value for ```margin-bottom``` (**default ```1```**)
 
 ### Usage: 
 Assigned 2rem of bottom margin to class
@@ -114,8 +114,8 @@ Assigned 2rem of bottom margin to class
 _Mixin which helps to add ```margin-right``` and ```margin-left``` to class_
 
 ### Parameters
-- `$r` - value for ```margin-right``` (as default it's used ```1```)
-- `$l` - value for ```margin-left``` (as default it's used ```null```)
+- `$r` - value for ```margin-right``` (**default ```1```**)
+- `$l` - value for ```margin-left``` (**default ```null```**)
 
 ### Usage: 
 Assigned 2rem of right margin and 1rem of left margin to class
@@ -133,8 +133,8 @@ Assigned 2rem of right margin and 1rem of left margin to class
 _Mixin which helps to add ```margin-top``` and ```margin-bottom``` to class_
 
 ### Parameters
-- `$t` - value for ```margin-top``` (as default it's used ```1```)
-- `$b` - value for ```margin-bottom``` (as default it's used ```null```)
+- `$t` - value for ```margin-top``` (**default ```1```**)
+- `$b` - value for ```margin-bottom``` (**default ```null```**)
 
 ### Usage: 
 Assigned 2rem of top margin and 1rem of bottom margin to class
@@ -152,10 +152,10 @@ Assigned 2rem of top margin and 1rem of bottom margin to class
 _Mixin which helps to add all margins to class_
 
 ### Parameters
-- `$t` - value for ```margin-top``` (as default it's used ```1```)
-- `$r` - value for ```margin-right``` (as default it's used ```null```)
-- `$b` - value for ```margin-bottom``` (as default it's used ```null```)
-- `$l` - value for ```margin-left``` (as default it's used ```null```)
+- `$t` - value for ```margin-top``` (**default ```1```**)
+- `$r` - value for ```margin-right``` (**default ```null```**)
+- `$b` - value for ```margin-bottom``` (**default ```null```**)
+- `$l` - value for ```margin-left``` (**default ```null```**)
 
 ### Usage: 
 Assigned 0.25rem of top and bottom margin and 1rem of left margin to class.<br />

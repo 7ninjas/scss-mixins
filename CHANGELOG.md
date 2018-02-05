@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - [Issue #73](https://github.com/7ninjas/scss-mixins/issues/73) added mixin for placeholder in forms mixins
 - [Issue #75](https://github.com/7ninjas/scss-mixins/issues/75) added mixins for buttons
 - added `gradient-bg` mixin from bootstrap
+- added border radius mixins
 
 :bug: Fixed:
 - fixed links in readme for gradients

@@ -50,9 +50,9 @@ Setting child element centered relatively to parent element
 _Mixin which helps with proper displaying container with flex property and 100% width._
 
 ### Parameters
-- `$fluid` - variable which indicates if container should be fluid (as default it's used ```$grid-fluid```)
-- `$gutter` - object with width of gutters for different resolutions  (as default it's used ```$grid-gutter-widths```)
-- `$max-widths` - object with max width of container for different resolutions (as default it's used ```$container-max-widths```)
+- `$fluid` - variable which indicates if container should be fluid (**default ```$grid-fluid```**)
+- `$gutter` - object with width of gutters for different resolutions  (**default ```$grid-gutter-widths```**)
+- `$max-widths` - object with max width of container for different resolutions (**default ```$container-max-widths```**)
 
 ### Usage: 
 

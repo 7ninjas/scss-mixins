@@ -1,125 +1,37 @@
-# _breakpoints.scss
-_File includes breakpoint viewport sizes and media queries._
+# _border-radius.scss
+_File includes mixins which help to keep consistent border radiuses._
 
 ### List of content:
 
-- [Mixin media-breakpoint-up](#mixin-media-breakpoint-up) (bootstrap 4.0.0)
-- [Mixin media-breakpoint-down](#mixin-media-breakpoint-down) (bootstrap 4.0.0)
-- [Mixin media-breakpoint-between](#mixin-media-breakpoint-between) (bootstrap 4.0.0)
-- [Mixin media-breakpoint-only](#mixin-media-breakpoint-only) (bootstrap 4.0.0)
+- [Mixin border-radius](./docs/border-radius.md#mixin-border-radius) (bootstrap 4.0.0)
+- [Mixin border-top-radius](./docs/border-radius.md#mixin-border-top-radius) (bootstrap 4.0.0)
+- [Mixin border-right-radius](./docs/border-radius.md#mixin-border-right-radius) (bootstrap 4.0.0)
+- [Mixin border-bottom-radius](./docs/border-radius.md#mixin-border-bottom-radius) (bootstrap 4.0.0)
+- [Mixin border-left-radius](./docs/border-radius.md#mixin-border-left-radius) (bootstrap 4.0.0)
 
 
 ### Default variables
-_Breakpoints are defined as a map of (name: minimum width), order from small to large: <br />
-xs: 0, sm: 544px, md: 768px, lg: 992px, xl: 1200px)<br />
-The map defined in the `$grid-breakpoints` global variable is used as the `$breakpoints` argument by default._
+_Default variables declared in file to be used in mixins._
 
 ```scss
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
+$color-primary: #999;
+$enable-rounded: false !default;
+$border-radius: 1px solid $color-primary !default;
 ```
 
-## Mixin media-breakpoint-up
+## Mixin border-radius
 
 ### Description
-_Media of at least the minimum breakpoint width. No query for the smallest breakpoint.<br />
-Makes the content of class apply to the given breakpoint and wider._
+_Mixin which uses variable `$enable-rounded`. If it's true borders will be rounded. Otherwise - it won't do anything._
 
 ### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
+- `$radius` - defines properties of wanted border radius (**default ```$border-radius```**)
 
 ### Usage: 
-
-
-#### Case
-Changing font size for devices with higher screen resolution than small devices
+Assign border radius with properties 1px solid and color defined in variables as `$red`
 
 ```scss
-.exampleClass {
-    @include media-breakpoint-up (sm) {
-        font-size: 16px;
-    }
-}
-```
-
-
-## Mixin media-breakpoint-down
-
-### Description
-_Media of at most the maximum breakpoint width. No query for the largest breakpoint.<br />
-Makes the content of class apply to the given breakpoint and narrower._
-
-### Parameters
-- `$name` - name of breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
-
-### Usage: 
-
-
-#### Case
-Changing font size for devices with lower screen resolution than large devices
-
-```scss
-.exampleClass {
-    @include media-breakpoint-down (lg) {
-        font-size: 14px;
-    }
-}
-```
-
-
-## Mixin media-breakpoint-between
-
-### Description
-
-
-### Parameters
-- `$lower` - name of lower breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$upper` - name of upper breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
-
-### Usage: 
-
-
-#### Case
-Changing font size for devices with screen resolution between medium and large devices
-
-```scss
-.exampleClass {
-    @include media-breakpoint-between (md, lg) {
-        font-size: 14px;
-    }
-}
-```
-
-
-## Mixin media-breakpoint-only
-
-### Description
-_Media between the breakpoint's minimum and maximum widths.<br />
-No minimum for the smallest breakpoint, and no maximum for the largest one.<br />
-Makes the content of class apply only to the given breakpoint, not viewports any wider or narrower._
-
-### Parameters
-- `$name` - name of lower breakpoint (included in `$grid-breakpoints`) (**required**)
-- `$breakpoints` - map defined in the `$grid-breakpoints`
-
-### Usage: 
-
-
-#### Case
-Changing font size for devices with lower screen resolution than large devices
-
-```scss
-.exampleClass {
-    @include media-breakpoint-only (lg) {
-        font-size: 14px;
-    }
+.exampleBorderClass {
+    @include border-radius (1px solid $red);
 }
 ```

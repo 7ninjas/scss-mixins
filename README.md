@@ -62,6 +62,16 @@ Example:
 - [Mixin hardware](./docs/animations.md#mixin-hardware)
 </details>
 <details open>
+  <summary>Border Radius</summary>
+  
+- [Full documentation](./docs/border-radius.md)
+- [Mixin border-radius](./docs/border-radius.md#mixin-border-radius)
+- [Mixin border-top-radius](./docs/border-radius.md#mixin-border-top-radius)
+- [Mixin border-right-radius](./docs/border-radius.md#mixin-border-right-radius)
+- [Mixin border-bottom-radius](./docs/border-radius.md#mixin-border-bottom-radius)
+- [Mixin border-left-radius](./docs/border-radius.md#mixin-border-left-radius)
+</details>
+<details open>
   <summary>Breakpoints</summary>
   
 - [Full documentation](./docs/breakpoints.md)
@@ -74,9 +84,9 @@ Example:
   <summary>Buttons</summary>
   
 - [Full documentation](./docs/buttons.md)
-- [Mixin mixin-button-variant](./docs/buttons.md#mixin-button-variant)
-- [Mixin mixin-button-outline-variant](./docs/buttons.md#mixin-button-outline-variant)
-- [Mixin mixin-button-size](./docs/buttons.md#mixin-button-size)
+- [Mixin button-variant](./docs/buttons.md#mixin-button-variant)
+- [Mixin button-outline-variant](./docs/buttons.md#mixin-button-outline-variant)
+- [Mixin button-size](./docs/buttons.md#mixin-button-size)
 </details>
 <details open>
   <summary>Colors</summary>

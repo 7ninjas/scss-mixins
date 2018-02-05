@@ -74,7 +74,8 @@ Truncating text in specific class
 _Mixin which helps assign consistent font values for given class_
 
 ### Parameters
-- `$variant` - font variant which should be assigned to font (```$typography``` will be search through for this value) (as default it's used ```base```)
+- `$variant` - font variant which should be assigned to font (```$typography``` will be search through for this 
+value) (**default ```base```**)
 - `$color` - color which should be assigned to font
 - `$line-height` - line height which should be assigned to font
 - `$align` - text alignment which should be assigned to font

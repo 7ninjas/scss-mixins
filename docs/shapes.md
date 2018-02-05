@@ -14,9 +14,9 @@ _Mixin which helps setting transition properties to given class_
 ### Parameters
 - `$color` - color of shape (***required***)
 - `$direction` - shape's corner direction (***required***)
-- `$size` - shape's size (as default it's used ```6px```)
-- `$position` - position of shape (as default it's used ```absolute```)
-- `$round` - boolean if corner should be rounded (as default it's used ```false```)
+- `$size` - shape's size (**default ```6px```**)
+- `$position` - position of shape (**default ```absolute```**)
+- `$round` - boolean if corner should be rounded (**default ```false```**)
 
 ### Usage: 
 Created rounded shape with green color and up direction

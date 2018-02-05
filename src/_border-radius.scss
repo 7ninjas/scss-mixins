@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/mixins/border-radius';
-@import 'utils';
 
 // Default variables
+$color-primary: #999;
 $enable-rounded: false !default;
+$border-radius: 1px solid $color-primary !default;

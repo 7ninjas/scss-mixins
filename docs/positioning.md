@@ -32,7 +32,7 @@ _Bootstrap helper which helps setting width and height of element_
 
 ### Parameters
 - `$width` - variable describing width (***required***)
-- `$height` - variable describing height (as default it's used ```$width```)
+- `$height` - variable describing height (**default ```$width```**)
 
 
 ## Mixin clearfix
@@ -67,9 +67,9 @@ Assigned appropriate z-index for header
 _Mixin which helps with positioning pseudo elements with content, display and position properties._
 
 ### Parameters
-- `$display` - variable which will be used as a value for ```display``` (as default it's used ```block```)
-- `$pos` - variable which will be used as a value for ```position``` (as default it's used ```absolute```)
-- `$content` - variable which will be used as a value for ```content``` (as default it's used empty string)
+- `$display` - variable which will be used as a value for ```display``` (**default ```block```**)
+- `$pos` - variable which will be used as a value for ```position``` (**default ```absolute```**)
+- `$content` - variable which will be used as a value for ```content``` (**default empty string**)
 
 ### Usage: 
 Assigned element with inline display and fixed position
@@ -94,14 +94,15 @@ Assigned element with inline display and fixed position
 _Mixin which helps to add position absolute with additional (optional) properties to class_
 
 ### Parameters
-- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (**default empty 
+string**)
 
 ### Usage: 
 Assigned position absolute without additional properties
 
 ```scss
 .exampleAbsoluteClass {
-   @include absolute(top 0 left 0 bottom 0);;
+   @include absolute(top 0 left 0 bottom 0);
 }
 ```
 
@@ -112,7 +113,8 @@ Assigned position absolute without additional properties
 _Mixin which helps to add position fixed with additional (optional) properties to class_
 
 ### Parameters
-- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (**default empty 
+string**)
 
 ### Usage: 
 Assigned position fixed without additional properties
@@ -129,7 +131,8 @@ Assigned position fixed without additional properties
 _Mixin which helps to add position relative with additional (optional) properties to class_
 
 ### Parameters
-- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (**default empty 
+string**)
 
 ### Usage: 
 Assigned position relative without additional properties
@@ -146,7 +149,8 @@ Assigned position relative without additional properties
 _Mixin which helps to add position sticky with additional (optional) properties to class_
 
 ### Parameters
-- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (as default it's used empty string)
+- `$args` - variable(s) which will be used as a value(s) for ```top right bottom left``` properties (**default empty 
+string**)
 
 ### Usage: 
 Assigned position sticky without additional properties
