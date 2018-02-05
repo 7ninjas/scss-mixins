@@ -1,1 +1,5 @@
 @import '~bootstrap/scss/mixins/gradients';
+
+$white: #fff !default;
+$enable-gradients: false !default;
+$body-bg: $white !default;
