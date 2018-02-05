@@ -19,20 +19,21 @@ _Default variables which are required in mixins located in file. They are set wi
 ```scss
 $white: #fff !default;
 $enable-gradients: false !default;
-$body-bg: $white!default;
+$body-bg: $white !default;
 ```
 
 ## Mixin gradient-bg
 
 ### Description
-_Mixin which helps to create background. Uses global `$enable-gradients` variable to indicate if background should be 
-plain color or gradient_
+_Mixin which helps to set background color. Uses global `$enable-gradients` variable to indicate if background should
+ be plain color or gradient. If variable is set `true` background is set to `linear gradient` with `180deg` repeated 
+horizontally._
 
 ### Parameters
-- `$color` - define background color
+- `$color` - defines background color
 
 ### Usage: 
-Assigned `$color-primary-darker` background color
+Assigned `$color-primary-darker` as background color
 
 ```scss
 .exampleBackgroundGradient {
@@ -47,10 +48,10 @@ Assigned `$color-primary-darker` background color
 _Mixin which helps to create horizontal gradient, from left to right_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#555`**)
-- `$end-color` - define end gradient color (**default `#333`**)
-- `$start-percent` - declare where you want to start `$start-color` (**default `0%`**)
-- `$end-percent` - declare where you want to stop `$end-color` (**default `100%`**)
+- `$start-color` - defines start gradient color (**default `#555`**)
+- `$end-color` - defines end gradient color (**default `#333`**)
+- `$start-percent` - defines  where you want to start `$start-color` (**default `0%`**)
+- `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
 Assigned horizontal background gradient to class
@@ -68,10 +69,10 @@ Assigned horizontal background gradient to class
 _Mixin which helps to create vertical gradient, from top to bottom_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#555`**)
-- `$end-color` - define end gradient color (**default `#333`**)
-- `$start-percent` - declare where you want to start `$start-color` (**default `0%`**)
-- `$end-percent` - declare where you want to stop `$end-color` (**default `100%`**)
+- `$start-color` - defines start gradient color (**default `#555`**)
+- `$end-color` - defines end gradient color (**default `#333`**)
+- `$start-percent` - defines  where you want to start `$start-color` (**default `0%`**)
+- `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
 Assigned vertical background gradient to class
@@ -89,9 +90,9 @@ Assigned vertical background gradient to class
 _Mixin which helps to create directional gradient_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#555`**)
-- `$end-color` - define end gradient color (**default `#333`**)
-- `$deg` - define an angle to specify direction of the gradient (**default `45deg`**)
+- `$start-color` - defines start gradient color (**default `#555`**)
+- `$end-color` - defines end gradient color (**default `#333`**)
+- `$deg` - defines an angle to specify direction of the gradient (**default `45deg`**)
 
 ### Usage: 
 Assigned directional background gradient to class
@@ -109,10 +110,10 @@ Assigned directional background gradient to class
 _Mixin which helps to create horizontal three colors gradient from left to right_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#00b3ee`**)
-- `$mid-color` - define middle gradient color (**default `#7a43b6`**)
-- `$end-color` - define end gradient color (**default `#c3325f`**)
-- `$color-stop` - define position of `$mid-color` from left to right (**default `50%`**)
+- `$start-color` - defines start gradient color (**default `#00b3ee`**)
+- `$mid-color` - defines middle gradient color (**default `#7a43b6`**)
+- `$end-color` - defines end gradient color (**default `#c3325f`**)
+- `$color-stop` - defines position of `$mid-color` from left to right (**default `50%`**)
 
 ### Usage: 
 Assigned horizontal three-colors background gradient to class
@@ -130,10 +131,10 @@ Assigned horizontal three-colors background gradient to class
 _Mixin which helps to create vertical three colors gradient from top to bottom_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#00b3ee`**)
-- `$mid-color` - define middle gradient color (**default `#7a43b6`**)
-- `$end-color` - define end gradient color (**default `#c3325f`**)
-- `$color-stop` - define position of `$mid-color` from top to bottom (**default `50%`**)
+- `$start-color` - defines start gradient color (**default `#00b3ee`**)
+- `$mid-color` - defines middle gradient color (**default `#7a43b6`**)
+- `$end-color` - defines end gradient color (**default `#c3325f`**)
+- `$color-stop` - defines position of `$mid-color` from top to bottom (**default `50%`**)
 
 ### Usage: 
 Assigned vertical three-colors background gradient to class
@@ -151,8 +152,8 @@ Assigned vertical three-colors background gradient to class
 _Mixin which helps to create radial gradient_
 
 ### Parameters
-- `$inner-color` - define start gradient color (**default `#555`**)
-- `$outer-color` - define end gradient color (**default `#333`**)
+- `$inner-color` - defines start gradient color (**default `#555`**)
+- `$outer-color` - defines end gradient color (**default `#333`**)
 
 ### Usage: 
 Assigned radial gradient with the shape of a circle
@@ -170,8 +171,8 @@ Assigned radial gradient with the shape of a circle
 _Mixin which helps to create striped gradient_
 
 ### Parameters
-- `$color` - define gradient color (**default `rgba(255,255,255,.15)`**)
-- `$angle` - define an angle to specify direction of the gradient (**default `45deg`**)
+- `$color` - defines gradient color (**default `rgba(255,255,255,.15)`**)
+- `$angle` - defines an angle to specify direction of the gradient (**default `45deg`**)
 
 ### Usage: 
 Assigned striped gradient to the class
