@@ -2,7 +2,7 @@
 _File includes function and mixins which help with positioning different type of elements_
 
 ### List of content:
-- [Mixin size](#function-size) (bootstrap 4.0.0)
+- [Mixin size](#mixin-size) (bootstrap 4.0.0)
 - [Mixin clearfix](#mixin-clearfix) (bootstrap 4.0.0)
 - [Mixin z-index](#mixin-z-index)
 - [Mixin pseudo](#mixin-pseudo)

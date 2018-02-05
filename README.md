@@ -146,7 +146,7 @@ Example:
   <summary>Positioning</summary>
 
 - [Full documentation](./docs/positioning.md)
-- [Mixin size](./docs/positioning.md#function-size)
+- [Mixin size](./docs/positioning.md#mixin-size)
 - [Mixin clearfix](./docs/positioning.md#mixin-clearfix)
 - [Mixin z-index](./docs/positioning.md#mixin-z-index)
 - [Mixin pseudo](./docs/positioning.md#mixin-pseudo)
