@@ -54,7 +54,7 @@ linter's configuration it will report errors in console so you know what rule ha
 
 Official website: <a href="https://stylelint.io/" target="_blank">Stylelint</a>
 
-**[:top:](#table-of-contents)**
+**[:top: back to top](#table-of-content)**
 
 ### Overusing elements
 
