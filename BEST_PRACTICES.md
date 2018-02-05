@@ -56,6 +56,9 @@ Official website: <a href="https://stylelint.io/" target="_blank">Stylelint</a>
 
 **[:top: back to top](#table-of-content)**
 
+----
+
+
 ### Overusing elements
 
 Sometimes (especially when you work with React projects) there is a chance that you will wrap some code in 
