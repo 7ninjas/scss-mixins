@@ -3,9 +3,9 @@ _File includes mixins which helps create consistently styled buttons_
 
 ### List of content:
 
-- [Mixin button-variant](#mixin-button-variant)(bootstrap 4.0.0)
-- [Mixin button-outline-variant](#mixin-button-outline-variant)(bootstrap 4.0.0)
-- [Mixin button-size](#mixin-button-size)(bootstrap 4.0.0)
+- [Mixin button-variant](#mixin-button-variant) (bootstrap 4.0.0)
+- [Mixin button-outline-variant](#mixin-button-outline-variant) (bootstrap 4.0.0)
+- [Mixin button-size](#mixin-button-size) (bootstrap 4.0.0)
 
 
 ### Default variables
@@ -25,13 +25,15 @@ $btn-box-shadow: inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !
 ## Mixin button-variant
 
 ### Description
-_Mixin which helps to create horizontal gradient, from left to right_
+_Mixin which helps to create button with specified border and background color when it's hovered_
 
 ### Parameters
-- `$start-color` - define start gradient color (**default `#555`**)
-- `$end-color` - define end gradient color (**default `#333`**)
-- `$start-percent` - declare where you want to start `$start-color` (**default `0%`**)
-- `$end-percent` - declare where you want to stop `$end-color` (**default `100%`**)
+- `$background` - define button's text color and start position of grandient color for background of button
+- `$border` - define button's border color
+- `$hover-background` - declare where you want to start `$start-color` (**default `0%`**)
+- `$hover-border` - declare where you want to stop `$end-color` (**default `100%`**)
+- `$active-background` - declare where you want to stop `$end-color` (**default `100%`**)
+- `$active-border` - declare where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
 Assigned horizontal background gradient to class
@@ -49,7 +51,7 @@ Assigned horizontal background gradient to class
 _Mixin which helps to create button with specified border and background color when it's hovered_
 
 ### Parameters
-- `$color` - define button's color (**default `#555`**)
+- `$color` - define button's text and border color (**default `#555`**)
 - `$color-hover:` - define button's color when hovered (**default `color-yiq($color)`**)
 - `$active-background` - define button's color when active (**default `$color`**)
 - `$active-border` - define button's border when active (**default `$color`**)

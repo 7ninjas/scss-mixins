@@ -3,13 +3,42 @@ _File includes mixins which helps create color gradients_
 
 ### List of content:
 
-- [Mixin gradient-x](#function-gradient-x)(bootstrap 4.0.0)
-- [Mixin gradient-y](#function-gradient-y)(bootstrap 4.0.0)
-- [Mixin gradient-directional](#function-gradient-directional)(bootstrap 4.0.0)
-- [Mixin gradient-x-three-colors](#function-gradient-x-three-colors)(bootstrap 4.0.0)
-- [Mixin gradient-y-three-colors](#function-gradient-y-three-colors)(bootstrap 4.0.0)
-- [Mixin gradient-radial](#function-gradient-radial)(bootstrap 4.0.0)
-- [Mixin gradient-striped](#function-gradient-striped)(bootstrap 4.0.0)
+- [Mixin gradient-bg](#mixin-gradient-bg) (bootstrap 4.0.0)
+- [Mixin gradient-x](#mixin-gradient-x) (bootstrap 4.0.0)
+- [Mixin gradient-y](#mixin-gradient-y) (bootstrap 4.0.0)
+- [Mixin gradient-directional](#mixin-gradient-directional) (bootstrap 4.0.0)
+- [Mixin gradient-x-three-colors](#mixin-gradient-x-three-colors) (bootstrap 4.0.0)
+- [Mixin gradient-y-three-colors](#mixin-gradient-y-three-colors) (bootstrap 4.0.0)
+- [Mixin gradient-radial](#mixin-gradient-radial) (bootstrap 4.0.0)
+- [Mixin gradient-striped](#mixin-gradient-striped) (bootstrap 4.0.0)
+
+
+### Default variables
+_Default variables which are required in mixins located in file. They are set with most common values._
+
+```scss
+$white: #fff !default;
+$enable-gradients: false !default;
+$body-bg: $white!default;
+```
+
+## Mixin gradient-bg
+
+### Description
+_Mixin which helps to create background. Uses global `$enable-gradients` variable to indicate if background should be 
+plain color or gradient_
+
+### Parameters
+- `$color` - define background color
+
+### Usage: 
+Assigned `$color-primary-darker` background color
+
+```scss
+.exampleBackgroundGradient {
+    @include gradient-bg($color-primary-darker);
+}
+```
 
 
 ## Mixin gradient-x

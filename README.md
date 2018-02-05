@@ -107,13 +107,14 @@ Example:
   <summary>Gradients</summary>
   
 - [Full documentation](./docs/gradients.md)
-- [Mixin gradient-x](./docs/gradients.md#function-gradient-x)
-- [Mixin gradient-y](./docs/gradients.md#function-gradient-y)
-- [Mixin gradient-directional](./docs/gradients.md#function-gradient-directional)
-- [Mixin gradient-x-three-colors](./docs/gradients.md#function-gradient-x-three-colors)
-- [Mixin gradient-y-three-colors](./docs/gradients.md#function-gradient-y-three-colors)
-- [Mixin gradient-radial](./docs/gradients.md#function-gradient-radial)
-- [Mixin gradient-striped](./docs/gradients.md#function-gradient-striped)
+- [Mixin gradient-bg](./docs/gradients.md#mixin-gradient-bg)
+- [Mixin gradient-x](./docs/gradients.md#mixin-gradient-x)
+- [Mixin gradient-y](./docs/gradients.md#mixin-gradient-y)
+- [Mixin gradient-directional](./docs/gradients.md#mixin-gradient-directional)
+- [Mixin gradient-x-three-colors](./docs/gradients.md#mixin-gradient-x-three-colors)
+- [Mixin gradient-y-three-colors](./docs/gradients.md#mixin-gradient-y-three-colors)
+- [Mixin gradient-radial](./docs/gradients.md#mixin-gradient-radial)
+- [Mixin gradient-striped](./docs/gradients.md#mixin-gradient-striped)
 </details>
 <details open>
   <summary>Grid</summary>
