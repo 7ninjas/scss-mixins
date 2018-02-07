@@ -28,9 +28,9 @@
 [![David](https://img.shields.io/david/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub issues](https://img.shields.io/github/issues/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/7ninjas/scss-mixins.svg?style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 
 [![GitHub stars](https://img.shields.io/github/stars/7ninjas/scss-mixins.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
 [![GitHub watchers](https://img.shields.io/github/watchers/7ninjas/scss-mixins.svg?style=social&label=Watch&style=for-the-badge)](https://github.com/7ninjas/scss-mixins)
@@ -62,6 +62,16 @@ Example:
 - [Mixin hardware](./docs/animations.md#mixin-hardware)
 </details>
 <details open>
+  <summary>Border Radius</summary>
+  
+- [Full documentation](./docs/border-radius.md)
+- [Mixin border-radius](./docs/border-radius.md#mixin-border-radius)
+- [Mixin border-top-radius](./docs/border-radius.md#mixin-border-top-radius)
+- [Mixin border-right-radius](./docs/border-radius.md#mixin-border-right-radius)
+- [Mixin border-bottom-radius](./docs/border-radius.md#mixin-border-bottom-radius)
+- [Mixin border-left-radius](./docs/border-radius.md#mixin-border-left-radius)
+</details>
+<details open>
   <summary>Breakpoints</summary>
   
 - [Full documentation](./docs/breakpoints.md)
@@ -74,9 +84,9 @@ Example:
   <summary>Buttons</summary>
   
 - [Full documentation](./docs/buttons.md)
-- [Mixin mixin-button-variant](./docs/buttons.md#mixin-button-variant)
-- [Mixin mixin-button-outline-variant](./docs/buttons.md#mixin-button-outline-variant)
-- [Mixin mixin-button-size](./docs/buttons.md#mixin-button-size)
+- [Mixin button-variant](./docs/buttons.md#mixin-button-variant)
+- [Mixin button-outline-variant](./docs/buttons.md#mixin-button-outline-variant)
+- [Mixin button-size](./docs/buttons.md#mixin-button-size)
 </details>
 <details open>
   <summary>Colors</summary>
@@ -155,7 +165,7 @@ Example:
   <summary>Positioning</summary>
 
 - [Full documentation](./docs/positioning.md)
-- [Mixin size](./docs/positioning.md#function-size)
+- [Mixin size](./docs/positioning.md#mixin-size)
 - [Mixin clearfix](./docs/positioning.md#mixin-clearfix)
 - [Mixin z-index](./docs/positioning.md#mixin-z-index)
 - [Mixin pseudo](./docs/positioning.md#mixin-pseudo)
