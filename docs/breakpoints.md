@@ -35,9 +35,6 @@ Makes the content of class apply to the given breakpoint and wider._
 - `$breakpoints` - map defined in the `$grid-breakpoints`
 
 ### Usage: 
-
-
-#### Case
 Changing font size for devices with higher screen resolution than small devices
 
 ```scss
@@ -60,9 +57,6 @@ Makes the content of class apply to the given breakpoint and narrower._
 - `$breakpoints` - map defined in the `$grid-breakpoints`
 
 ### Usage: 
-
-
-#### Case
 Changing font size for devices with lower screen resolution than large devices
 
 ```scss
@@ -85,9 +79,6 @@ Changing font size for devices with lower screen resolution than large devices
 - `$breakpoints` - map defined in the `$grid-breakpoints`
 
 ### Usage: 
-
-
-#### Case
 Changing font size for devices with screen resolution between medium and large devices
 
 ```scss
@@ -111,9 +102,6 @@ Makes the content of class apply only to the given breakpoint, not viewports any
 - `$breakpoints` - map defined in the `$grid-breakpoints`
 
 ### Usage: 
-
-
-#### Case
 Changing font size for devices with lower screen resolution than large devices
 
 ```scss

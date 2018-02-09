@@ -11,7 +11,7 @@ _File includes helper for adding @font-face rules_
 _Specify a font name, URL where it can be found, font weight and font style._
 
 ### Parameters
-- `$font-name` - define a name for the font (**required**)
+- `$font-name` - defines a name for the font (**required**)
 - `$file-name` - name of font files with path (**required**)
 - `$weight` - defines the boldness of the font. Default value is "normal".
 - `$style` - defines how the font should be styled. Default value is "normal".

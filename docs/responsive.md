@@ -39,9 +39,9 @@ Assigned top margin for different screen resolutions
 _Mixin which helps make embed objects responsible_
 
 ### Parameters
-- `$x` - value of horizontal aspect ratio (as default it's used ```16```)
-- `$y` - value of vertical aspect ratio (as default it's used ```9```)
-- `$selector` - value of media selector (as default it's used ```> :first-child```)
+- `$x` - value of horizontal aspect ratio (**default ```16```**)
+- `$y` - value of vertical aspect ratio (**default ```9```**)
+- `$selector` - value of media selector (**default ```> :first-child```**)
 
 ### Usage: 
 Assigned media with aspect ratio 4:3
