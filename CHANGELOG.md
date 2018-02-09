@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 :rocket: New feature:
 - [Issue #70](https://github.com/7ninjas/scss-mixins/issues/70) upgraded bootstrap to v4.0.0 and updated docs
+- [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
 - [Issue #73](https://github.com/7ninjas/scss-mixins/issues/73) added mixin for placeholder in forms mixins
 - [Issue #75](https://github.com/7ninjas/scss-mixins/issues/75) added mixins for buttons
 - added `gradient-bg` mixin from bootstrap
@@ -11,7 +12,8 @@ All notable changes to this project will be documented in this file.
 
 :bug: Fixed:
 - fixed links in readme for gradients
-
+- [Issue #69](https://github.com/7ninjas/scss-mixins/issues/69) changed `$grid-gutter-widths` variable in mixin files
+ and _variables.scss
 
 ## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
