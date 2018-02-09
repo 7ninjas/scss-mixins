@@ -66,8 +66,10 @@ $grid-breakpoints: (
 $grid-columns: 12;
 $grid-fluid: false;
 $grid-gutter-widths: (
-  down sm: 40px,
-  up sm: 30px,
+  xl: 30px,
+  lg: 30px,
+  md: 30px,
+  sm: 30px,
 );
 $container-max-widths: (
   sm: 540px,
