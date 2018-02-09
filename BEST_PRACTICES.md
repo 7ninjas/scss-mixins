@@ -286,15 +286,15 @@ order can mislead you while reading code.
 Good practice:
 ```scss
 .container {
-  .active {
+  &.active {
     ...
   }
-  .hovered {
+  &.hovered {
     ...
   }
   
   .button {
-    .hovered {
+    &.hovered {
       ...
     }
     .text {
@@ -380,7 +380,7 @@ you can easily override mixins styles and while maintaining it will help you und
 Good practice:
 ```scss
 .container {
-  @include p(2, 2, 2, 2);
+  @include p(2);
   @include font(h1, $align: right);
   padding-left: 5px;
 }
