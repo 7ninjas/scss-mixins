@@ -25,21 +25,19 @@ $grid-breakpoints: (
     $mixin: 'only';
     $name: nth($list, 1);
   }
-
   @else if $list-length == 2 {
     $mixin: nth($list, 1);
     $name: nth($list, 2);
-    @if ($mixin != 'down' or $mixin != 'only' or $mixin != 'up') {
+    @if ($mixin != 'down' and $mixin != 'only' and $mixin != 'up') {
       @error 'Oops! Invalid breakpoint.';
     }
   }
-
   @else if $list-length == 3 {
     $mixin: nth($list, 1);
     $lower: nth($list, 2);
     $upper: nth($list, 3);
     @if ($mixin != 'between') {
-      @error 'Oops! Invalid breakpoint.';
+      @error 'Oops! Invalid breakpoint. 2';
     }
   }
 
@@ -48,19 +46,16 @@ $grid-breakpoints: (
       @content;
     }
   }
-
   @else if $mixin == 'only' {
     @include media-breakpoint-only($name) {
       @content;
     }
   }
-
   @else if $mixin == 'up' {
     @include media-breakpoint-up($name) {
       @content;
     }
   }
-
   @else if $mixin == 'between' {
     @include media-breakpoint-between($lower, $upper) {
       @content;
