@@ -14,9 +14,8 @@ _File includes mixins which help to keep consistent border radiuses._
 _Default variables declared in file to be used in mixins._
 
 ```scss
-$color-primary: #999;
-$enable-rounded: false !default;
-$border-radius: 1px solid $color-primary !default;
+$border-radius: 5px !default;
+$enable-rounded: true !default;
 ```
 
 ## Mixin border-radius
