@@ -11,7 +11,7 @@ _File includes mixin which help with styling form elements_
 _Mixin which helps with styling placeholder in inputs_
 
 ### Usage: 
-Changed placeholder's font style on base one and it's color on $color-primary-light (variable)
+Changed placeholder's font style on base one and it's color on `$color-primary-light`
 
 ```scss
 @include placeholder {

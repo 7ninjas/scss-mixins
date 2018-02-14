@@ -19,10 +19,10 @@ _Mixin which helps setting transition properties to given class_
 - `$round` - boolean if corner should be rounded (**default ```false```**)
 
 ### Usage: 
-Created rounded shape with green color and up direction
+Created rounded shape with $color-grey color and up direction
 
 ```scss
 .exampleTransitionClass {
-  @include css-triangle($color: #00ff00, $direction: up, $round: true);
+  @include css-triangle($color: $color-grey, $direction: up, $round: true);
 }
 ```

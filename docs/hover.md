@@ -19,9 +19,9 @@ Assigned different color for hovered element
 
 ```scss
 .exampleHoveredClass {
-    color: #222;
+    color: $color-blue;
     @include hover() {
-        color: #555;
+        color: $color-blue-dark;
     }
 }
 ```
@@ -37,9 +37,9 @@ Assigned different color of element when it's hovered and focused
 
 ```scss
 .exampleHoveredFocusClass {
-    color: #222;
+    color: $color-blue;
     @include hover-focus {
-        color: #555;
+        color: $color-blue-dark;
     }
 }
 ```
@@ -56,7 +56,7 @@ Set color of element when it's plain, hovered and focused
 ```scss
 .examplePlainHoveredFocusClass {
     @include plain-hover-focus {
-        color: #555;
+        color: $color-blue-light;
     }
 }
 ```
@@ -72,9 +72,9 @@ Assigned different color of element when it's hovered, focused and active
 
 ```scss
 .exampleHoveredFocusActiveClass {
-    color: #222;
+    color: $color-blue;
     @include hover-focus-active {
-        color: #555;
+        color: $color-blue-dark;
     }
 }
 ```

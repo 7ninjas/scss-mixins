@@ -100,7 +100,7 @@ Set `h1` font variation styles from `$typography` variable and change font color
 
 ```scss
 .exampleClass {
-   @include font(h1, #000);
+   @include font(h1, $color-black);
 }
 ```
 

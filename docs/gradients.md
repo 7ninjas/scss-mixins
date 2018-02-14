@@ -50,15 +50,16 @@ _Mixin which helps to create horizontal gradient, from left to right_
 ### Parameters
 - `$start-color` - defines start gradient color (**default `#555`**)
 - `$end-color` - defines end gradient color (**default `#333`**)
-- `$start-percent` - defines  where you want to start `$start-color` (**default `0%`**)
-- `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
+- `$start-percent` - defines where you want to start `$start-color` (**default `0%`**)
+- `$end-percent` - defines where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
-Assigned horizontal background gradient to class
+Assigned horizontal background gradient to class with `$color-white` and `$color-black` color properties which starts
+ in 10% and finishes in 90% of area
 
 ```scss
 .exampleGradient {
-    @include gradient-x(#000, #fff, 10%, 90%);
+    @include gradient-x($color-black, $color-white, 10%, 90%);
 }
 ```
 
@@ -75,11 +76,11 @@ _Mixin which helps to create vertical gradient, from top to bottom_
 - `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
-Assigned vertical background gradient to class
+Assigned vertical background gradient to class with `$color-white` and `$color-yellow` color properties
 
 ```scss
 .exampleGradient {
-    @include gradient-y(#f00, #0f0, 10%, 90%);
+    @include gradient-y($color-red, $color-yellow);
 }
 ```
 
@@ -95,11 +96,11 @@ _Mixin which helps to create directional gradient_
 - `$deg` - defines an angle to specify direction of the gradient (**default `45deg`**)
 
 ### Usage: 
-Assigned directional background gradient to class
+Assigned directional background gradient to class with `$color-yellow` and `$color-orange` color properties
 
 ```scss
 .exampleGradient {
-    @include gradient-directional(30deg, #f00, #0f0);
+    @include gradient-directional(30deg, $color-yellow, $color-orange);
 }
 ```
 
@@ -112,15 +113,16 @@ _Mixin which helps to create horizontal three colors gradient from left to right
 ### Parameters
 - `$start-color` - defines start gradient color (**default `#00b3ee`**)
 - `$mid-color` - defines middle gradient color (**default `#7a43b6`**)
-- `$end-color` - defines end gradient color (**default `#c3325f`**)
 - `$color-stop` - defines position of `$mid-color` from left to right (**default `50%`**)
+- `$end-color` - defines end gradient color (**default `#c3325f`**)
 
 ### Usage: 
-Assigned horizontal three-colors background gradient to class
+Assigned horizontal three-colors background gradient to class with `$color-white`, `$color-grey` and `$color-black` 
+color properties
 
 ```scss
 .exampleThreeColorsGradient {
-   @include gradient-x-three-colors(#f00, #0f0, 80%, #00f);
+   @include gradient-x-three-colors($color-white, $color-grey, 80%, $color-black);
 }
 ```
 
@@ -133,15 +135,16 @@ _Mixin which helps to create vertical three colors gradient from top to bottom_
 ### Parameters
 - `$start-color` - defines start gradient color (**default `#00b3ee`**)
 - `$mid-color` - defines middle gradient color (**default `#7a43b6`**)
-- `$end-color` - defines end gradient color (**default `#c3325f`**)
 - `$color-stop` - defines position of `$mid-color` from top to bottom (**default `50%`**)
+- `$end-color` - defines end gradient color (**default `#c3325f`**)
 
 ### Usage: 
-Assigned vertical three-colors background gradient to class
+Assigned vertical three-colors background gradient to class with `$color-white`, `$color-grey` and `$color-black` 
+color properties
 
 ```scss
 .exampleThreeColorsGradient {
-   @include gradient-y-three-colors(#f00, #0f0, 40%, #00f);
+   @include gradient-y-three-colors($color-white, $color-grey, 40%, $color-black);
 }
 ```
 
@@ -156,11 +159,11 @@ _Mixin which helps to create radial gradient_
 - `$outer-color` - defines end gradient color (**default `#333`**)
 
 ### Usage: 
-Assigned radial gradient with the shape of a circle
+Assigned radial gradient with the shape of a circle to class with `$color-pink` and `$color-purple` color properties
 
 ```scss
 .exampleRadialGradient {
-   @include gradient-radial(#f00, #0f0);
+   @include gradient-radial($color-pink, $color-purple);
 }
 ```
 
@@ -175,10 +178,10 @@ _Mixin which helps to create striped gradient_
 - `$angle` - defines an angle to specify direction of the gradient (**default `45deg`**)
 
 ### Usage: 
-Assigned striped gradient to the class
+Assigned striped gradient to class with `$color-orange` color property
 
 ```scss
 .exampleStripedGradient {
-   @include gradient-striped(#f0f, 30deg);
+   @include gradient-striped($color-orange, 30deg);
 }
 ```
