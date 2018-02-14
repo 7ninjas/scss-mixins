@@ -16,7 +16,7 @@ All notable changes to this project will be documented in this file.
  and _variables.scss
 - fixed buttons documentation
 - fixed border-radius documentation and variables
-- fix media-breakpoint-variant mixin, variables and documentation 
+- fixed media-breakpoint-variant mixin, variables and documentation 
 
 ## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
