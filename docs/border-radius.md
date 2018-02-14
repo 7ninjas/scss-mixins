@@ -27,7 +27,7 @@ _Mixin which uses variable `$enable-rounded`. If it's true - borders will be rou
 - `$radius` - defines properties of wanted border radius (**default ```$border-radius```**)
 
 ### Usage: 
-Assign border radius property with 10px value
+Assign border radius with `10px` value
 
 ```scss
 .exampleBorderClass {
@@ -45,7 +45,7 @@ anything._
 - `$radius` - defines properties wanted properties for top border radius (***required***)
 
 ### Usage: 
-Assign top border radius properties with 3px value
+Assign top border radius with `3px` value
 
 ```scss
 .exampleTopBorderClass {
@@ -63,7 +63,7 @@ anything._
 - `$radius` - defines wanted properties for right border radius
 
 ### Usage: 
-Assign right border radius properties with 12px value
+Assign right border radius with `12px` value
 
 ```scss
 .exampleRightBorderClass {
@@ -81,7 +81,7 @@ anything._
 - `$radius` - defines wanted properties for bottom border radius
 
 ### Usage: 
-Assign bottom border radius properties with 30px value
+Assign bottom border radius with `30px` value
 ```scss
 .exampleBottomBorderClass {
     @include border-bottom-radius (30px);
@@ -98,7 +98,7 @@ anything._
 - `$radius` - defines wanted properties for left border radius
 
 ### Usage: 
-Assign left border radius properties with default value (5px)
+Assign left border radius with default value (`5px`)
 
 ```scss
 .exampleLeftBorderClass {
