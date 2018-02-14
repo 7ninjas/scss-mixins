@@ -37,7 +37,7 @@ $grid-breakpoints: (
     $lower: nth($list, 2);
     $upper: nth($list, 3);
     @if ($mixin != 'between') {
-      @error 'Oops! Invalid breakpoint. 2';
+      @error 'Oops! Invalid breakpoint.';
     }
   }
 
