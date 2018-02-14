@@ -25,10 +25,10 @@ Assigned top margin for different screen resolutions
   @include responsive-prop(margin-top, (xxl: 160px, xl: 160px, lg: 130px, md: 100px, sm: 70px, xs: 50px));
   
   @include responsive-prop(margin-top, (
-    down xs: 12px,
-    sm: 10px,
-    between md lg: 3px,
-    up xl: 2px
+    down xs: 30px,
+    sm: 50px,
+    between md lg: 80px,
+    up xl: 150px
   ));
 }
 ```
