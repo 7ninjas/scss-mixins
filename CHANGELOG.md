@@ -17,6 +17,8 @@ All notable changes to this project will be documented in this file.
 - fixed buttons documentation
 - fixed border-radius documentation and variables
 - fixed media-breakpoint-variant mixin, variables and documentation 
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) removed `absolute` property from `pseudo mixin` in 
+`positioning` documentation
 
 ## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
