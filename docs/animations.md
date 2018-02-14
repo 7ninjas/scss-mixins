@@ -11,8 +11,9 @@ _File includes mixin for hardware acceleration for some animation_
 _Simple and effective for when you need to trigger hardware acceleration for some animation, keeping everything fast, slick and flicker-free._
 
 ### Parameters
-- `$backface` - set `hidden` value for `backface-visibility` property. Default value is `true`
-- `$perspective` - gives an element a 3D-space by affecting the distance between the Z plane and the user. Default is `1000`
+- `$backface` - set `hidden` value for `backface-visibility` property. (**default `true`**)
+- `$perspective` - gives an element a 3D-space by affecting the distance between the Z plane and the user. (**default
+ `1000`**)
 
 ### Usage: 
 
