@@ -14,6 +14,9 @@ All notable changes to this project will be documented in this file.
 - fixed links in readme for gradients
 - [Issue #69](https://github.com/7ninjas/scss-mixins/issues/69) changed `$grid-gutter-widths` variable in mixin files
  and _variables.scss
+- fixed buttons documentation
+- fixed border-radius documentation and variables
+- fixed media-breakpoint-variant mixin, variables and documentation 
 - [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) removed `absolute` property from `pseudo mixin` in 
 `positioning` documentation
 
