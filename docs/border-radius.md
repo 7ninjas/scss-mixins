@@ -14,9 +14,8 @@ _File includes mixins which help to keep consistent border radiuses._
 _Default variables declared in file to be used in mixins._
 
 ```scss
-$color-primary: #999;
-$enable-rounded: false !default;
-$border-radius: 1px solid $color-primary !default;
+$border-radius: 5px !default;
+$enable-rounded: true !default;
 ```
 
 ## Mixin border-radius
@@ -28,11 +27,11 @@ _Mixin which uses variable `$enable-rounded`. If it's true - borders will be rou
 - `$radius` - defines properties of wanted border radius (**default ```$border-radius```**)
 
 ### Usage: 
-Assign border radius with properties 1px solid and color defined in variables as `$red`
+Assign border radius with `10px` value
 
 ```scss
 .exampleBorderClass {
-    @include border-radius (1px solid $red);
+    @include border-radius (10px);
 }
 ```
 
@@ -46,11 +45,11 @@ anything._
 - `$radius` - defines properties wanted properties for top border radius (***required***)
 
 ### Usage: 
-Assign top border radius with properties 1px solid and color defined in variables as `color-primary-light`
+Assign top border radius with `3px` value
 
 ```scss
 .exampleTopBorderClass {
-    @include border-top-radius (1px solid $color-primary-light);
+    @include border-top-radius (3px);
 }
 ```
 
@@ -64,11 +63,11 @@ anything._
 - `$radius` - defines wanted properties for right border radius
 
 ### Usage: 
-Assign right border radius with properties 1px solid and color defined in variables as `$color-primary`
+Assign right border radius with `12px` value
 
 ```scss
 .exampleRightBorderClass {
-    @include border-right-radius (1px solid $color-primary);
+    @include border-right-radius (12px);
 }
 ```
 
@@ -82,11 +81,10 @@ anything._
 - `$radius` - defines wanted properties for bottom border radius
 
 ### Usage: 
-Assign bottom border radius with properties 1px solid and color defined in variables as `$color-secondary`
-
+Assign bottom border radius with `30px` value
 ```scss
 .exampleBottomBorderClass {
-    @include border-bottom-radius (1px solid $color-secondary);
+    @include border-bottom-radius (30px);
 }
 ```
 
@@ -100,10 +98,10 @@ anything._
 - `$radius` - defines wanted properties for left border radius
 
 ### Usage: 
-Assign left border radius with properties 1px solid and color defined in variables as `$color-success`
+Assign left border radius with default value (`5px`)
 
 ```scss
 .exampleLeftBorderClass {
-    @include border-left-radius (1px solid $color-success);
+    @include border-left-radius ();
 }
 ```

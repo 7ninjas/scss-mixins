@@ -12,13 +12,13 @@ _File includes mixins which helps create consistently styled buttons_
 _Default variables which are required in mixins located in file. They are set with most common values._
 
 ```scss
-$black: #242222 !default;
-$white: #fff !default;
+$color-black: #242222 !default;
+$color-white: #fff !default;
 $enable-rounded: false !default;
 $btn-focus-width: 2px !default;
 $enable-shadows: false !default;
-$btn-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
-$btn-box-shadow: inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+$btn-active-box-shadow: inset 0 3px 5px rgba($color-black, .125) !default;
+$btn-box-shadow: inset 0 1px 0 rgba($color-white, .15), 0 1px 1px rgba($color-black, .075) !default;
 ```
 
 
@@ -36,11 +36,11 @@ _Mixin which helps to create button with specified border and background color w
 - `$active-border` - defines button's border color when active (**default `darken($border, 12.5%)`**)
 
 ### Usage: 
-Assign primary color (variable) as button's text and background color and primary dark (variable) as border of button 
+Assign $color-red as background color and $color-red-dark as border color of button.
 
 ```scss
 .exampleGradient {
-    @include button-variant($color-primary, $color-primary-dark);
+    @include button-variant($color-red, $color-red-dark);
 }
 ```
 
@@ -57,12 +57,11 @@ _Mixin which helps to create button with specified border and background color w
 - `$active-border` - defines button's border when active (**default `$color`**)
 
 ### Usage: 
-Assigned button with $color-primary(variable) color and $color-primary-light(variable) color of border and background
- while active.
+Assign $color-red as button's text and border color and $color-red-dark as border color while active.
 
 ```scss
 .exampleSizedButton {
-    @include button-outline-variant($color: $color-primary, $active-background: $color-primary-light, $active-border: $color-primary-light);
+    @include button-outline-variant($color-red, $active-border: $color-red-dark);
 }
 ```
 
@@ -81,10 +80,10 @@ _Mixin which helps to keep consistent size of button_
 
 ### Usage: 
 Assigned button with 10px of top and bottom padding, 20px of right and left padding, 16px font size, 20px line height
- and 1px solid border with $color-primary(variable) color
+ and 5px border-radius
 
 ```scss
 .exampleSizedButton {
-    @include button-size(10px, 20px, 16px, 20px, 1px solid $color-primary);
+    @include button-size(10px, 20px, 16px, 20px, 5px);
 }
 ```

@@ -68,16 +68,15 @@ _Mixin which helps with positioning pseudo elements with content, display and po
 
 ### Parameters
 - `$display` - variable which will be used as a value for ```display``` (**default ```block```**)
-- `$pos` - variable which will be used as a value for ```position``` (**default ```absolute```**)
 - `$content` - variable which will be used as a value for ```content``` (**default empty string**)
 
 ### Usage: 
-Assigned element with inline display and fixed position
+Assigned element with inline display and default content
 
 ```scss
 .examplePseudoClass {
    &:before {
-       @include pseudo(block, absolute);
+       @include pseudo(block);
        ...
     }
    &:after {
