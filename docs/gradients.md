@@ -50,15 +50,16 @@ _Mixin which helps to create horizontal gradient, from left to right_
 ### Parameters
 - `$start-color` - defines start gradient color (**default `#555`**)
 - `$end-color` - defines end gradient color (**default `#333`**)
-- `$start-percent` - defines  where you want to start `$start-color` (**default `0%`**)
-- `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
+- `$start-percent` - defines where you want to start `$start-color` (**default `0%`**)
+- `$end-percent` - defines where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
-Assigned horizontal background gradient to class
+Assigned horizontal background gradient to class with `$color-white` and `$color-black` color properties which starts
+ in 10% and finishes in 90% of area
 
 ```scss
 .exampleGradient {
-    @include gradient-x(#000, #fff, 10%, 90%);
+    @include gradient-x($color-black, $color-white, 10%, 90%);
 }
 ```
 
@@ -75,11 +76,11 @@ _Mixin which helps to create vertical gradient, from top to bottom_
 - `$end-percent` - defines  where you want to stop `$end-color` (**default `100%`**)
 
 ### Usage: 
-Assigned vertical background gradient to class
+Assigned vertical background gradient to class with `$color-white` and `$color-yellow` color properties
 
 ```scss
 .exampleGradient {
-    @include gradient-y(#f00, #0f0, 10%, 90%);
+    @include gradient-y($color-red, $color-yellow);
 }
 ```
 
