@@ -16,9 +16,11 @@ All notable changes to this project will be documented in this file.
  and _variables.scss
 - fixed buttons documentation
 - fixed border-radius documentation and variables
-- fixed media-breakpoint-variant mixin, variables and documentation 
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) fixed media-breakpoint-variant mixin, variables and documentation 
 - [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) removed `absolute` property from `pseudo mixin` in 
 `positioning` documentation
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) added missing `px` in `responsive-prop` mixin in 
+`responsive` documentation
 
 ## [v1.0.0-alpha2] - 2018-01-16
 :rocket: New feature:
