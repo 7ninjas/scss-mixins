@@ -36,7 +36,7 @@ _Mixin which helps to create button with specified border and background color w
 - `$active-border` - defines button's border color when active (**default `darken($border, 12.5%)`**)
 
 ### Usage: 
-Assign primary `$color-red` as background color and `$color-red-dark` color `$color-red-dark` as border of button 
+Assign $color-red as background color and $color-red-dark as border color of button.
 
 ```scss
 .exampleGradient {
@@ -57,7 +57,7 @@ _Mixin which helps to create button with specified border and background color w
 - `$active-border` - defines button's border when active (**default `$color`**)
 
 ### Usage: 
-Assigned button with `$color-red` color and `$color-red-dark` color of border while active.
+Assign $color-red as button's text and border color and $color-red-dark as border color while active.
 
 ```scss
 .exampleSizedButton {
