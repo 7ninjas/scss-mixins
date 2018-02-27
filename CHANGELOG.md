@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.0.0-alpha3] - 2018-02-27
 :rocket: New feature:
 - [Issue #70](https://github.com/7ninjas/scss-mixins/issues/70) upgraded bootstrap to v4.0.0 and updated docs
 - [Issue #27](https://github.com/7ninjas/scss-mixins/issues/27) created 'best practices' document
