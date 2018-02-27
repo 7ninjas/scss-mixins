@@ -1,6 +1,6 @@
 {
   "name": "@7ninjas/scss-mixins",
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-alpha3",
   "description": "`scss-mixins` is a collection of scss mixins and functions to ease and improve implementations of common style-code patterns.",
   "keywords": [
     "scss",
