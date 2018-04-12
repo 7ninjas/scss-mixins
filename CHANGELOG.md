@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:rocket: New feature:
+- updated dependencies
+
+:bug: Fixed:
+- [Issue #89](https://github.com/7ninjas/scss-mixins/issues/89) added `forms.scss` to `all.scss` file 
+- [Issue #91](https://github.com/7ninjas/scss-mixins/issues/91) changes name of `triangle` mixing (only) in 
+documentation
 
 ## [v1.0.0-alpha3] - 2018-02-27
 :rocket: New feature:

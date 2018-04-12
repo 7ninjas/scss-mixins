@@ -185,7 +185,7 @@ Example:
   <summary>Shapes</summary>
   
 - [Full documentation](./docs/shapes.md)
-- [Mixin css-triangle](./docs/shapes.md#mixin-css-triangle)
+- [Mixin triangle](./docs/shapes.md#mixin-triangle)
 </details>
 <details open>
   <summary>Spacing</summary>

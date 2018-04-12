@@ -3,10 +3,10 @@ _File includes mixin which helps in creating triangles in css_
 
 ### List of content:
 
-- [Mixin css-triangle](#mixin-css-triangle)
+- [Mixin triangle](#mixin-triangle)
 
 
-## Mixin css-triangle
+## Mixin triangle
 
 ### Description
 _Mixin which helps setting transition properties to given class_
@@ -23,6 +23,6 @@ Created rounded shape with $color-grey color and up direction
 
 ```scss
 .exampleTransitionClass {
-  @include css-triangle($color: $color-grey, $direction: up, $round: true);
+  @include triangle($color: $color-grey, $direction: up, $round: true);
 }
 ```
