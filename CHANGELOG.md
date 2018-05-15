@@ -2,14 +2,16 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+:bug: Fixed:
+- [Issue #98](https://github.com/7ninjas/scss-mixins/issues/98) included `border-radius` mixins
 
 ## [v1.0.0] - 2018-04-12
 :rocket: New feature:
 - updated dependencies
 
 :bug: Fixed:
-- [Issue #89](https://github.com/7ninjas/scss-mixins/issues/89) added `forms.scss` to `all.scss` file 
-- [Issue #91](https://github.com/7ninjas/scss-mixins/issues/91) changes name of `triangle` mixing (only) in 
+- [Issue #89](https://github.com/7ninjas/scss-mixins/issues/89) added `forms.scss` to `all.scss` file
+- [Issue #91](https://github.com/7ninjas/scss-mixins/issues/91) changes name of `triangle` mixing (only) in
 documentation
 
 ## [v1.0.0-alpha3] - 2018-02-27
@@ -27,10 +29,10 @@ documentation
  and _variables.scss
 - fixed buttons documentation
 - fixed border-radius documentation and variables
-- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) fixed media-breakpoint-variant mixin, variables and documentation 
-- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) removed `absolute` property from `pseudo mixin` in 
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) fixed media-breakpoint-variant mixin, variables and documentation
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) removed `absolute` property from `pseudo mixin` in
 `positioning` documentation
-- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) added missing `px` in `responsive-prop` mixin in 
+- [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) added missing `px` in `responsive-prop` mixin in
 `responsive` documentation
 - [Issue #80](https://github.com/7ninjas/scss-mixins/issues/80) changed hardcoded colors to variables in documentation
 
@@ -72,7 +74,7 @@ documentation
 - added units.scss
 - added utils.scss
 - run linters on each commit - git hooks
- 
+
 :bug: Fixed:
 - updated readme
 
