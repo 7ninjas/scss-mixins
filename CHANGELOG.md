@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 :bug: Fixed:
 - [Issue #98](https://github.com/7ninjas/scss-mixins/issues/98) included `border-radius` mixins
 - [Issue #100](https://github.com/7ninjas/scss-mixins/issues/100), [Issue #101](https://github.com/7ninjas/scss-mixins/issues/101) changed `$gutter` variable
+- [Issue #102](https://github.com/7ninjas/scss-mixins/issues/102) updated triangle mixin
 - [Issue #103](https://github.com/7ninjas/scss-mixins/issues/103) Updated description of `mixin @font-face` usage along with `css-modules`
 
 ## [v1.0.0] - 2018-04-12
