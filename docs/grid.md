@@ -54,7 +54,7 @@ _Mixin which helps with proper displaying container with flex property and 100% 
 - `$gutter` - object with width of gutters for different resolutions  (**default ```$grid-gutter-widths```**)
 - `$max-widths` - object with max width of container for different resolutions (**default ```$container-max-widths```**)
 
-### Usage: 
+### Usage:
 
 #### Case 1
 Assigned grid container with gutters
@@ -64,7 +64,7 @@ Assigned grid container with gutters
 }
 ```
 
-#### Case 2 
+#### Case 2
 Assigned fluid grid container.
 
 ```scss
@@ -90,17 +90,17 @@ _Mixin which helps to create columns with their size, gutters, offset and alignm
 ### Parameters
 - `$size` - variable which define size of each column (**default `12`**)
 - `$columns` - variable which define number of columns (**default `12`**)
-- `$gutter-widths` - variable which define width of each gutter (**default values for each breakpoints defined in ```$grid-gutter-widths```**)
+- `$gutter` - variable which define width of each gutter (**default values for each breakpoints defined in ```$grid-gutter-widths```**)
 - `$offset` - variable which define size of offset (**default `0`**)
 - `$align` - variable which define alignment of columns (**default `auto`**)
 
-### Usage: 
+### Usage:
 
 #### Case 1
 Define styles for block that used 12 column out of the possible default 12 per container.
 ```scss
 .exampleColumn {
-    @include col();
+    @include col;
 }
 ```
 
@@ -123,8 +123,7 @@ Define styles for block that used 2 column out of the possible 5 per container.
 
 
 #### Case 4
-Define styles for block that used 2 column out of the possible 12
-and set 5 columns offset.
+Define styles for block that used 2 column out of the possible 12 and set 5 columns offset.
 ```scss
 .exampleColumn {
     @include col(2, $offset: 5);
@@ -132,10 +131,17 @@ and set 5 columns offset.
 ```
 
 #### Case 5
-Define styles for block that used 2 column out of the possible 12
-and align it to the center of the container.
+Define styles for block that used 2 column out of the possible 12 and align it to the center of the container.
 ```scss
 .exampleColumn {
     @include col(2, $align: center);
+}
+```
+
+#### Case 6
+Define styles for block that used 2 column out of the possible 12 and removed gutters.
+```scss
+.exampleColumn {
+    @include col(2, $gutter: false);
 }
 ```
