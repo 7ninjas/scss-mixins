@@ -1,7 +1,7 @@
 @import 'positioning';
 
 @mixin triangle($color, $direction, $size: 6px, $position: absolute, $round: false) {
-  @include pseudo($pos: $position);
+  @include pseudo($display: $position);
 
   height: 0;
   width: 0;
