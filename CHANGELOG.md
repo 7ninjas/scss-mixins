@@ -2,6 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [v1.0.1] - 2018-06-21
 :bug: Fixed:
 - [Issue #98](https://github.com/7ninjas/scss-mixins/issues/98) included `border-radius` mixins
 - [Issue #100](https://github.com/7ninjas/scss-mixins/issues/100), [Issue #101](https://github.com/7ninjas/scss-mixins/issues/101) changed `$gutter` variable
